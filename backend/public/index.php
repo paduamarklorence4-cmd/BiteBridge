@@ -1,10 +1,9 @@
 <?php
 $allowed = [
-    'https://lab6-react-rontend-nine.vercel.app',
-    'https://lab6-react-frontend.onrender.com',
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    
+    'https://bite-bridge-fikw.vercel.app',
+
 ];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed, true)) {
