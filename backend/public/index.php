@@ -1,22 +1,31 @@
 <?php
-$allowed = [
+// ===== CORS: isa lang ang block, bago ang kahit anong output =====
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+$allowed_exact = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
     'https://bite-bridge-fikw.vercel.app',
-
 ];
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-if (in_array($origin, $allowed, true)) {
+
+// Lahat ng deployment ng Vercel project (production, preview, at bagong URL)
+$allowed_pattern = '#^https://bite-bridge-fikw(-[a-z0-9-]+)?-paduamarklorence4-cmd\.vercel\.app$#';
+
+$is_allowed = in_array($origin, $allowed_exact, true) || preg_match($allowed_pattern, $origin);
+
+if ($is_allowed) {
     header("Access-Control-Allow-Origin: $origin");
     header('Access-Control-Allow-Credentials: true');
+    header('Vary: Origin');
 }
-
 header('Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
+
 define('PREVENT_DIRECT_ACCESS', TRUE);
 /**
  * ------------------------------------------------------------------
@@ -24,9 +33,9 @@ define('PREVENT_DIRECT_ACCESS', TRUE);
  * ------------------------------------------------------------------
  *
  * MIT License
- * 
+ *
  * Copyright (c) 2020 Ronald M. Marasigan
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -57,34 +66,24 @@ define('PREVENT_DIRECT_ACCESS', TRUE);
  *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME
  *---------------------------------------------------------------
- *
- * This variable must contain the name of your "scheme" directory.
- * Set the path if it is not in the same directory as this file.
- * 
  * NO TRAILING SLASH!
  */
-	$system_path 			= 'scheme';
+$system_path = 'scheme';
 
 /*
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAME
  *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "app"
- * directory than the default one you can set its name here.
- *
  * NO TRAILING SLASH!
  */
-	$application_folder 	= 'app';
+$application_folder = 'app';
 
 /*
  *---------------------------------------------------------------
- * APPLICATION DIRECTORY NAME
+ * PUBLIC FOLDER NAME
  *---------------------------------------------------------------
- * This let you set up your public folder where css, js and other public,
- * files will be visible
  */
-	$public_folder			= 'public';
+$public_folder = 'public';
 
 /*
  * ------------------------------------------------------
@@ -101,12 +100,5 @@ define('PUBLIC_DIR', $public_folder);
  * Setup done? Then Hurray!
  * ------------------------------------------------------
  */
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Content-Type, Authorization');
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    http_response_code(204);
-    exit;
-}
 require_once SYSTEM_DIR . 'kernel/LavaLust.php';
 ?>
