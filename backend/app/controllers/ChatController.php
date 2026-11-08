@@ -196,21 +196,28 @@ class ChatController extends Controller
 
     private function ask_ai($url, $message)
     {
+        // A free hosting plan puts the AI service to sleep when idle, so the first call can take up to a minute.
+        @set_time_limit(75);
         $payload = json_encode(['message' => $message]);
+        $headers = ['Content-Type: application/json'];
+        $key = getenv('AI_SERVICE_KEY');
+        if ($key) {
+            $headers[] = 'X-AI-Key: ' . $key;
+        }
         if (function_exists('curl_init')) {
             $ch = curl_init($url);
             curl_setopt_array($ch, [
                 CURLOPT_POST => true, CURLOPT_POSTFIELDS => $payload,
-                CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
-                CURLOPT_RETURNTRANSFER => true, CURLOPT_CONNECTTIMEOUT => 2, CURLOPT_TIMEOUT => 5,
+                CURLOPT_HTTPHEADER => $headers,
+                CURLOPT_RETURNTRANSFER => true, CURLOPT_CONNECTTIMEOUT => 10, CURLOPT_TIMEOUT => 65,
             ]);
             $body = curl_exec($ch);
             $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
         } else {
             $ctx = stream_context_create(['http' => [
-                'method' => 'POST', 'header' => "Content-Type: application/json\r\n",
-                'content' => $payload, 'timeout' => 5, 'ignore_errors' => true,
+                'method' => 'POST', 'header' => implode("\r\n", $headers) . "\r\n",
+                'content' => $payload, 'timeout' => 65, 'ignore_errors' => true,
             ]]);
             $body = @file_get_contents($url, false, $ctx);
             $code = 200;

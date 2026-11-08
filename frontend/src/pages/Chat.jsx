@@ -4,7 +4,6 @@ import * as Lucide from 'lucide-react'
 import { CLINIC } from '../config'
 import PageHeader from './PageHeader'
 import './ChatFlow.css'
-import Captcha from '../components/Captcha'
 
 const pick = (...names) => names.map((n) => Lucide[n]).find(Boolean) || Lucide.Circle
 const Send = pick('Send')
@@ -304,7 +303,6 @@ function Retrieve({ onBack }) {
 export default function Chat() {
   const [consented, setConsented] = useState(() => readFlag(CONSENT_KEY) === 'yes')
   const [agree, setAgree] = useState(false)
-  const [verified, setVerified] = useState(false)
   const [mode, setMode] = useState('chat') // chat | assess | done | retrieve
   const [result, setResult] = useState(null)
   const [msgs, setMsgs] = useState([
@@ -313,6 +311,7 @@ export default function Chat() {
   const [input, setInput] = useState('')
   const [busy, setBusy] = useState(false)
   const [aiDown, setAiDown] = useState(false)
+  const [slow, setSlow] = useState(false)
   const [offline, setOffline] = useState(false)
   const tokenRef = useRef(readFlag(TOKEN_KEY) || '')
   const starting = useRef(false)
@@ -352,9 +351,10 @@ export default function Chat() {
     setMsgs((m) => [...m, { from: 'user', text: q }])
     setInput('')
     setBusy(true)
+    const slowTimer = setTimeout(() => setSlow(true), 6000)
     try {
       if (offline) throw new Error('offline')
-      const d = await withSession((t) => api('/chat/message', { session_token: t, message: q }))
+      const d = await withSession((t) => api('/chat/message', { session_token: t, message: q }, { timeout: 75000 }))
       setAiDown(false)
       setMsgs((m) => [...m, { from: 'bot', text: d.reply, assess: Boolean(d.offer_assessment) }])
     } catch (err) {
@@ -362,6 +362,8 @@ export default function Chat() {
       setAiDown(true)
       setMsgs((m) => [...m, { from: 'bot', text: presetReply(q) }])
     } finally {
+      clearTimeout(slowTimer)
+      setSlow(false)
       setBusy(false)
     }
   }
@@ -404,29 +406,11 @@ export default function Chat() {
                 them. If you choose to share your name, contact number, or a wound photo, they are used only for your care.
               </p>
               <p><Link to="/privacy">Read the full Privacy Notice</Link></p>
-             <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '16px 0' }}>
-  <input
-    type="checkbox"
-    checked={agree}
-    onChange={(e) => {
-      setAgree(e.target.checked)
-      if (!e.target.checked) setVerified(false)
-    }}
-    style={{ marginTop: 4 }}
-  />
-  <span>I have read the Privacy Notice and I agree to continue.</span>
-</label>
-
-{agree && <Captcha onVerified={() => setVerified(true)} />}
-
-<button
-  type="button"
-  className="btn btn-primary"
-  disabled={!agree || !verified}
-  onClick={accept}
->
-  Start chat
-</button>
+              <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '16px 0' }}>
+                <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} style={{ marginTop: 4 }} />
+                <span>I have read the Privacy Notice and I agree to continue.</span>
+              </label>
+              <button type="button" className="btn btn-primary" disabled={!agree} onClick={accept}>Start chat</button>
               <p className="fineprint">
                 If this is an emergency or the bleeding will not stop, call the center at {CLINIC.phoneDisplay} or go to the nearest hospital.
               </p>
@@ -473,7 +457,7 @@ export default function Chat() {
                     )}
                   </div>
                 ))}
-                {busy && <div className="bubble bubble-bot">Typing...</div>}
+                {busy && <div className="bubble bubble-bot">{slow ? 'The assistant is waking up. The first answer can take up to a minute…' : 'Typing...'}</div>}
                 <div ref={end} />
               </div>
               <div className="chat-quick">

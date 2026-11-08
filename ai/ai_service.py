@@ -10,12 +10,17 @@ never invents medical advice. All first aid wording must be approved by the
 center's nurse or physician before real use.
 Replies come in English and Filipino; Filipino/Taglish messages get Filipino replies.
 """
+import hmac
+import os
 import re
 
 import joblib
 from flask import Flask, jsonify, request
 
 CONFIDENCE_THRESHOLD = 0.40
+
+# When deployed, set AI_SERVICE_KEY on this service and on the backend so only the backend can use /chat.
+AI_KEY = os.environ.get("AI_SERVICE_KEY", "")
 
 # Update these to the center's verified details.
 PHONE = "0948 983 8158"
@@ -103,7 +108,7 @@ def detect_lang(text):
 def add_cors(resp):
     # Local development only. In production, call this service from the LavaLust backend.
     resp.headers["Access-Control-Allow-Origin"] = "*"
-    resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    resp.headers["Access-Control-Allow-Headers"] = "Content-Type, X-AI-Key"
     return resp
 
 
@@ -116,6 +121,8 @@ def health():
 def chat():
     if request.method == "OPTIONS":
         return ("", 204)
+    if AI_KEY and not hmac.compare_digest(request.headers.get("X-AI-Key", ""), AI_KEY):
+        return jsonify({"error": "unauthorized"}), 401
     data = request.get_json(silent=True) or {}
     message = str(data.get("message", "")).strip().lower()
     if not message or len(message) > 500:
