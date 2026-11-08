@@ -1,0 +1,25 @@
+.st-badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
+.st-badge-gray   { background: #e4ebf2; color: #3e4c59; }
+.st-badge-green  { background: #e6f4ea; color: #1e7e34; }
+.st-badge-red    { background: #fdecea; color: #b02a2a; }
+.st-badge-amber  { background: #fff4e0; color: #8a5a00; }
+.st-badge-navy   { background: #dfe8f3; color: #0f2a44; }
+.st-tabs { display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid #d9e2ec; margin-bottom: 18px; }
+.st-tab { background: transparent; border: 0; border-bottom: 3px solid transparent; padding: 10px 14px; font: inherit; cursor: pointer; color: #52606d; }
+.st-tab:hover { color: #1f2933; }
+.st-tab[aria-selected="true"] { color: #0f2a44; border-bottom-color: #c62828; font-weight: 700; }
+.st-perm-group { margin: 0 0 14px; }
+.st-perm-group h3 { margin: 0 0 6px; font-size: 0.95rem; text-transform: capitalize; }
+.st-perm-list { display: grid; gap: 4px 18px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.st-perm-list label { display: flex; gap: 8px; align-items: flex-start; font-size: 0.92rem; }
+.st-report-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin: 16px 0; }
+.st-report-stat { background: #f8fafc; border: 1px solid #e4ebf2; border-radius: 10px; padding: 10px 12px; }
+.st-report-stat span { display: block; color: #52606d; font-size: 0.82rem; }
+.st-report-stat strong { font-size: 1.15rem; }
+.st-formrow { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 8px; }
+.st-formrow .pt-field { min-width: 180px; }
+@media print {
+  .st-sidebar, .st-topbar, .st-noprint { display: none !important; }
+  .st-shell { display: block; }
+  .st-content { padding: 0; }
+}

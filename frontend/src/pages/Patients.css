@@ -1,0 +1,46 @@
+.pt-toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.pt-search { position: relative; flex: 1 1 280px; max-width: 420px; }
+.pt-search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #52606d; pointer-events: none; }
+.pt-search input { width: 100%; padding: 10px 36px 10px 38px; border: 1px solid #d9e2ec; border-radius: 10px; font: inherit; background: #fff; }
+.pt-search button { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: transparent; border: 0; padding: 6px; cursor: pointer; color: #52606d; border-radius: 6px; }
+.pt-tablewrap { overflow-x: auto; }
+.pt-table { width: 100%; border-collapse: collapse; min-width: 760px; }
+.pt-table th, .pt-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #e4ebf2; vertical-align: middle; }
+.pt-table th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: #52606d; background: #f8fafc; }
+.pt-table tr:last-child td { border-bottom: 0; }
+.pt-code { font-variant-numeric: tabular-nums; color: #52606d; white-space: nowrap; }
+.pt-actions { display: flex; gap: 6px; white-space: nowrap; }
+.pt-iconbtn { display: inline-flex; align-items: center; gap: 6px; background: #fff; border: 1px solid #d9e2ec; border-radius: 8px; padding: 6px 10px; cursor: pointer; font: inherit; }
+.pt-iconbtn:hover { background: #f4f7fa; }
+.pt-pager { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; padding: 12px 14px; border-top: 1px solid #e4ebf2; }
+.pt-pager-btns { display: flex; gap: 8px; }
+.pt-empty { padding: 40px 16px; text-align: center; color: #52606d; }
+.pt-skelrow td div { height: 14px; border-radius: 6px; background: #e4ebf2; animation: st-pulse 1.2s ease-in-out infinite; }
+.pt-toast { position: fixed; right: 20px; bottom: 20px; background: #1e7e34; color: #fff; padding: 12px 16px; border-radius: 10px; box-shadow: 0 8px 24px rgba(15, 42, 68, 0.24); z-index: 80; }
+
+.pt-overlay { position: fixed; inset: 0; background: rgba(15, 42, 68, 0.55); display: grid; place-items: center; padding: 16px; z-index: 70; }
+.pt-modal { background: #fff; width: min(640px, 100%); max-height: 92vh; overflow-y: auto; border-radius: 14px; box-shadow: 0 16px 48px rgba(15, 42, 68, 0.3); animation: pt-pop 0.15s ease-out; }
+@keyframes pt-pop { from { opacity: 0; transform: translateY(8px) scale(0.98); } to { opacity: 1; transform: none; } }
+.pt-modal-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e4ebf2; }
+.pt-modal-head h2 { margin: 0; font-size: 1.2rem; }
+.pt-modal-body { padding: 20px; }
+.pt-form { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+.pt-form .full { grid-column: 1 / -1; }
+.pt-field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.pt-field input, .pt-field textarea { width: 100%; padding: 10px 12px; border: 1px solid #d9e2ec; border-radius: 8px; font: inherit; background: #fff; }
+.pt-field textarea { min-height: 84px; resize: vertical; }
+.pt-field input:focus, .pt-field textarea:focus, .pt-search input:focus { outline: 2px solid #0f2a44; outline-offset: 1px; }
+.pt-hint { font-size: 0.82rem; color: #52606d; margin-top: 4px; }
+.pt-error { background: #fdecea; border-left: 4px solid #c62828; padding: 10px 12px; border-radius: 6px; margin-bottom: 14px; }
+.pt-form-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+.pt-kv { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; margin: 0 0 16px; }
+.pt-kv dt { color: #52606d; }
+.pt-kv dd { margin: 0; word-break: break-word; }
+.pt-sub { margin: 18px 0 8px; font-size: 1rem; }
+.pt-mini { width: 100%; border-collapse: collapse; }
+.pt-mini th, .pt-mini td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #e4ebf2; font-size: 0.92rem; }
+@media (max-width: 640px) {
+  .pt-form { grid-template-columns: 1fr; }
+  .pt-kv { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .pt-modal, .pt-skelrow td div { animation: none; } }

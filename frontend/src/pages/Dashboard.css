@@ -1,0 +1,6 @@
+.st-charts { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.st-chart h2 { margin: 0 0 12px; font-size: 1.05rem; }
+.st-chart-body { height: 260px; }
+.st-chart-note { margin: 8px 0 0; font-size: 0.85rem; color: #52606d; }
+.st-empty { height: 260px; display: grid; place-items: center; text-align: center; color: #52606d; }
+.st-asof { margin: 0 0 16px; font-size: 0.85rem; color: #52606d; }

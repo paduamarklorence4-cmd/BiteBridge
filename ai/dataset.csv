@@ -1,0 +1,4151 @@
+text,intent
+excuse me email address thanks,contact
+uhm who is the docctor po pls,staff_info
+good day what can the center do asap,services
+good day sino ang doktor po pls,staff_info
+hello po pwede bang ma delay ang turok thank you,vaccine_followup
+sir can you give the vaccine to children kasi,services
+sir good morning please,greeting
+excuse mehow much does it cost ba,fees
+excuse me kumusta,greeting
+po kinagat ako ng kuting po ba,bite_report
+urgent are you huamn,bot_identity
+hey there,greeting
+uhm will you send me an sms reminder,vaccine_followup
+urgent may kagat ako sapaa?,bite_report
+uhm ok ssalamat?,thanks
+paki sagot can i pa yin cash ?,fees
+paki sagot pano ko malalaman ang schedule ko po maam,vaccine_followup
+pasnesya na po what time do you open?,hours
+what time do you close po ba,hours
+hello ano ang first aid sa kagat pls,first_aid
+how do i get to the cilnic,location
+hello paano kayo hanapin ?,location
+tanong lang tumatanggap ba kayo ng gcash po,fees
+uhmanong programming language ang gamit salamat,about_system
+sir where is ez animal bite center ?,location
+qick question mamamatay ba ako thanks,medical_advice
+hello email address ?,contact
+pasensya na po i was bitten by a pet dog,bite_report
+hello po hello,greeting
+nakagat ang anak ko ng kuting hello,bite_report
+pls magkano ang konsulta hello,fees
+pls should i skip my vaccine salamat,medical_advice
+good day list of services hello,services
+urgent do i need a tetanus shot thanks,medical_advice
+sir good morning po maam,greeting
+urgent how to find the center po,location
+hi admin bitten by a kitten what do i do,bite_report
+thanks po psl,thanks
+paki sagot nandiyan ba ang doktor kasi,staff_info
+maam dumugo ang kagat sa akin please,bite_report
+hello po nakagat ako ng aso ano gagawin ko ?,bite_report
+pasensya na po are you open on sunday thank you,hours
+paki sagot hello is anyone there ?,greeting
+pls directions to the center thank you,location
+hi i want to cancel my appointment ba,appointment
+paki sagot an oang address ninyo,location
+po do you also treat scratches thanks,services
+pls sino ang nurse hello,staff_info
+good day pwede ccash hello,fees
+god day how much is the vaccine po,fees
+hi admin follow up ko kailan po maam,vaccine_followup
+what can the center do po ba,services
+uhm can i get a reminder for my next dose asap,vaccine_followup
+excuse me linic hours kasi,hours
+tanong lang ano ang gamit na database ng system hello,about_system
+hello sir pwede bang hindi na ako magpabakuna,medical_advice
+pls kumain ka na ba thanks,off_topic
+hello what doo i do right now ba,first_aid
+sino ang mga staff thank you,staff_info
+hello pohey ba,greeting
+good day may facebook page ba kayo ba,contact
+hi am i going to get aan infection,medical_advice
+tanong lang bitten by a cat what do i do asap,bite_report
+excuse me ano ang unang gagawin,first_aid
+excuse me how long should i wash the wound pls,first_aid
+hi admin do i need to book first thanks,appointment
+hello po sino ang gumawa ng system na ito agad,about_system
+sir pwede ko ba kayong tawagan please,contact
+uhm am i going to get something dangerous pls,medical_advice
+maam sino ang nurse po,staff_info
+pasensya na po wherre are you located ?,location
+hi po how do i know m schedule,vaccine_followup
+hi admin should i wash the wound po,first_aid
+pwede mgtanong immediate steps after a bite,first_aid
+sir hello po agad,greeting
+exccuse me location po,location
+excuse me landline number thank you,contact
+pls how long is the vcacination schedule,vaccine_followup
+po do you treat animal bites,services
+pwede magtanong maagndang umaga,greeting
+sir bitten bya cat what do i do thanks,bite_report
+firsst aid steps po ba,first_aid
+sir is it okay to use herbal medicine on the wound,medical_advice
+ask ko lang pwedee ba mag bayad sa maya thanks,fees
+hello po number po ng clinic salamat,contact
+quick question who are you hello,bot_identity
+uhm sige salamat hello,thanks
+paki sagot how long should i wash the wound po amam,first_aid
+ilang tableta ang iinumin ko?,medical_advice
+hello anong oras ang sara ba,hours
+nakagat ako ng alagang aso ano gagawin ko thank you,bite_report
+is it ssafe for pregnant women,medical_advice
+pls hey there po sir,greeting
+pls paano kayo hanapin hello,location
+pasensya na po sino ang nag program nito thanks,about_system
+hello sir how to cook adobo ba,off_topic
+pls i was bitten by a neighbor's dog po pls,bite_report
+maam ilang beses ang turok po,vaccine_followup
+excuse me saan sa aclapan kayo,location
+ask ko lang who is in charge of the clinic asap,staff_info
+hi location po,location
+hi do i use soap and water hello,first_aid
+pwede bang hindi na ako magpabakuna po pls,medical_advice
+pasensya na po busineess hours please,hours
+hello po wht can the center do salamat,services
+maam aam i going to get something dangerous ?,medical_advice
+pls ano ang pangalan ng doktor kasi,staff_info
+pasensya na po nakagat ako ng askal ba,bite_report
+hi admin saan ang clinic helllo,location
+maam naklamot ako ng daga thanks,bite_report
+uhm where is ez animal bite center po ba,location
+mamamatay ba ako?,medical_advice
+po ilan ang stfaf ninyo agad,staff_info
+quick question can i give the shot to my dog,medical_advice
+good day dapat ba hugasan ang sugat?,first_aid
+schedule ng clinic po,hours
+uhm nasaan ang clinic?,location
+hello po hanggang anong oras kayo ba,hours
+sir nakalmot ako ng tuta asap,bite_report
+hell sir how do i get to the clinic pls,location
+hello po pls,greeting
+urgent will i die from this?,medical_advice
+pasensya na po nandiyan ba ang doktor thank you,staff_info
+hi admin hello po maam,greeting
+contact details asap,contact
+urgent phone number po,contact
+urgent saan kayo located?,location
+ask ko lang ano ang kaya ng clinic po maam,services
+tanong lang ano ang address ninyo salamat,location
+hello sir what are the names of the staff po maam,staff_info
+maam address po po,location
+pwede magtanong gusto kong i cnacel ang appointment?,appointment
+hi admin sino ang developer ng system kasi,about_system
+pls nakalmot ako ng paniki asap,bite_report
+urgent how do i clean a bitte wound?,first_aid
+what to do before going to the clinic asap,first_aid
+hi nakagat akoo ng aso ano gagawin ko agad,bite_report
+excuse me do i need to book first,appointment
+quick question mobile numbe rof the clinic pls,contact
+good day nakagat ang anak ko ng pusa,bite_report
+pls tell me a joke,off_topic
+paki sagot nakagat ako ng daga ano gagawin ko please,bite_report
+uhmi got scratched by a cat po maam,bite_report
+pwede magtanong i missed my vaccine schedule po,vaccine_followup
+hi admin schedule ng clinic po ba,hours
+hi do you offer anti rabies shots asap,services
+paki sagot who built this website asap,about_system
+hello sir pano mag luto ng sinigang asap,off_topic
+pasensya na po may online payment ba,fees
+hello po late na kao sa susunod na turok ?,vaccine_followup
+when is my next shot po ba,vaccine_followup
+good day who are the researchers pls,about_system
+pasensya na po magkano ang bakuna please,fees
+excuse me nakagat ako ng paniki asap,bite_report
+sir paano makipag ugnayan sa inyo,contact
+hello what technology does this systemm use kasi,about_system
+ask ko lang are you open today po ba,hours
+paki sagot nandiyan ba ang doktor hello,staff_info
+hi anong pangaan mo asap,bot_identity
+ok salmat?,thanks
+po nakagat ako ng aso ng kapitbahay ano gagawin ko?,bite_report
+hi robot ka ba please,bot_identity
+good day whati s bitebridge ba,about_system
+tanong lang do you offer anti rabies shots pls,services
+paki sagot what are your hours pls,hours
+do you treat animal bites kassi,services
+maam who is on duuty today?,staff_info
+ask ko lang who made bitebridge ba,about_system
+ask k lang bukas ba kayo ngayon kasi,hours
+maam are you open o nholidays po,hours
+excuse me what is day 0 3 7,vaccine_followup
+hi admin can i book an appointment thank you,appointment
+hello po what programming language is this ba,about_system
+pasensya na po are yu a real person thanks,bot_identity
+paki sagot hey salamat,greeting
+pasensya na po kinagat ako ng tuta po,bite_report
+hey po ba,greeting
+ask ko lang address ppo thanks,location
+hi admin gusto kong magpa schedule,appointment
+good day mamamatay ba ako thank you,medical_advice
+pwede magtanong how much is the anti rabies shot ?,fees
+what servicees do you offer ?,services
+quick question paano akyo hanapin po sir,location
+hi tell me a joke,off_topic
+hello po what is 2 plus 2,off_topic
+maam am i going to get rabies thank you,medical_advice
+pls operating hours po ba,hours
+hello sir schedule ng clinic po sir,hours
+paki sagot what is day 0 3 7 pls,vaccine_followup
+sir dapat ko bang takpan ang sugat ba,first_aid
+sino ang nurse please,staff_info
+hello paano mag set ng appointment ?,appointment
+sir who is the doctor?,staff_info
+ask ko lang wheni s my next shot salamat,vaccine_followup
+good day pwede bang hindi na ako magpabakuna thanks,medical_advice
+hi admin can i drink alcohol after the shot po,medical_advice
+pwede magtanong how do ic lean a bite wound thank you,first_aid
+pwede magtanong pano kayo tawagan ba,contact
+sir salamat sa tulong,thanks
+maam paano ginawa ang chatbot na itto,about_system
+po pwede ba ang tuob sa sugat thanks,medical_advice
+uhm tell me a story,off_topic
+paki sagot first aids teps thanks,first_aid
+recommend a movie?,off_topic
+how tof ind the center po ba,location
+good day paano pumunta sa clinic po sir,location
+pls will you send me an sms reminder thank you,vaccine_followup
+tanong lang clinic hours po pls,hours
+sir aanong oras na sa japan po pls,off_topic
+po do you accept walk ins,appointment
+can i speak wiith the doctor please,staff_info
+hi admin who are the staff pls,staff_info
+ginagaot ba ninyo ang kagat po maam,services
+hi how far is the clinic salamat,location
+quick question first aid for animal bite po,first_aid
+maam anong serbisyo ang meron kayo ?,services
+hi anong oras pwede pumunta po sir,appointment
+pls how long hsould i wash the wound?,first_aid
+tanong lang i missed my second dose helllo,vaccine_followup
+sir thanks a lot thank you,thanks
+pasensya na po what should i do after a bite po sir,first_aid
+pasensya na po when is my next dose agad,vaccine_followup
+maam maganda ba ako pls,off_topic
+hello sino ang ag program nito po,about_system
+hell opo operating hours please,hours
+is this real person po sir,bot_identity
+uhm kumusta ka na ba,greeting
+good day how to find the center,location
+i was bitten by a puppy po maam,bite_report
+good day ilang turok ang kailangan,vaccine_followup
+where is ez animal bite center thanks,location
+hi po nakalimutan ko ang bakuna ko pls,vaccine_followup
+may rabies na ba ako pls,medical_advice
+hello sir i missed my second dose thank you,vaccine_followup
+pasensya na po salamat po maam,thanks
+hi po may landmark ba kayo hello,location
+maam i was bitten by a stray dog agad,bite_report
+hello do i have something dangerous kasi,medical_advice
+hi po po sir,greeting
+ho are you po sir,greeting
+hello sir can i text you salamat,contact
+hello sir am i going to get an infection ?,medical_advice
+tanong lang what do i do right now please,first_aid
+maam maraming salamat po po,thanks
+good day tumatanggap ba kayo ng gcash ba,fees
+pasensya na p magandang hapon agad,greeting
+sir saan kayo located po maam,location
+pwede magtanong who is in charge of the clinic,staff_info
+quick question are you human,bot_identity
+hello can i reschedule my appointment po,appointment
+urgent anong oras na sa japan thank you,off_topic
+quick questionlandline number?,contact
+hello kinagat ako ng daga ps,bite_report
+maam do i need to book first?,appointment
+paki sagot cn you give the vaccine to children thanks,services
+excuse me how many shots do i need hello,vaccine_followup
+ano ang address ninyo pls,location
+can you give the vaccinet o children,services
+saan ang ez animal bite center ba,location
+pls ano ang paborito mong kanta?,off_topic
+tanong lang kinagat ako ng ppaniki po ba,bite_report
+pls my child was bitten by a kitten po maam,bite_report
+maam how much is the consultation po,fees
+uhm how far is the clnic,location
+address po thanks,location
+maam number po ng clinic thank you,contact
+maam pwede ba mag text,contact
+uhm nakagat ang anak ko ng aso pls,bite_report
+hello cp number ng clinic,contact
+excuse me i got scratched by a pet dog po pls,bite_report
+bukas ba kayo ngayon agad,hours
+maam pwede ba mag bayad sa maya hello,fees
+paki sagot what is 2 plus 2 po pls,off_topic
+po may anti rabies baa kayo?,services
+tanong lang may rabies na ba ako ?,medical_advice
+urgent nakagat ako ng kuting po sir,bite_report
+hello what are your hours po sir,hours
+tanong lang how much for the whole series po pls,fees
+tanong lang what can the center do po ba,services
+pasensya na po pwede ba mag text pls,contact
+hi po ilang turok ang kailangan po,vaccine_followup
+anong oras kayo nagsasara salamat,hours
+hello po kailangan ba mag book muna asap,appointment
+hello sir ano ang unang gagawin kasi,first_aid
+pwede magtanong sino ang nurse,staff_info
+sir immediate steps after a bite hello,first_aid
+hello po what should i do after a bite po sir,first_aid
+hi paano kayo hanapin pls,location
+good day diagnose my wound po ba,medical_advice
+are you open on sunday agad,hours
+nagbibigay ba kayo ng bakuna helo,services
+paki sagot my dog bit my hand,bite_report
+hello sir do you accept gcash po pls,fees
+paki sagot what is the service fee,fees
+urgent are you hatgpt ?,bot_identity
+ilang turok ang kailangan po,vaccine_followup
+paki sagot am i going to get tetanus?,medical_advice
+uhm do you keep patient records ba,services
+hi who is the best basketball player pls,off_topic
+quick question nakagat ako sa binti po,bite_report
+tanong lang who are the researchers po ba,about_system
+how do i reach the center agad,contact
+quick question magandang umaga po ba,greeting
+hello paano gamutin ang kagat ppls,first_aid
+quick question paano pigilan ang dugo sa sugat ?,first_aid
+po i want to schedule a visit po pls,appointment
+who is the nurse po pls,staff_info
+psensya na po immediate steps after a bite po maam,first_aid
+hello sir may serbisyo ba kayo para sa kagat,services
+hi admin are you chatgp tthank you,bot_identity
+excuse me ilang minuto hugasan ang sugat hello,first_aid
+hello sir salamat po,thanks
+hi admin what is your phone number salamat,contact
+quick question how can i contact you po,contact
+hi admin anong mga bakuna ang meron please,services
+ask ko lang bitten by a bat what do i do,bite_report
+okay thank you,thanks
+uhm what is 2 plus 2 po ba,off_topic
+urgent landline number?,contact
+hello sir what are you,bot_identity
+urgent what is your address,location
+what do i od right now hello,first_aid
+excuse me may anti rabies ba kayo,services
+good day nakagat ang anak ko ng tuta po maam,bite_report
+excuse me ano ang first aid sa kagat po,first_aid
+good day may sms reminder ba hello,vaccine_followup
+good day gusto kong magpa schedule ba,appointment
+hi po where are you located agad,location
+hi admin gaano katagal ang bakuna,vaccine_followup
+ask ko lang may imepksyon ba ang sugat ko hello,medical_advice
+excuse me whatt is your phone number thank you,contact
+good day hello po kasi,greeting
+po is the clinic near the highway po sir,location
+po am i going to get an infection po ba,medical_advice
+pasensya na po phone number po,contact
+tanong lang follow up ko kailan po,vaccine_followup
+good ady what dose of paracetamol,medical_advice
+urgent mobile nuumber of the clinic ba,contact
+sir magkano ang bayad thank you,fees
+hi ho ware you hello,greeting
+hello sir are you aipo pls,bot_identity
+hi po who developed this system asap,about_system
+po my child was bitten by a rat po,bite_report
+quick question a stray dog bit me,bite_report
+good day ligtas ba sa buntis ang bakuna po pls,medical_advice
+hello sir good afternoon ba,greeting
+where inc alapan are you po sir,location
+tanong lang ano ang bitebridge hello,about_system
+hello po can i get the source code po sir,about_system
+uhm may kagat ako sa paa please,bite_report
+pwede magtanong mamamatay ba ako,medical_advice
+pls anong ulam ngayon,off_topic
+hi admin i have a bite wound po,bite_report
+sabon at tubigb a ang gagamitin agad,first_aid
+excuse me what is the meaning of liffe po sir,off_topic
+bitten by a stray og what do i do please,bite_report
+po paano mag set ng appointment?,appointment
+hello sir do you also treat scratcehs thank you,services
+ask ko lang anong serbisyo ang meron kayo kasi,services
+excuse me dapat ko bang takpan ang sugat po maam,first_aid
+maam do you treat animal bites po ba,services
+what is bitebriidge thanks,about_system
+hello good afternoon po maam,greeting
+hello sir walk n lang ba o appointment,appointment
+excuse me how long should i wash the wound ?,first_aid
+uhm a pet dog bit me?,bite_report
+hi pano mag luto ng sinigang,off_topic
+can oyu help me with math,off_topic
+maam do you accept gcash,fees
+paki sagot may tao ba kasi,greeting
+good day salamat sa tulong pls,thanks
+helo sir i missed my second dose,vaccine_followup
+pwede mmagtanong may jowa ka ba,off_topic
+sir who built this website salamat,about_system
+urgent should i put aalcohol on the wound thank you,first_aid
+pwede magtanong may anti rabies ba kayo please,services
+i was bitten by a pet dog po maam,bite_report
+tanong lang p number ng clinic please,contact
+urgent should i cover th ewound hello,first_aid
+uhm musta po,greeting
+urgent magkano ang bakuna ?,fees
+quick question bukas ba kayo ngayon please,hours
+hello po how to find the center please,location
+ask ko lang how much is the consultation agad,fees
+hi po where is ez animal bite center thank yu,location
+urgent anong oras ang sara,hours
+maam how much for the whole series salamat,fees
+pls may jowa ka ba salamat,off_topic
+pls ilang turok ang kailangan po pls,vaccine_followup
+hi i missed my second dose thanks,vaccine_followup
+excuse me walk in lang ba o appointment po pls,appointment
+tanong lang who is in charge of the clinic kasi,staff_info
+quick question magkano ang turok thank you,fees
+urgent anong oras kayo nagsasara thank you,hours
+po anong dapat gawin agad,first_aid
+hi ilang turok ang kailangan,vaccine_followup
+may sugat ako galing sa kagat ng aso po,bite_report
+quick question paano gumagana ang bitebridge thank you,about_system
+hi po pwede ba walk in ba,appointment
+urgent phone number please,contact
+pasensya na po pwede ba lagyan ng alcohol ang sugat thank you,first_aid
+urgent who are you kasi,bot_identity
+sir ano ang gagawin ko baggo pumunta sa clinic,first_aid
+paki sagot what technology does this system use salamat,about_system
+ikaw ba ay tao salamat,bot_identity
+pasensya na po saan ang clinic hello,location
+po what is your ddress,location
+ask ko lang magkano ang turok kasi,fees
+hi admin sino ang physician?,staff_info
+hi may kumagat sa akin na daga thank you,bite_report
+po bitten by a puppy what do i do ba,bite_report
+good day write my essay,off_topic
+sir is this a capstone project po,about_system
+hi po sino ang gumawa ng system na ito please,about_system
+pwede magtanong magkano ang bakuna,fees
+bukas ba kayo ngayon thank you,hours
+good day pwede ba lagyan ng alcohol ang sugat thanks,first_aid
+hi admin what is your name pls,bot_identity
+hi anong oras kayo bukas thanks,hours
+paano pigilan ang dugo sa sugat,first_aid
+hi admin first aid steps po ba,first_aid
+urgent who are you po pls,bot_identity
+po can i speak with the doctor,staff_info
+my child was bitten by a puppy,bite_report
+hi anong oras kayo nagsasara ba,hours
+ask ko lang pwede bag ako na ang mag inject?,medical_advice
+sir what days are you open thank you,hours
+pasensya na po kumusta ka na kasi,greeting
+what to do before going to the clinic po sir,first_aid
+tanong lang magkao po lahat,fees
+quick question do you treat animal bites hello,services
+hi how to stop the bleeding from a bite hello,first_aid
+uhm what are your hours hello,hours
+paki sagot i got scratched by a neighbor's dog agad,bite_report
+hi pwede ba sa bata ang bakuna asap,services
+ask ko lang there is a bite on my arm thank you,bite_report
+how much does it cost pls,fees
+good day nakagat ako sa kamay asap,bite_report
+excuse me walk in lang ba o appointment,appointment
+po do you accept gcash po maam,fees
+urgent can you give the vacine to children ?,services
+hi po helllo po,greeting
+sir anong aarw kayo bukas ba,hours
+hello sir what dose of paracetammol salamat,medical_advice
+do you do wound cleaning kasi,services
+good daym agkano ang turok please,fees
+hello po sing me a song,off_topic
+urgent wha tis your phone number?,contact
+are you a real person po,bot_identity
+hello sir may online payment ba po ba,fees
+pasensya na po what are you kasi,bot_identity
+urgent may pila ba agad,appointment
+i got scratched by a dog po,bite_report
+ask ko lang thank you pls,thanks
+urgent gusto kong magpa schedule po,appointment
+po can i pay in cash thanks,fees
+what should i do after a bite asap,first_aid
+tanong lang how many doses of the vaccine,vaccine_followup
+po ano ang paborito mong kanta,off_topic
+maam sino ang nmaamahala sa clinic,staff_info
+urgent can i text you po ba,contact
+tell me if i need stitches po ba,medical_advice
+ask ko lang who is the physician ba,staff_info
+pls is it safe for pregnant women po sir,medical_advice
+tanong lang what medicine should i take hello,medical_advice
+pano magluto ng sinigang po ba,off_topic
+maam i am late for my next dose kasi,vaccine_followup
+uhm bukas ba kayo ngayon thank you,hours
+pls thanks asap,thanks
+pwede magtanong cp number ng clinic?,contact
+sir email address agad,contact
+hi sige salamat please,thanks
+ask ko lang kumusta,greeting
+pwede magtanong pano linisin anng kagat ba,first_aid
+quick question ilan ang staff ninyo please,staff_info
+hello sir what do i do right now po pls,first_aid
+how do i reach the center kasi,contact
+urrgent how many doses of the vaccine ba,vaccine_followup
+paki sagot i watn to cancel my appointment ba,appointment
+pls may pila ba po maam,appointment
+can i text you agad,contact
+uhm what time do you open kasi,hours
+sir iakw ba ay tao,bot_identity
+quick queestion i want to cancel my appointment?,appointment
+hi admin is it safe for pregnant women asap,medical_advice
+hi po where are you located salamat,location
+sir pano linisin ang kagat hello,first_aid
+maam how to fix my phone thanks,off_topic
+ligtas ba sa buntis ang bakuna,medical_advice
+maam can i get a reminder for my next dose po,vaccine_followup
+quick question contact number pls,contact
+hi good afternoon thank you,greeting
+maam sino ang developer ng system po,about_system
+paensya na po i missed my second dose thank you,vaccine_followup
+hello sir what is day 0 3 7 hello,vaccine_followup
+paki sagot what medicine should i take ?,medical_advice
+ask ko lang my child was bitten by a kitten po sir,bite_report
+sir i missed my vaccine schedule thank you,vaccine_followup
+how much is the anti rabies shot po ba,fees
+ask ko lang ano angg gamit na database ng system,about_system
+hello i was bitten by a cat salamat,bite_report
+urgent saan ang ez animal bite center,location
+ask ko lang how many doses of the vaccine po,vaccine_followup
+hello how many shots do i need,vaccine_followup
+hi po paano kayo hanapin ?,location
+excuse me a monkey bit me hello,bite_report
+pwede magtanong until what timme are you open?,hours
+good day is my wound serious hello,medical_advice
+urgent paano pumunta sa clinic thank you,location
+pl sokay thank you,thanks
+sir sino ang nurse pls,staff_info
+bitten by a kitten what do i do po sir,bite_report
+hi do i have an infection kasi,medical_advice
+hello sir how do i reach the center po maam,contact
+hi may kumagat sa akin na pusa ba,bite_report
+hi admin where is the clinic,location
+uhm hello is anyone there pls,greeting
+maam who is the physician,staff_info
+pls do i use soap and water ?,first_aid
+hello sir can i get the source ocde please,about_system
+malapit ba kayyo sa bayan asap,location
+urgent what services are available po ba,services
+hello nasaan ang clinic po pls,location
+sir who made bitebridge po,about_system
+saan ang ez animal bite center,location
+hiwhat is your name?,bot_identity
+hi admin ilan tableta ang iinumin ko ?,medical_advice
+hello sir paano mag set ng appointment agad,appointment
+nakalmot ako ng unggoy po maam,bite_report
+hello dapat ko bang takpan ang sugat?,first_aid
+urgent do you accept gcash?,fees
+quick uqestion where is ez animal bite center hello,location
+paki sagot am i going to get a esrious wound po pls,medical_advice
+pano ko malalaman ang schedule ko po sir,vaccine_followup
+tanong lang saan kayo located,location
+quick question anong seribsyo ang meron kayo asap,services
+uhm sino ang nasa duty ngayon ?,staff_info
+maam may kumagat sa akin na pusa hello,bite_report
+hello po nakalmot ako ng tuta po pls,bite_report
+nakalmot ao ng tuta?,bite_report
+maam my child was bitten by a puppy please,bite_report
+who is the physician saalmat,staff_info
+maam do you accept maya asap,fees
+pwede magtanong may rabies na ba ako,medical_advice
+hi admin pano kayo tawaganp o ba,contact
+ask ko lang anong payment methods,fees
+what is the service fee asap,fees
+sir may kumagat sa akin n atuta po ba,bite_report
+paki sagott how many staff do you have po pls,staff_info
+hi late na ako sa susunod na turok?,vaccine_followup
+po do you give rabies vaccine thanks,services
+hi kagat ng aso sa braso ko hello,bite_report
+pwede magtanongc an i come today thank you,appointment
+paseensya na po what database does this system use agad,about_system
+paki sagot are you open on holidays po ba,hours
+do you accept maya pls,fees
+po list of services salamat,services
+good day recommend a movie thanks,off_topic
+good evening thanks,greeting
+good dday how do i get to the clinic,location
+hi admin i missed my vaccine schedule,vaccine_followup
+good day my child was bitten by a neighbor's dog,bite_report
+what is thhe meaning of life ba,off_topic
+paki sagot do i need a tetanus shot ?,medical_advice
+sir nakagat ang anak ko ng aso ng kapitbahay ba,bite_report
+paki sagot do you accept walk ins salamat,appointment
+excuse me may rabies na ba ako asap,medical_advice
+uhm may kumagat sa akin na pusa?,bite_report
+hello sir magandang umaga thank you,greeting
+urgent my child was bitten by a bat,bite_report
+do you treat animal bites thanks,services
+hi po ginagamotb a ninyo ang kagat ?,services
+hi po ano ang gagawin ko bago pumunta sa clinic ba,first_aid
+good day ano ang gamit na database ng system thank you,about_system
+paki sagot nasaan ang clini please,location
+do you accept walk ins asap,appointment
+urgent how far is the clinic po sir,location
+hello sir ano ang gamit na dtabase ng system agad,about_system
+good morning ba,greeting
+maam sino ang pinakamagaling na artista po,off_topic
+email address,contact
+hello sir are you human po maam,bot_identity
+uhm contact number po,contact
+hi po sino ang nag program nito,about_system
+uhm dapat ko bang takpan ang sugat po,first_aid
+h may rabies vaccine ba kayo agad,services
+hello first aid for animal bite,first_aid
+are you a robot po pls,bot_identity
+tanong lang okay thank you?,thanks
+excuse me should i wash the wound?,first_aid
+hello ilang minuto hugasan ang sugat po ba,first_aid
+hi admin may email ba kayo?,contact
+good day what time do you open,hours
+good day pwede ba ang tuob sa sugat po sir,medical_advice
+hello sir can i tex you agad,contact
+excuse me do i need a tetanus shot,medical_advice
+po musta salamat,greeting
+po am i goingt o get an infection kasi,medical_advice
+excuse me phone number please,contact
+what payment methods do you accept po,fees
+sir ano ang gagawin ko bago ppumunta sa clinic,first_aid
+how do i know my schedule kasi,vaccine_followup
+hi where in calapan are you thank you,location
+helo diagnose my wound po pls,medical_advice
+excuse me do i have rabies thank you,medical_advice
+thanks for the help,thanks
+paki sagot good evening,greeting
+uhm pwede ba sa bata ang bakuna po pls,services
+pasensya na po late na ako sa susunod na turok op maam,vaccine_followup
+ask ko lang pwede ba ako pumunta ngayon thank you,appointment
+sir anong oras na sa japan ?,off_topic
+as kko lang salamat po,thanks
+hello how much is the consultation po sir,fees
+pasensya na po magkano ng bakuna,fees
+hi po ccan i speak with the doctor,staff_info
+hello po what is your address hello,location
+hi admin can i give the shot to my dog please,medical_advice
+po who is the best basketball player po ba,off_topic
+i am late for my next dose thanky ou,vaccine_followup
+hi nagbibigay ba kayo ng bakuna salamat,services
+quick question who is the president,off_topic
+po landline numberba,contact
+hi saan ang clinic ?,location
+hello sir kailan ang susunod na bakuna ko kasi,vaccine_followup
+do you also treat scratches ?,services
+uhm can i drink alcohol after the shoot thank you,medical_advice
+maam magandang gabi ?,greeting
+dapat ko bang takpan ang sugat,first_aid
+quick question my child was bitten by a dog salamat,bite_report
+paki sagot pwede bang magpa book p osir,appointment
+hi po naalmot ako ng unggoy salamat,bite_report
+excuse me oras ng clinic,hours
+do i use soap and water,first_aid
+hi gusto mo ba ng pizza asap,off_topic
+hi sino ang kausap ko thank you,bot_identity
+is thi sa real person po,bot_identity
+pasensya na po thank you so much kasi,thanks
+hello sir how do i reach the center asap,contact
+hello isr kailan ang susunod na turok ba,vaccine_followup
+hello po is the clinic near the highway po,location
+good evneing po ba,greeting
+excuse me how much for the whole series po,fees
+pasensya na po o you accept gcash,fees
+quick question can i text you?,contact
+sino ang developer ng system hello,about_system
+anong ulam ngayon,off_topic
+paano ginawa ang chatbot na ito po sir,about_system
+hi po may serbisyo ba kay para sa kagat po pls,services
+excuse me pwede ba walk in,appointment
+pls a stray dog bit me hello,bite_report
+paki sagot business hours asap,hours
+urgent tell me story,off_topic
+hello directions to the center pls,location
+tanong lang are you a reeal person thanks,bot_identity
+what is your address po sir,location
+hi po hello is anyone there ?,greeting
+hello anong oras kayo nagsasara,hours
+maam are you open on sunay kasi,hours
+hi admin nakagat ako ng daga ?,bite_report
+pasensya na pob usiness hours,hours
+hi po pwede cash kasi,fees
+good day pwede ba ang tuob a sugat po,medical_advice
+kumain ka na ba po ps,off_topic
+paano mag set ng appointment hello,appointment
+hi how much does it cst asap,fees
+po what is 2 plus 2 po pls,off_topic
+quick question follow up ko kailan thank you,vaccine_followup
+po aong payment methods ba,fees
+pwede magtanonga nong serbisyo ang meron kayo please,services
+uhm pwede ba walk iin agad,appointment
+should i cover the wound please,first_aid
+maam paano pigilan ang dugo sa ugat,first_aid
+hello sir do you treat animal bites please,services
+pls do i have a serious wound po,medical_advice
+hi what is your name pls,bot_identity
+excuse me are you open now po maam,hours
+po what time can i visit ba,appointment
+hi po pwede ba mag text,contact
+hello po ay sugat ako galing sa kagat ng aso,bite_report
+hi po is the clinic near the highway po pls,location
+urgent ginagmot ba ninyo ang kagat salamat,services
+po nakagat ako sa binti please,bite_report
+pasensya na po do you accept gcash thank you,fees
+paki sagot musta ?,greeting
+tanong lang i missed my vaccine schedule ?,vaccine_followup
+excuse me sino ang kausap ko thanks,bot_identity
+maam magkano po lahat thanks,fees
+paki sagot should i cover the wound,first_aid
+pwede magtanong how long should i wash the wound thanks,first_aid
+maam can i pay in cash thanks,fees
+nakagat ako ng unggoy ba,bite_report
+quick question should i put alcohol on the wound po,first_aid
+quick question what to do before going to the clinic saalmat,first_aid
+tanong lang magandang umaga po maam,greeting
+excuse me tell me if i need stitches kasi,medical_advice
+quick question bukas ba kayo kapag linggo ?,hours
+ask ko lang pwede ba sa bata an gbakuna po,services
+urgent what is the service fee ?,fees
+ilang beses ang turok po ba,vaccine_followup
+paki sagot pwede ba ako pumunta ngayon ba,appointment
+hello are you a robot hello,bot_identity
+how many doses of the vaccine ?,vaccine_followup
+hello anong oras kayo bukas po pls,hours
+hello sir sabon at tubig ba ang gagamitin po sir,first_aid
+hi po kinagat ako ng pusapo ba,bite_report
+tanong lang sino ka,bot_identity
+hi po who is the physician please,staff_info
+sir what tiem do you open agad,hours
+excuse me is this a capstone project agad,about_system
+pasensya na po i missed my second dose aad,vaccine_followup
+pasesya na po hey there po sir,greeting
+good day do you give rabies vaccine,services
+tanong lang may rabies na ba ako hello,medical_advice
+hello po may facebook ppage ba kayo po maam,contact
+whatt do i do right now,first_aid
+maam i am late for my next dose ba,vaccine_followup
+hello sir late na ako sa susunod na turok,vaccine_followup
+pls kamusta ka aap,greeting
+pwede magtanong can i book an appointment hello,appointment
+hello po saan kayo located ba,location
+hello address po please,location
+hello sir may kumagat sa akin na kuting,bite_report
+maam am i going to get tetanus,medical_advice
+pasensya na po proyekto ba ito ng estudyante,about_system
+hello may pila ba,appointment
+what payment methods do you accept po maam,fees
+can ipay in cash po maam,fees
+urgent kwentuhan mo ako?,off_topic
+good day contact number pls,contact
+ask ko lang how do i make an appointment thank you,appointment
+po a cat bit me please,bite_report
+hi is there an online payment po,fees
+ask ko lang magkano ang bayad,fees
+maam can i gte the source code thank you,about_system
+sir i am late for my next dose?,vaccine_followup
+urgent magkano ang buong bakuna po pls,fees
+hi po anong oras pwede pumunta po sir,appointment
+tanong lang bukas ba kayo ngayon po,hours
+tanong lang location p oplease,location
+pls may facebook page ba kayo ?,contact
+po thanks alot?,thanks
+excuse me recommend a movie,off_topic
+hi po may kumagat sa akin na tuta,bite_report
+hello tumatanggap ba kayo ng gcash please,fees
+pwede magtanong do you offer anti rabies shots agad,services
+pls ano ang unang gagawin,first_aid
+tanong lang am i goign to get a serious wound please,medical_advice
+excuse me directions to the center po maam,location
+ask koo lang hi ?,greeting
+pasensya na po do you keep patient records p ba,services
+hello po can i pay in cash po maam,fees
+ask ko lang salamat hello,thanks
+pls can i get the source code po pls,about_system
+pasensa na po pwede ba ang tuob sa sugat,medical_advice
+po may tao ba po,greeting
+po ilang minuto hugasan ang sugat please,first_aid
+good day directions to the center please,location
+ask ko lang how much is the anti rabies shot po sir,fees
+uhm may sms reminder ba please,vaccine_followup
+got it thanks ?,thanks
+hello sir paano kayo makokontak kasi,contact
+hi po my child was bitten by a kitten,bite_report
+excuse me how much does it cost ?,fees
+hi admin what is day 0 37,vaccine_followup
+uhm pwede bng ako na ang mag inject po sir,medical_advice
+paki sagot how do i make an appointment tthanks,appointment
+magkano ang konsutla,fees
+quick question do i have rabies po pls,medical_advice
+hi admin do you do wound cleaning po,services
+ask ko lang do i need a tetanus shot thanks,medical_advice
+excuse me until what time are you open asap,hours
+paki sagot nakalimutan ko ang bakuna ko po sir,vaccine_followup
+sir anong payment methods po,fees
+hi admin what t odo before going to the clinic po pls,first_aid
+ask ko lang pwede ba mag bayad sa maya ?,fees
+hello sir may pila ba please,appointment
+pls i got scratched by a rat please,bite_report
+excuse me unttil what time are you open asap,hours
+uhm dapat ko bang takpan ang sugat kasi,first_aid
+hello po pwede ba i reschedule,appointment
+pwede ko ba kayong tawagan po,contact
+hello sir how do i make an appointment kasi,appointment
+hello sir pwede cash po,fees
+pasensya na po bukas ba kayo sa holiday po,hours
+hi admin anong oras kay onagsasara ?,hours
+quick question mamamatay ba ako po sir,medical_advice
+po cna i get a reminder for my next dose thanks,vaccine_followup
+tanong lang ano anggagawin ko bago pumunta sa clinic hello,first_aid
+hi po follow up kko kailan po sir,vaccine_followup
+anong pangalan mo ?,bot_identity
+helol sir anong dapat gawin agad ?,first_aid
+hi what is day 0 3 7?,vaccine_followup
+good day hw do i make an appointment agad,appointment
+good day kailan ang susunod na bakuna ko agad,vaccine_followup
+maam salamat po po pls,thanks
+pwede magtanong i got scratched by a rat po ba,bite_report
+uhm nakagat ako ng pusa po sir,bite_report
+uhm can i come today po,appointment
+hello sir may anti rabies baa kayo,services
+gusto kong i cancel anga ppointment agad,appointment
+sir thank you ?,thanks
+hello do you do wound cleaning hello,services
+tanong lang pwede bang ma delay ang turok,vaccine_followup
+good day who made bitebridge,about_system
+hi po how can i contact you thank you,contact
+hello sir paano pumunta saa clinic kasi,location
+po what dose of paracetamol po,medical_advice
+hello po how to cook adobo po pls,off_topic
+anyone htere pls,greeting
+paano pumunta sa clinic salamat,location
+hi admin ilang turok ang kailangan hello,vaccine_followup
+sir pano mag luto ng sinigang po maam,off_topic
+hi po do you treat animal bites kasi,services
+sir may sms reminder ba,vaccine_followup
+good day do you keep patient records ba,services
+uhm location po,location
+uhm do you also treat scratches kasi,services
+pasensya na po is this a eral person,bot_identity
+pls bitten by a monkey what do i do po maam,bite_report
+hello sir what is yur phone number agad,contact
+hello nakagat ang anak ko ng aso ng kapitbahay hello,bite_report
+urgent may kagat ako sa paa po maam,bite_report
+uhm do you treat animal bites hello,services
+hello po i missed my second dose salamat,vaccine_followup
+hello magkano ang bunog bakuna po,fees
+ask ko lang what days aree you open,hours
+ano ang kaya ng clinic?,services
+hello sir what medicine should i take po maam,medical_advice
+contact number po pls,contact
+paki sagot what services do yoou offer kasi,services
+tanong lang how much does it cost po maam,fees
+ask ko lang are you open on holidyas agad,hours
+quick question paano kayo makokontak please,contact
+pwede magtanong kinagat ako ng tuta po maam,bite_report
+what database does this system use ?,about_system
+hip ano linisin ang kagat agad,first_aid
+excuse me is there an online payment please,fees
+can i get a reminder for my next dose,vaccine_followup
+maam anong dapat gawin agad,first_aid
+should i wash the wound po ba,first_aid
+pwede magtanong what is 2 plus 2 asap,off_topic
+hi admin kailan ang susuunod na bakuna ko po maam,vaccine_followup
+ilag minuto hugasan ang sugat kasi,first_aid
+maam business hours,hours
+hi admin thank you kasi,thanks
+quick question contact number salamat,contact
+hi po do you keep patient records salamat,services
+what services do you offer pls,services
+ask ko lang what do i do right now po,first_aid
+hi po who will assess my wound po maam,staff_info
+excuse me ok thanks pls,thanks
+gamutan ba ng kalmot ?,services
+ask ko lang what can the center do po maam,services
+hi may email ba kayo,contact
+maa mmay facebook page ba kayo,contact
+pasensya na po can i speak wth the doctor thanks,staff_info
+maam kinagat ako ng unggoy po ba,bite_report
+who is the physician,staff_info
+hello po i want to cancel my appointment salamat,appointment
+pwede ba sa bata ang bakua,services
+sir who will assess my wound pleasse,staff_info
+quick question kailan ang susunod na bakuna ko po maam,vaccine_followup
+pls sino ang pinakamagaling na artista po,off_topic
+pwede magtanong open pa ba kayo,hours
+how many shots do i need?,vaccine_followup
+hi po bukas ba kayo kapag linggo po sir,hours
+good day whho built this website po sir,about_system
+quick question may kaagt ako sa paa asap,bite_report
+will you send me an sms reminder salamat,vaccine_followup
+pls pwede cash,fees
+pwede magtanong do you keep patient records,services
+hi how much does it cost po ba,fees
+good day who is the physician po ba,staff_info
+good day i was bitten by a kitten thanks,bite_report
+sino ang pinakamagaing na artista please,off_topic
+pwede ko bang makausap ang nurse thanks,staff_info
+po hello thanks,greeting
+po salamat po thanks,thanks
+saan ang clinic ?,location
+hi admin are you a real person ba,bot_identity
+hello sir should i wash hte wound thanks,first_aid
+paano makipag ugnayan sa inyo?,contact
+quick question anong dosage ng gamo?t,medical_advice
+hello emal address ?,contact
+how can i contactyou please,contact
+sir may rabies vaccine ba kayo kasi,services
+paki sagot how many shots do i need?,vaccine_followup
+kumusta,greeting
+address po po pls,location
+uhm how many shots do i need kasi,vaccine_followup
+ask ko lang do you acceptt walk ins po maam,appointment
+hi admin ano ang kaya ng clniic,services
+urgent magkano ang konsulta,fees
+pwede magtanong who is the president asap,off_topic
+pls who made bitebridge hello,about_system
+who is the doctor salamat,staff_info
+maam sino ang kausap ko?,bot_identity
+uhm a negihbor's dog bit me agad,bite_report
+hi admin what is the service fee thank you,fees
+excuse me thanks hello,thanks
+kinagat ako g alagang aso,bite_report
+uhm am i going to get an infection pls,medical_advice
+good day hwo many staff do you have ba,staff_info
+maam how far is the clinic ba,location
+ask ko lang ano ka,bot_identity
+pasensya na po i am late for my next dose po maam,vaccine_followup
+sir are you open on sunday ba,hours
+po nagbibigay ba kayo ng bakuna po maam,services
+hello ano ang number ng clinic pls,contact
+uhhm magkano ang bayad,fees
+quick question contact number,contact
+ask ko lang who developed this system agad,about_system
+excuse me how many staff do you have po sir,staff_info
+hello po how much is the consultation,fees
+urgent do yu also treat scratches please,services
+hi admin a kitten bit me ba,bite_report
+pasensya na po business hours?,hours
+po what dose off paracetamol agad,medical_advice
+quick question do you offer anti rabies shots salamat,services
+good day i want to cancel my appointment po maam,appointment
+maam list of services,services
+quick question sino ang gumawa ng chatbot asap,about_system
+pwede ba ako pumunt ngayon po ba,appointment
+pls sabon at tubig ba ang gagamtin,first_aid
+pwede magtanong pa send ng location,location
+paki sagot phone number po,contact
+ask ko lang bitten by a neighbor's dog what do i do,bite_report
+tanong lang ginagamot ba ninyo ang kagat,services
+quick question sinno ang gumawa ng website na ito thanks,about_system
+tanong lang how much is the anti rabies shot hello,fees
+urrgent sino ang namamahala sa clinic agad,staff_info
+pls maraming salamat po thank you,thanks
+quick question ikaw ba ay tao asap,bot_identity
+uhm kailan ang susunod na bakuna ko po ba,vaccine_followup
+may online payment ba thanks,fees
+anong oras kayo bukast hank you,hours
+excuse me phone number ?,contact
+ano ang paborito mong kanta ba,off_topic
+tanong lang p asend ng location,location
+quick question ginagamot ba ninyo ang kagat,services
+pasensya na po a cat bit me ?,bite_report
+hi what is bitebridg please,about_system
+excuse me thank you so much agad,thanks
+excuse mee who is the physician po pls,staff_info
+po a rat bit me thanks,bite_report
+hello sir ikaw ab ay tao,bot_identity
+good day who is the best basketball player po ba,off_topic
+hello po is it safe for pregnant women ?,medical_advice
+hi po gusto kong magpa schedule po sir,appointment
+po how many shots do i need po,vaccine_followup
+bitten by a kitten what do i do plase,bite_report
+pwede magtanong thanks thank you,thanks
+quick question malapit ba kayo sa bayan pls,location
+hi po ccan i come today hello,appointment
+number po ng clinic please,contact
+hi write my essayagad,off_topic
+hi magkano ang bayad?,fees
+good dayy can i come today po maam,appointment
+hello po will i die from this pls,medical_advice
+quick question translate this to korean po maam,off_topic
+hello sir do i use soap and water po maam,first_aid
+kailangan ba mg book muna?,appointment
+hello sir musta hello,greeting
+san ang clinic po ba,location
+hello po can you help me with math,off_topic
+pasensya na po who is in charge of the clinic po ba,staff_info
+hello po nakagat ang anak ko ng kuting salamat,bite_report
+hi po saan ang ez animal bite center?,location
+hello po pwede ba lagyann g alcohol ang sugat kasi,first_aid
+hi pohow to cook adobo pls,off_topic
+tanong lang saan kayo locateed salamat,location
+excuse me na miss ko ang schedule,vaccine_followup
+hi who built this website po pls,about_system
+maam totoong tao ba ito,bot_identity
+tanong lang pwede ko ba kayong tawagan thank you,contact
+po ano ang gagawin ko bago pumunta sa clinic hello,first_aid
+ask ko lang dapat ba hugasan ang sugat thank you,first_aid
+hi pwede ko bang makausap ang nurse ?,staff_info
+urgent can i take amoxicillin,medical_advice
+hi po is there a queue ?,appointment
+hi admin clinic hours,hours
+hi admin do you keep patient records ?,services
+excuse me do you treat animal bites po sir,services
+hi what database does this system use po sir,about_system
+hi aadmin ano ang bitebridge?,about_system
+how much is the vaccine salamat,fees
+hi po tell me a joke kasi,off_topic
+pasesya na po number po ng clinic,contact
+quick question ano ang first aid sa kagat?,first_aid
+quick questio nhow to stop the bleeding from a bite,first_aid
+ask ko lang si the doctor available po sir,staff_info
+hi ilang tableta ang iinumin ko hello,medical_advice
+sir can i get the source code ?,about_system
+paki sagot list of services ba,services
+sir i missed my second dose po,vaccine_followup
+hello who is the physician ba,staff_info
+pls can i talk to the nurse po sir,staff_info
+hi anng serbisyo ang meron kayo hello,services
+po can you give the vaccine to children po ba,services
+po a neighbor's doog bit me,bite_report
+tanong lang ano ang paborito mong kanta asap,off_topic
+excuse me na miss ko angg schedule please,vaccine_followup
+tanong lang nakagat ang anak ko ng aso ng kapitbahay,bite_report
+excuse me paano mag set ng appointment salamat,appointment
+maam schedule ng clinic please,hours
+uhm what is 2 plus 2 thanks,off_topic
+hi admin i am late for my next dose po,vaccine_followup
+hello ano ang mga services ninyo,services
+hi admin gamutan ba ng kalmot,services
+paki sagot is there an online payment pls,fees
+what are your hours po,hours
+pls gaano katagal ang bakuna,vaccine_followup
+urgent schedule ng clinic po,hours
+what payment methods do you accept kasi,fees
+urgent how amny shots do i need ba,vaccine_followup
+sir gusto kong i cancel ang appointment,appointment
+good day how long hould i wash the wound,first_aid
+tanonglang what are your hours please,hours
+where are you located salamat,location
+mobile number of the linic thank you,contact
+maam anong araw kayo bukas kasi,hours
+pwede magtanong do you offer nati rabies shots asap,services
+hello ilang tableta ang iinumin ko hello,medical_advice
+uhm nakagat ako ng aso ano gagawin ko thanks,bite_report
+hi admin may email ba kayo,contact
+hi po good evenin gthank you,greeting
+are you a reall person ba,bot_identity
+hi po got it thanks po,thanks
+uhm sino ang doktor pls,staff_info
+urgent how to ifnd the center hello,location
+pwede magtanong who will assess my wound please,staff_info
+pasensya na po paano gamutin ang kagat?,first_aid
+ask ko lang what are the names of the staff ?,staff_info
+excuse me how much des it cost,fees
+good day anong mga bakuna ang meron po ba,services
+good day sino ang physician pls,staff_info
+ask ko lang diagnose my wound,medical_advice
+nakagat ang anak ko ng pusa hello,bite_report
+po magandang umaga kasi,greeting
+pasensya na po ano ang kaya ng clinic?,services
+hi pwede bang magpa book thank you,appointment
+pasensya na po good afternoon salmat,greeting
+gusto kong magpa schedule salamat,appointment
+paki sagot sino ang nurse thank you,staff_info
+good day can i call the clinic,contact
+tanong lang kinagat ako ng pusa po ba,bite_report
+urgent what is bitebridge ba,about_system
+pls can i talk to the nurse please,staff_info
+excuse me what is bitebridge po ba,about_system
+good day naaklmot ako ng aso po,bite_report
+what technology does this system use salamat,about_system
+anong mga bakuna ang meron agad,services
+hi po how much is the consultation po,fees
+urgent nagbibigay ba kayo ng bakuna please,services
+pasensya na po sino ang gumawa ng website na ito hello,about_system
+po paano mag set ng appointment thanks,appointment
+po clinnic hours po sir,hours
+quick question ano ang unang gagwain,first_aid
+po what time can i visitthank you,appointment
+pwede magtanong how much is the vaccine po pls,fees
+urgent can i call the clinic po pls,contact
+pasensya na po what is your phone number po maam,contact
+maam pa send ng location,location
+excuse me gust omo ba ng pizza hello,off_topic
+paki sagot my child was bitten by a monkey agad,bite_report
+pwede magtanong can i call the clinic thanks,contact
+tanong lang bitten by a rat what do i do po ba,bite_report
+goo dday anong oras kayo bukas hello,hours
+hi admin can i talk to the nurse po sir,staff_info
+quick question gamutan ba ng kalmot pls,services
+hanggang anong oras kayo?,hours
+hello sir gusto mo ba ng pizza please,off_topic
+hello po ano ang mga services ninyo pls,services
+po may sugat ako galing sa kagat ng aso po maam,bite_report
+good day can i come today po ba,appointment
+good day hey there,greeting
+pls what is the meaning of life hello,off_topic
+po what days are you open kasi,hours
+paki sagot do i have a serious wound thanks,medical_advice
+saan ang ez animal bite center thanks,location
+paki sagot late na ako sa susunod na turok thank you,vaccine_followup
+what is your phone number po maam,contact
+maam contact details asap,contact
+do i have a serious wound please,medical_advice
+paki sagot okay thank you,thanks
+pasensya na po sino ang crush mo ba,off_topic
+excuse me is there a queue po maam,appointment
+hello can i drink alcohol after the shot pls,medical_advice
+maam a neighbor's dog bit me asap,bite_report
+paki sagot is there a queue please,appointment
+hi admin am i goig to get an infection,medical_advice
+excuse me bitten by a cat what do i do please,bite_report
+may facebook page ba kyo po pls,contact
+hi admin may serbisyo ba kayo para sa kagat ba,services
+ak ko lang kumusta ka na agad,greeting
+paano kayo makokontak kai,contact
+nkagat ako ng pusa ano gagawin ko po pls,bite_report
+uhm may facebook page ba kayo po maam,contact
+pki sagot ok salamat ?,thanks
+uhm may landmark ba kayo salamat,location
+quick question gamutan ba ng kalmot?,services
+ask ko lang how much does it cost thanks,fees
+hi bitten by a neighbor's dog what do i do po,bite_report
+po kumusta po maam,greeting
+quick question can i call the clinic po,contact
+pasensya na po is the doctor available pls,staff_info
+excuse me sino ang nag program nito thanks,about_system
+pls anyone there ba,greeting
+ask ko lang anong serbbisyo ang meron kayo,services
+hi admin what is the service fee ?,fees
+tanong lang phone number po ba,contact
+quick question tumatanggap ba kayo ng gcash ?,fees
+helllo sir kumusta hello,greeting
+quick question sino ang pinakamagaling na artista thanks,off_topic
+pwede magtanong email addess hello,contact
+hi kumain ka na ba asap,off_topic
+sir pwede ba lagyan ng alcohol ang sugat?,first_aid
+quick question may kumagat saa akin na aso,bite_report
+hello sir paano gamutin angg kagat hello,first_aid
+ok thanks pls,thanks
+pls sino ang gumawa ng website na ito hello,about_system
+sir what do i do right now po ba,first_aid
+pasensya na po may impeksyon ba ang sugat ko,medical_advice
+pasensya na po cp number ng clinic hello,contact
+hello can i clal the clinic?,contact
+po can i reschedule my appointment thanks,appointment
+ano ang first aid sa kagat agad,first_aid
+good dday list of services?,services
+hi totoong tao baa ito thanks,bot_identity
+ask ko lang who made bitebridge sap,about_system
+hi po do you accept walk ins?,appointment
+tanong lang good morning ?,greeting
+ask ko lang who is the doctor thank you,staff_info
+quick quetion pano mag luto ng sinigang thanks,off_topic
+pwede ba ang tuob sa sugat po ba,medical_advice
+tanong lang do you also treat scratches po sir,services
+paki sagot list of services,services
+hi write my essay po sir,off_topic
+tanong lang do you do wound cleaning po pls,services
+hi po nakagat ang anak ko ng daga asap,bite_report
+good day my child was bitten by a pet dog thank you,bite_report
+po whta database does this system use pls,about_system
+uhm how to stop the bleeding from a bite asap,first_aid
+sino ang gumawa ng website na ito?,about_system
+what payment metods do you accept please,fees
+pasensya na po until what time are you open,hours
+pasensya na po ano ang address ninyo po maam,location
+tanong lang malapit ba kayo sa bayan asap,location
+sir clinic hours,hours
+hello mobile number of the clinic please,contact
+quick question what is your phone number,contact
+good day biitten by a cat what do i do ?,bite_report
+po where are you located po,location
+quick question thanks po sir,thanks
+address po po sir,location
+hi po do i hae an infection po sir,medical_advice
+pls directions to the center pls,location
+ask ko lang anong oras pwede pumunta please,appointment
+hi admin may facebook page ba kayo,contact
+quick question paano gamutin ang kagat,first_aid
+good day do you also treat scratches hello,services
+hello po pwede ko bang makausap ang nurse agad,staff_info
+excuse me sino ang gumawa ng website na ito thank you,about_system
+quick question ilang beses ang turok po ba,vaccine_followup
+hi po saan sa calapan kayo hello,location
+tell me if i need stitches,medical_advice
+uhm do i have rabies po ba,medical_advice
+po is there an online payment,fees
+uhm sino ang titingni sa sugat ko ba,staff_info
+urgent kailangan ko ba ng tetanus agad,medical_advice
+maam nakalimutan ko ang bakuna ko hello,vaccine_followup
+excuse me should i skip my vaccine po maam,medical_advice
+uhm what do i do right now?,first_aid
+paki sagot pwede ba uminom ng alak habang nagpapabakuna ?,medical_advice
+hello po pwede bang ma delay ang turok po sir,vaccine_followup
+hi totoong tao ba ito asap,bot_identity
+urgent can i get the source code?,about_system
+ask ko lang a rat bit me thanks,bite_report
+hi ilang minuto hugaan ang sugat,first_aid
+hi po should i cover the wound,first_aid
+po good afternoon po maam,greeting
+urgent my child was bitten by a dog ?,bite_report
+how much is tthe vaccine,fees
+pasensya na po sino ang crush mo,off_topic
+maam nakagat ako sa kamay,bite_report
+pasensya na po kaialngan ba mag book muna please,appointment
+paseensya na po a cat bit me,bite_report
+hi admin saamat sa tulong asap,thanks
+hi po musta,greeting
+hello is the doctor available po ba,staff_info
+hi po anoa ng unang gagawin po sir,first_aid
+maam sabon at tubig ba ang gagamitin,first_aid
+hello sir bbukas ba kayo ngayon kasi,hours
+ask ko lang kailan ang susunod na turok ba,vaccine_followup
+paki sagot a dog bit me o sir,bite_report
+quick question nakagat ang anak ko ng kuting,bite_report
+pwede magtanong how do i get to the clinic,location
+is it okay to use herbal medicine on the wound thank you,medical_advice
+pakii sagot sino ang doktor?,staff_info
+hello sir what database does this system use ba,about_system
+pasensya na po saan ang ez animal bite center,location
+tanong lang paano pumunta sa clinic,location
+tanong lang how can i contact you pls,contact
+paki sagot bitten by a monkey what do i do,bite_report
+uhm malala ba ang sugat ko,medical_advice
+uhm do yuo also treat scratches thanks,services
+pasensya na po how to fix my phone hello,off_topic
+hello sir gusto mo ba ng pizza po pls,off_topic
+urgent who is the hpysician thank you,staff_info
+hello sir may kumagat sa akin na tuta ba,bite_report
+hi bitten by a stray dog what do i do thank you,bite_report
+excuse me i missed my second dose kasi,vaccine_followup
+hi admin wht should i do after a bite thank you,first_aid
+h can i book an appointment po pls,appointment
+hi may sms reminder ba thanks,vaccine_followup
+maam sabon at tubig ba ang gagamitin thank you,first_aid
+bukas ba kayo sa holiday hello,hours
+maam what is 2 plus 2 hello,off_topic
+whatt time can i visit ba,appointment
+pasensya na po can i bok an appointment po pls,appointment
+ask ko lang anong oras ang sara ?,hours
+can you give the vaccine to children asap,services
+hello po anong programming language ang gamit ba,about_system
+urgent gaano katagal ang bakuna please,vaccine_followup
+hi po pwede bang hindi na ako magpabakuna please,medical_advice
+uregnt magkano ang buong bakuna,fees
+excuuse me how much is the consultation po,fees
+hi admni do i have rabies,medical_advice
+sir my child was bitten by a monkey please,bite_report
+tanong lang how to stop the bleeding from a bite agad,first_aid
+hi admi nakalmot ako ng alagang aso,bite_report
+pasensya na po paano mag set ng appointment ?,appointment
+good day tell me about the bitebridge system,about_system
+tanong lang i go scratched by a stray dog ba,bite_report
+maam pwede ba mag text po sir,contact
+pasensya na po pwede ba lagyan ng alcohol ang sugat kasi,first_aid
+hello how was this chatbot made hello,about_system
+write my essa y?,off_topic
+hi open pa ba kayo salamat,hours
+hello sir ano ang paborito mong kanta thank you,off_topic
+hello how much is the anti rabies shot hello,fees
+hello po sino ang doktor po maam,staff_info
+uhm i want to schedule a visit hello,appointment
+pasensya na po who ownsthe clinic hello,staff_info
+pls who are you ba,bot_identity
+hello po mamamatay ba ako ?,medical_advice
+pls what time do you open ba,hours
+paki sagot what time do you open thanks,hours
+uhm ano ang kaya ng clinic po,services
+ask ko lang i got scratched by a neighbor's dog po sir,bite_report
+tanong lang email address,contact
+hia dmin what can the center do thank you,services
+sir sino ang gumawa ng system na ito please,about_system
+hi admin paano mag set ng appointment please,appointment
+uhm my dog bit my hand plls,bite_report
+hi po paano gumagana ang bitebridge,about_system
+pls totoong tao ba ito please,bot_identity
+hello po until what time are yo uopen ?,hours
+pasensya na ppo thanks asap,thanks
+excuse me business hours kasi,hours
+po thank you so much ?,thanks
+hi po clinic hours ba,hours
+po anong oras kayo bukas agad,hours
+hi admin are you human pls,bot_identity
+na miss ko ang schedule ba,vaccine_followup
+maam i have a bite wound,bite_report
+can i come today po,appointment
+po ok thanks po pls,thanks
+who is the doctor please,staff_info
+hi po operating hours,hours
+pls follow up ko kaailan agad,vaccine_followup
+pasensya na po how do i make an appointment agad,appointment
+sino ang pinakamagaling na artista kasi,off_topic
+hi po dapat ba hugasan ang sugat ba,first_aid
+maam gamutan ba ngk almot po pls,services
+paki sagot there is a bite on my arm agad,bite_report
+hello are you open today salamat,hours
+pasensya na po pwede ba i reschedule pls,appointment
+tanong lang nakalmot ako ng alagang aso po sir,bite_report
+quick question anong oras pwede pumunta po ba,appointment
+pasensya na po are you a robot thanks,bot_identity
+paki sagot anong gamot ang pwede kong inumin kasi,medical_advice
+hi iis there a queue hello,appointment
+paki sagotkagat ng aso sa braso ko,bite_report
+quick question is there a queue hello,appointment
+hi po how can i contact you,contact
+tanong lang directions to the center,location
+good day who built this website thank you,about_system
+excuse me paano makipag ugnayan sa inyo thanks,contact
+hello how many tabletss hould i take,medical_advice
+pasensya na po tell me if i need stitches,medical_advice
+excuse me who are the researchers pls,about_system
+pls hey there thank you,greeting
+hello sir are you a robot,bot_identity
+maam tao ka ba,bot_identity
+excuse me anong serbisyo ang meron kayo po maam,services
+hello po saan ang clinic ba,location
+paki sagot kinagat ako ng askal please,bite_report
+urgent may jowa ka ba asap,off_topic
+hello sir na miss ko ang schedule?,vaccine_followup
+askk o lang magkano po lahat po,fees
+what services do you offer po,services
+hello po recommend a movie ba,off_topic
+ikaw b aay tao po pls,bot_identity
+hello bukas ba kayo kapaag linggo kasi,hours
+quick question translate this to korean pls,off_topic
+hello contact details po sir,contact
+hello po roas ng clinic pls,hours
+ask ko lang nasaan ang clinic,location
+hi admin how many doses of the vaccine,vaccine_followup
+uhm i want to cancel my appointment agad,appointment
+maganda ba ako po maam,off_topic
+paano kayo makokontak please,contact
+hi admin sino ang pinakamagaling na artista ?,off_topic
+how much for the whole series salamat,fees
+hello sirn akagat ang anak ko ng aso ng kapitbahay,bite_report
+gamutan ba ng kalmot,services
+po where in calapan are you?,location
+quick question ilang talbeta ang iinumin ko po pls,medical_advice
+pwede magtanong who is the president pls,off_topic
+paki sagot gamutan ba ng kalmot please,services
+hello sir how do i get to the clinic po ba,location
+sir saan ang clinic,location
+excuse me do you like music?,off_topic
+good day should i cover the wound ba,first_aid
+hello po tao ka ba,bot_identity
+ask ko lang where is ez animal bite center,location
+pls do i need to book first asap,appointment
+hi po nakagat ako ng pusa,bite_report
+ask ko lang contact number po sir,contact
+who is the nurse pls,staff_info
+hello po may landmark ba kayo thank you,location
+pwede magtanong ano ang address ninyo,location
+hi good morning thanks,greeting
+tanong lang should i put alcohol on the wound po,first_aid
+urgent magkano ang turok hello,fees
+list of services po ba,services
+pasensya na po nakagat ao ng tuta po sir,bite_report
+paano makipag ugnayan sa niyo po pls,contact
+pwede magtanong my child was bitten by a puppy,bite_report
+hello sir pa send ng location,location
+sir magkano po lahat,fees
+quick question what payment methods do you accept po sir,fees
+maam maraming salaat po,thanks
+saan sa calapan kayo agad,location
+uhm what can the center do po pls,services
+hello po who is the nurse please,staff_info
+maam immediate steps after a bite ba,first_aid
+paki sagot anong oras nna sa japan agad,off_topic
+pwede magtanong kamustaka po,greeting
+hello sir sino ka kasi,bot_identity
+uhm paano pumunta sa clinic ba,location
+quick question sino ang crush mo po pls,off_topic
+pakii sagot sino ang nurse?,staff_info
+hello po nakagaat ako ng aso ng kapitbahay ano gagawin ko ?,bite_report
+quick question are you ai asap,bot_identity
+urgent how was this chatbot mae hello,about_system
+robot ka ba salamat,bot_identity
+hello pwede cash,fees
+good day can you give the vaccine to children hlelo,services
+urgent may serbisyo ba kayo para sa kagat salamat,services
+po gusto kong i cancl ang appointment,appointment
+first aid for animal bite hello,first_aid
+hello po good afternoon thank you,greeting
+ask ko lang kwentuhan mo ako po pls,off_topic
+can i reschedule my appointment po ba,appointment
+quick question saaan sa calapan kayo ?,location
+uhm ano ka po,bot_identity
+uhm what dose of paracetamol hello,medical_advice
+hello nakagat ako ng aso ano gagawin ko?,bite_report
+pls list of serviecs hello,services
+tanong lang what medicine should i take thanks,medical_advice
+hello po paano makipag ugnayan sa inyo,contact
+hi pano mag luto ng sinigang po,off_topic
+ask ko lang paano makipag ugnayan sa inyo hello,contact
+hi po how long is the vaccination schedule hello,vaccine_followup
+good dayw hat days are you open ?,hours
+what do i do right now salamat,first_aid
+pls magkano ang buong bakuna?,fees
+po magkano ang turok please,fees
+nakalmot ako ng daga,bite_report
+hi admin how much s the consultation ba,fees
+pls sino ang pinakamagaling na artista hello,off_topic
+sir what is your address ba,location
+i got scratched y a bat po ba,bite_report
+pasensya na poo ikaw ba ay tao ba,bot_identity
+quick question when is my next dose thanks,vaccine_followup
+nakagat ako ng tuta ano gagawin ko salamat,bite_report
+po where are you located thanks,location
+maam pwede ba ako pumunta ngayon po ba,appointment
+paki sagot how much does it cots,fees
+maam what do i do right now,first_aid
+hi po sino ang developer ng system agad,about_system
+hello sir sin ka,bot_identity
+hi po ok thanks po,thanks
+ilang tableta angi inumin ko po pls,medical_advice
+urgent how do i make an appointmet thank you,appointment
+ask ko lang kagat ng aso sa braso ko asap,bite_report
+ask ko lang may kagat ako sa paa po ba,bite_report
+pasensya na po clinic hours salamat,hours
+can i get a reminder for my next dose thank you,vaccine_followup
+i missed my second dose asap,vaccine_followup
+hi admin is a nurse available kasi,staff_info
+hello sir anong mga bakuna ang meron,services
+helllo sir dapat ko bang takpan ang sugat,first_aid
+am i going to get rabies,medical_advice
+maam pwede ba i reschedule,appointment
+quick question may rabies na ba ako,medical_advice
+urgent should i cover the wound thanks,first_aid
+hello sir ano ang pangalan ng doktor ba,staff_info
+urgent sino ang developer ng systme thanks,about_system
+excuse me anong oras kayo bukas,hours
+kwentuhan mo ako po sir,off_topic
+walk in alng ba o appointment po maam,appointment
+pasensya na po ano angg bitebridge thank you,about_system
+po how much is the vaccine po maam,fees
+uhm i got scratched by a puppy po ba,bite_report
+quick question pano linisin ang kagat ba,first_aid
+pasensya na po what should i do after a bite,first_aid
+hi admin bukas ba kayo sa holiday,hours
+pasensya na po do you accept gcash po ba,fees
+maam pwede ba i reschedule po maam,appointment
+paki sagot may anti rabies ba kayo po maam,services
+po how much is the consultation pls,fees
+po sino ang nag program nito po sir,about_system
+hi admin i got scratched by a neighbor's dog agad,bite_report
+urgent how much does it cost thank you,fees
+po where in calapan are youu pls,location
+uhm anong oras wpede pumunta,appointment
+hi po how much is the anti rabies shot agad,fees
+ask ko lang what are the names of the staff thanks,staff_info
+hi po do you accept gcash agad,fees
+maam sino ang nasa duty ngayon ?,staff_info
+pwede bang hindi na ako magpabakua kasi,medical_advice
+urgent sino ang namamahala sa clinic pls,staff_info
+tanong lang ilang minuto hugasan ang sugat agad,first_aid
+sir my child was bitten by a neghbor's dog thank you,bite_report
+excuse me kumusta po thank you,greeting
+are you open today hello,hours
+urgent are you chatgpt please,bot_identity
+quick question are you a real person,bot_identity
+uhm hi po thanks,greeting
+uhm ok thanks po,thanks
+po is this a capstone project,about_system
+sir what is the weather agad,off_topic
+hi po pwede ba ang tuob sa sugat salaamt,medical_advice
+hi pwede cash po,fees
+sir hey htere thanks,greeting
+uhm how do i get to the clinic thanks,location
+uhm who are you ba,bot_identity
+anyone there po sir,greeting
+po nakagat ako ng paniki ano gagawin ko hello,bite_report
+is my wound serious ba,medical_advice
+pwede maggtanong my child was bitten by a cat,bite_report
+uhm is my wound serious,medical_advice
+hello po kaiilangan ko ba ng tahi,medical_advice
+pasensya na po paano kayo hanapin pls,location
+excuse me should i ut alcohol on the wound po sir,first_aid
+po gaano katagal ang bakuna ba,vaccine_followup
+pwede ba sa bata ang bakuna ?,services
+quick question what time can i visit thank you,appointment
+po pwede ba mag text po sir,contact
+hello how do i know my schedule po ba,vaccine_followup
+hi admin mamamatay ba ako,medical_advice
+ask ko lang nakalimutan ko ang bakuna ko,vaccine_followup
+hi admin do you accept maya po pls,fees
+hlelo sir may facebook page ba kayo,contact
+excuse me how much is the nti rabies shot po ba,fees
+pasensya na po should i put alcohol on the wound thanks,first_aid
+po do i use soap and water ?,first_aid
+pls what is day 0 3 7,vaccine_followup
+po what is your address pls,location
+hi po do i need a tetanus shot po ba,medical_advice
+maam can i pay in cash hello,fees
+uhm should i cover the wound ?,first_aid
+excuse me i want to schedule a visit ?,appointment
+hi po may rbies na ba ako po ba,medical_advice
+am i going to get a serious wound po sir,medical_advice
+uhm do you keep patient records po ba,services
+maam can i reschedule my appointment ba,appointment
+po paano gamutin ang kagat?,first_aid
+quick question sige salamat pls,thanks
+quick question pa send ng location po ba,location
+hi may online payment ba asap,fees
+tanonglang do you offer anti rabies shots salamat,services
+hello nakalmot akoo ng tuta po ba,bite_report
+hello tell me a joke ba,off_topic
+schedule ng clinic thakn you,hours
+hi po are you ai pls,bot_identity
+pasensya na po email address pls,contact
+good day is there a qqueue salamat,appointment
+pasensya na po malala ba ang sugat ko,medical_advice
+pwede magtanong what is your phone number agad,contact
+pwede cash thank you,fees
+tanong lang anyone there po ba,greeting
+hello sir do you also treat scratches,services
+how to fix my phone,off_topic
+ask ko lang nakalmot ako ng aso ng kapitbahay agad,bite_report
+ask ko lang got it thanks,thanks
+hello po nandiyan ba ang doktor ?,staff_info
+uhm my chil was bitten by a bat po,bite_report
+excuse me dumugo ang kagat sa akin pls,bite_report
+pasensya na po may anti rabies ba kayo thank you,services
+pwede ba mag text po maam,contact
+excuse me ikaw ba ay tao?,bot_identity
+paki sagot sino ang physician,staff_info
+paki sagot how much is the antirabies shot po maam,fees
+good day salamat,thanks
+excuse me magkano ang bayad kasi,fees
+kailan ang susunod na turok ba,vaccine_followup
+pwede mgatanong kagat ng aso sa braso ko ba,bite_report
+quick question magkano ang bakuna salamat,fees
+hi admin walk in lang ba o appointment po ba,appointment
+po thank you so much salamat,thanks
+good day robot ka ba po ba,bot_identity
+ask ko lan gusto mo ba ng pizza po pls,off_topic
+hi can i take amoxicillin po maam,medical_advice
+hi i got scratched by a kitten,bite_report
+pwede magtnaong anong oras ang sara,hours
+sir what time do you close hello,hours
+ask ko lang operating hours po maam,hours
+hi admin start thanks,greeting
+how to find the centerr ba,location
+hello sir bitten by a dog what do i do po,bite_report
+maraming salamat asap,thanks
+maam pogi ba ako hello,off_topic
+excuse me sino ang doktor thanks,staff_info
+pls pweede ba ako pumunta ngayon pls,appointment
+na miss ko ang schedule thanks,vaccine_followup
+pls how do i clean a bite wound thank you,first_aid
+hi admin who is the physician salamat,staff_info
+good day how many doses of the vaccine,vaccine_followup
+hi late na ako sa susunod na turok po ba,vaccine_followup
+paki sagot anong araw kayo bukas po sir,hours
+paki sagot may pila ba ?,appointment
+pls totoong tao ba ito salamat,bot_identity
+pls anong ulam ngayon thnks,off_topic
+hello po pwede b lagyan ng alcohol ang sugat po ba,first_aid
+uhm is it okay to use herbal medicine on the wound,medical_advice
+what is the service fee po ba,fees
+hi po i am late for my next dose pls,vaccine_followup
+uhm nakagat ako ng kuting asap,bite_report
+hello sir follow up ko kailan hello,vaccine_followup
+pasensya na po sino ang gumawa ng website na ito,about_system
+can you give the vaccine to children,services
+hi admin open pa ba kayo,hours
+ask ko lang until what time are you open agad,hours
+tanong lang may jwoa ka ba po ba,off_topic
+tanong lang my child was bitten by a dog thanks,bite_report
+paki sagot ilan ang staff ninyo po sir,staff_info
+hi pom aganda ba ako asap,off_topic
+excuse me sino ang mga staff,staff_info
+paki sagot are you a bot po pls,bot_identity
+quick question where is ez animal bite center poo maam,location
+hi admin first aid for animal bite,first_aid
+are you open todday ba,hours
+hi po anong serbisyo ang meron kayo,services
+hi am i going to get something dangerous ba,medical_advice
+hi should i skip my vaccine asap,medical_advice
+excuse me ginagamot ba ninyo ang kagat agad,services
+excuse me operating hours kasi,hours
+good day ano ang number ng clinic kasi,contact
+po magandang hapon hello,greeting
+ano ang number ng clinic po ba,contact
+pwede magtanong when is my next dose asap,vaccine_followup
+hello sir is there an online payment,fees
+paki sagot i got scratched by a rat asap,bite_report
+hi po saan ang clinic po,location
+quick question how to cook adobo,off_topic
+pasensyana po are you open today asap,hours
+excuse me phnoe number ba,contact
+follow up ko kailan agad,vaccine_followup
+hi what is bitebridge po maam,about_system
+hi po location po po mama,location
+pwede magtanong may impeksyon ba ang sugat ko ba,medical_advice
+good ady kinagat ako ng daga po ba,bite_report
+hello hi po agad,greeting
+quick question kailangan ba mag book umna asap,appointment
+urgent tumatanggap ba kayo ng gcash kasi,fees
+excuse me magkano ang konsulta please,fees
+maam what is the meaning of life hello,off_topic
+quick question do you accept walk ins asap,appointment
+paki sagot i missed my vaccine schedule po sir,vaccine_followup
+pwede magtanong how far is the clinic po ba,location
+sir landline numberagad,contact
+hello do you offer anti rabies shots,services
+pls am i going to get rabies thank you,medical_advice
+pls ok salamat,thanks
+uhm walk in lang ba o appointment thank you,appointment
+uhm can i text you?,contact
+pls nakagat ako ng unggoy ano gagawin ko please,bite_report
+pwede magtanong nakagat ang anak ko ng tuta kasi,bite_report
+quick question pwede ba mag text po ba,contact
+uhm kailan ang susunod na bakuna ko,vaccine_followup
+hello po what is your name agad,bot_identity
+hello po maganda ba ako pls,off_topic
+what time do you close,hours
+pls sino ang mga staff,staff_info
+good day how much is the anti rabies shot kasi,fees
+urgent my dog bit my hand kasi,bite_report
+po magkano ang bakuna po pls,fees
+pwede magtanong what days are you open ba,hours
+po hello is anyone there?,greeting
+hello hanggang anong oras kayo,hours
+hi po musta pls,greeting
+pwede magtanong what days are you open po pls,hours
+urgent how are you po,greeting
+paki sagot nakalimutan ko ang bakuna ko asap,vaccine_followup
+write my essay,off_topic
+hello sir who is the president thanks,off_topic
+tanong langbusiness hours,hours
+salamat sa tulong po sir,thanks
+tanong lang are you open now hello,hours
+uhm may sms reminder ba agad,vaccine_followup
+ask ko lang anong mga bakuna ang meron ba,services
+uhm what tim ecan i visit po ba,appointment
+pls may facebook page ba kayo po ba,contact
+quick question how many shots do i need thanks,vaccine_followup
+good day ilang tableta ang iinumin ko agad,medical_advice
+hello po hi po,greeting
+magkano ang buong bakuna po maam,fees
+ask ko lang whattime do you close po sir,hours
+uhm paano ginawa ang chatbo tna ito salamat,about_system
+paki sagot magkano ang konsulta po pls,fees
+excuse me ginagamot ba ninyo ang kagat po pls,services
+tanong lang translate this to korean please,off_topic
+good day late na ako sa susunod na turok po,vaccine_followup
+excusse me salamat po please,thanks
+how long is the vaccination schedule hello,vaccine_followup
+hello po hwere are you located po sir,location
+pwede magtanong ma ypila ba,appointment
+maam proyekto ba ito ng estudyante,about_system
+hello sir where is the clinic,location
+contcat details,contact
+ask ko lang nakagat ako ng askal o pls,bite_report
+sino ang pinakamagaling na artista po,off_topic
+maamlist of services po pls,services
+uhm can i erschedule my appointment pls,appointment
+pak isagot my child was bitten by a dog,bite_report
+hi admin may sms reminde ba please,vaccine_followup
+urgent how do i make an appointment agad,appointment
+tanong lang sino ang nasa duty ngayon ?,staff_info
+hello po can you give the vaccine to children,services
+hi pwede ba akong uminom ng antibiotic thanks,medical_advice
+tanong lang what arre your hours po,hours
+hello musta po,greeting
+ask ko lang ano ang mga services ninyo,services
+maam magkano ang bayad thank you,fees
+hello paano mag set ng appointment thanks,appointment
+uhm aer you open today po sir,hours
+pls got it thanks pls,thanks
+po nakagat ako ng pusa ano gagawin ko asap,bite_report
+tanong lang is there a queue,appointment
+quick question clinic hours salamat,hours
+nakalmot ako ng pusa?,bite_report
+uhm who are the researchers please,about_system
+tanong lang anong oras na sa japan,off_topic
+magkano ang bayad thank you,fees
+ask ko lang can i speak with the doctor?,staff_info
+ask ko lang recommend a movie salamat,off_topic
+uhm do you accept maya ?,fees
+tanon glang pwede ba ako pumunta ngayon po maam,appointment
+maam what is your address agad,location
+pasensya na po thanks gaad,thanks
+hi po anong gamot ang pwede kong inumin pls,medical_advice
+sir how many tablet sshould i take asap,medical_advice
+hi what to do before going to the clinic please,first_aid
+excuse me is it safe for pregnant women kasi,medical_advice
+urgent my child was bitten by a cat salamat,bite_report
+po bukasb a kayo kapag linggo agad,hours
+hello po paano pigilan anng dugo sa sugat po sir,first_aid
+pls do you accept maya pls,fees
+urggent how does bitebridge work kasi,about_system
+hello po saan ang clinic,location
+tell me a sstory hello,off_topic
+pls pwede bang ako na ang mag inject please,medical_advice
+ask ko lang may rabies vaccine ba kayo po maam,services
+may kumagat sa akiin na pusa?,bite_report
+i want too schedule a visit agad,appointment
+quick questin may jowa ka ba ?,off_topic
+paki sagot what do i do right now please,first_aid
+quick question ano agn kaya ng clinic ba,services
+tanong lang pano ko malalaman ang schedule ko ba,vaccine_followup
+maam how od i get to the clinic?,location
+paki sagot is the clinic near the highway agad,location
+excuse me open pa ba kayo po ba,hours
+tanong lang who are the researchers asap,about_system
+tanong lang what time can i visit po maam,appointment
+uhm what is your phone number thanks,contact
+hello po may kumagat sa akin na pusa hello,bite_report
+pwde magtanong salamat po thank you,thanks
+hello sir is it okay to use herbal medicine on the wound po ba,medical_advice
+anong dapat gawin agad?,first_aid
+hello po anong oras na sa japan po ba,off_topic
+sir what should i do after a bite asap,first_aid
+do i have an infection,medical_advice
+excuse me pano ko malalaman ang scheduleko thanks,vaccine_followup
+paki sagot what technology does this system use?,about_system
+paki sagot tao ka ba hello,bot_identity
+po ehy po ba,greeting
+ask ko lang magkano po lahat ?,fees
+quick question ilang minuto hugasan ang sugat hello,first_aid
+hipo tell me a story agad,off_topic
+urgent sino ang physician po maam,staff_info
+pls who is the president asap,off_topic
+tanong lang how much for the whole series thanks,fees
+hi po pano ko malalaman ang schedule ko hello,vaccine_followup
+is it okay to use herbal medicine on the wound po pls,medical_advice
+pwede magtanong sabon at tubig ba ang gagamitin salamat,first_aid
+urgent ano ang address ninyo po ba,location
+po directions to thhe center,location
+pwede magtanong sino ang gumawa ng website na ito po pls,about_system
+pwede magtanong list of services,services
+good day do you have a facebook page,contact
+hi ano ang gagawin ko bago pumunta sa clinic,first_aid
+pano ko malalaman ang schedule ko po ba,vaccine_followup
+should i skip my vaccine po sir,medical_advice
+moblie number of the clinic hello,contact
+cp number ng clinic salamat,contact
+sir pwede bang ako na ang mag inject po ba,medical_advice
+quick question kalan ang susunod na turok please,vaccine_followup
+sir whaat do i do right now salamat,first_aid
+urgent tell me if i need stitches pls,medical_advice
+excuse me can i reschedule my appointment asap,appointment
+tanong lang should i skip my vaccine po maam,medical_advice
+where in calapan are you,location
+ask ko lang sino ang kausap ko thanks,bot_identity
+po may kumagat sa akin na pusa?,bite_report
+uhm what to do before going to the clinic,first_aid
+paano mag set ng appointment?,appointment
+hi admin pwede cash thanks,fees
+ask ko lang snio ang mga staff,staff_info
+tanong lang what are the names of the staff,staff_info
+can i take amoxicillin,medical_advice
+quick question ano ang gagawin ko bago pumunta sa clinic po maam,first_aid
+maam do you give rabies vaccine asap,services
+hi admin kinagat ako ng unggoy,bite_report
+hello can i text you thhank you,contact
+good day sino ang nurse hello,staff_info
+pasensya na po what are you ?,bot_identity
+tell me a story saalmat,off_topic
+good day what programming language is this,about_system
+urgent will you send me an sms reminder kasi,vaccine_followup
+pasensya na po pwede ba mag bayad sa maya,fees
+mobile number of teh clinic please,contact
+ano ang address ninyo ?,location
+hello po ano ang kaya ng clinic poo maam,services
+maam cann i call the clinic po,contact
+hi admin ginagamot ba ninyo ang kagat kasi,services
+whoi s on duty today pls,staff_info
+tanong lang nakagat ako nga lagang aso po,bite_report
+hi admin what is the meaning of life ba,off_topic
+directions to the center po maam,location
+quick questiion maraming salamat ?,thanks
+po may rabies na ba ako kasi,medical_advice
+pwede b alagyan ng alcohol ang sugat po pls,first_aid
+uhm saalmat agad,thanks
+helol agad,greeting
+clinic hours please,hours
+paki sagot how can i contact you,contact
+maam may pila ba po ba,appointment
+totoong tao ba ito kai,bot_identity
+good day can i book an appointment,appointment
+hi i am late for my enxt dose thanks,vaccine_followup
+can i get a reminder for my next dose ba,vaccine_followup
+tumatanggap ba kayo ng gcash po maam,fees
+good day is thee clinic near the highway asap,location
+good day thanks for the help pleaes,thanks
+uhm anong oras kayo bukas po pls,hours
+sir got it thanks po maam,thanks
+hello sir anong payment methods po sir,fees
+paki sagot ano ang number ng clinic po ba,contact
+uhm do you accept walk ins asap,appointment
+ask ko lang oras ng clinic asap,hours
+hi po ano ang gagawin ko bago pumunta sa clinic po ba,first_aid
+paki sagot what medicine should i take please,medical_advice
+hello po how are you,greeting
+hi admin nakagat angg anak ko ng kuting,bite_report
+pasensya na po may kumagat sa akin na askal please,bite_report
+pwede ko bang makasap ang nurse kasi,staff_info
+hello sir are you open today ?,hours
+ask ko lang contact number pls,contact
+maam i want to schedule a visit po maam,appointment
+excuse me can you give the vaccine to children ba,services
+nakalmot ako ng pusa ba,bite_report
+pasensya na po bukas ba kayo ngayon po amam,hours
+excuse me can i get a reminder for my next dose po maam,vaccine_followup
+urgent anong mga bakuna ang meron please,services
+uhm sing me a song kasi,off_topic
+paki sagot do i nee da tetanus shot?,medical_advice
+ask ko lang wede bang magpa book,appointment
+pls paano mag set ng appointment po pls,appointment
+sir when is my next sht po maam,vaccine_followup
+hi nakagat ako ng unggoy ano gagawin ko asap,bite_report
+what is the meaning of life po,off_topic
+pls how are you,greeting
+quikc question got it thanks please,thanks
+tanong ang how to find the center kasi,location
+po how much does iit cost,fees
+urgent can i speak with the doctor ba,staff_info
+pwede ba walk in?,appointment
+maam what is your address po ba,location
+hi po sino ang ipnakamagaling na artista po,off_topic
+good morning thank you,greeting
+what days are you open agad,hours
+pwede magtanong paano mag set ng appointment salamat,appointment
+hello what services do you ofer po,services
+quick question what can the center do,services
+hello salamat po,thanks
+who is the best basketball player,off_topic
+hello po may email ba kayo thanks,contact
+hi po can i come today,appointment
+kinagat ako ng daga,bite_report
+excuse me nakagat ang anak ko ng unggoy po sir,bite_report
+sir nakalimutan ko ang bakuna ko po,vaccine_followup
+hi can i speak with the doctor thank you,staff_info
+hi po pwede ba walk in po ba,appointment
+hi po is the clinic near the highway asap,location
+ask ko lang i was bitten by a cat salamat,bite_report
+pwee magtanong gaano katagal ang bakuna,vaccine_followup
+uhm ligtaas ba sa buntis ang bakuna pls,medical_advice
+hell open pa ba kayo thank you,hours
+contact details po sir,contact
+quick question oras ng clinic po ba,hours
+paano kayo hanapin thanks,location
+nakagat ang anak ko ng tuta,bite_report
+hi po am i going to get raies,medical_advice
+pwede magtanong are you a robot po maam,bot_identity
+hi admin proyekto ba ito ng estudyante hello,about_system
+exxcuse me follow up ko kailan pls,vaccine_followup
+pwede ba lagyan ng alcohol ang sugat salamat,first_aid
+sir is a nurse available po ba,staff_info
+hello sir anong ulam ngayon pls,off_topic
+hello tumatanggap ba kayo ng gcash,fees
+hello sir do you do ound cleaning po pls,services
+hi po pwede ba akong uminom ng antibiotic pls,medical_advice
+hi admin can i come today ba,appointment
+sr do i need a tetanus shot please,medical_advice
+sir who owns the clinic,staff_info
+may tao ba po ba,greeting
+hello sir what should i do after a bite agad,first_aid
+hello po do i have an infection pls,medical_advice
+good day pa send ng location,location
+pasensya na po are you open on sunday ba,hours
+maam ano ang unang gagawin agad,first_aid
+sir ilang tableta ang iinumin ko ba,medical_advice
+hello po saan ang ez animal bite center hello,location
+excuse me is a nurse available,staff_info
+pwede magtanong pwede bang ma delay ang turok,vaccine_followup
+hello po pano linisin ang kagat po,first_aid
+pwede ba sa bata ang bakuna kasi,services
+uhm kinagat ako ng unggoy,bite_report
+nakagat ako ng aso ano gagawin ko po pls,bite_report
+hi business hours po maam,hours
+good day who made bitebridge pls,about_system
+maam how to find the center po,location
+tanong lang ano ka po pls,bot_identity
+tanong lang do i have a serious wound kasi,medical_advice
+anong pangalanm o hello,bot_identity
+sir how many doses of the vaccne?,vaccine_followup
+pwede magtanong is this a real person thank you,bot_identity
+hello sir ligtas ba sa buntis ang bakuna pls,medical_advice
+hi po magandang hapon po sir,greeting
+good day bukas ba kayo ngayon,hours
+pwede magtanong my dog bit my hand kasi,bite_report
+uhm what is the service fee kasi,fees
+maam anyone htere thanks,greeting
+hi admin pwede bang hindi na ako magpabakuna,medical_advice
+tanong lang nakagat ako ng daga thanks,bite_report
+hello po do i use soap and water salamat,first_aid
+tanong lang nakagat ako ng kuting ano gagawin ko hello,bite_report
+hello sir malapit ba kayo sa bayan salamat,location
+po ilang turok ang kaiilangan agad,vaccine_followup
+good day can you give the vaccine to children po,services
+hello sir are you a real peron,bot_identity
+hi magkano ang bakuna po sir,fees
+ecuse me may pila ba po ba,appointment
+hello what is yur phone number ba,contact
+hello sir cp number ng clinic po ba,contact
+hi admin nakagat ako ng tuta po,bite_report
+hello sige salamat aagd,thanks
+hi what is day 0 3 7 thanks,vaccine_followup
+uhm am i going to get someting dangerous thanks,medical_advice
+pasensya na po anong oras ang sara?,hours
+what are your hours,hours
+may serbisyo ba kayo para sa kagat pls,services
+pwede magtanong ilang minuto hugasan ang sugat po ba,first_aid
+hi admin what payment methods do you accept,fees
+sir my child was bitten by a rat po sir,bite_report
+hello sir may kumagat sa akin na pusa po ba,bite_report
+pwede magtanong where is ez animal bite center po sir,location
+hi pwede bang magpa book?,appointment
+do you accept walkins,appointment
+pano kayo tawagan,contact
+hello po magkano ang buong bakuna po maam,fees
+pasensya na po can i book an appointment po maam,appointment
+hi admin email address please,contact
+paki sgot hello po ba,greeting
+uhm ano ang number ng clinic agad,contact
+hi o ksalamat po ba,thanks
+sir what programming language is this agad,about_system
+maam late na ako sa suunod na turok po maam,vaccine_followup
+good day where is the clinic,location
+ask ko lang bitten by a dog what do i do kasi,bite_report
+good day may kumgaat sa akin na aso,bite_report
+po maraming salamat thank you,thanks
+sir sino ang nag program nito po sir,about_system
+excuse me how much is the consultation po ba,fees
+hello po can i speak with the doctor thanks,staff_info
+hello po opgi ba ako po pls,off_topic
+how many shots do i need thanks,vaccine_followup
+may landmrak ba kayo,location
+pls pwede ba mag bayad sa maya thank you,fees
+paki sagot i want to cancel my appointment thank you,appointment
+hello sir how do i know my schedulle asap,vaccine_followup
+excuse me nakagat ang anak ko ng aso ng kapitbahay salamat,bite_report
+are you open now hello,hours
+maam ano ang bitebridge po sir,about_system
+paki sagot can i pay i ncash pls,fees
+hello kumusta kka na ba,greeting
+hello po nakagat ako sa binti please,bite_report
+hello sir how do i make an appointment,appointment
+hi admin sino ang pinakamagaling na artista thanks,off_topic
+po ano ang address ninyo thank you,location
+will you send me an sms reminder po,vaccine_followup
+pasensya na po can i take amoxicillin asap,medical_advice
+sir how do i know my schedule,vaccine_followup
+hi sing me a song,off_topic
+hello sir nakagat ang anak ko ng pusa salamat,bite_report
+gusto mo ban g pizza kasi,off_topic
+hi admin write my essay salamat,off_topic
+hello sir what time can i visit,appointment
+pls may impeksyon baang sugat ko ?,medical_advice
+tanong lang hanggang anong oras kayo ppo sir,hours
+hi is it okay to use herbal medicine on the wound ba,medical_advice
+hi po are you open otday po ba,hours
+quick question nakagat ako ng paniki agad,bite_report
+hello operating hours kasi,hours
+po what esrvices do you offer thanks,services
+pwede magtanong can i book an appointment pls,appointment
+where is ez animal bite center?,location
+hi anong oras ang sara po,hours
+kumusta kasi,greeting
+do you kepe patient records ba,services
+hi admin anong dapat gawin agad ba,first_aid
+hi how are you kasi,greeting
+quick questioon paano kayo makokontak po maam,contact
+quick quetsion who is the best basketball player thanks,off_topic
+good day anong araw kayo bukas hello,hours
+ask ko lang nakagat ang anak ko ng paniki salamat,bite_report
+uhm pwede ba walk in po pls,appointment
+pls where in calapan are you thanks,location
+pls tell me a joke pomaam,off_topic
+ask ko langg magkano ang turok po pls,fees
+kailan ang susunod na turok asap,vaccine_followup
+ask ko lang bukas ba kayo sa holiday hello,hours
+hi ddress po kasi,location
+good day mobile number of the clinic po maam,contact
+hello how much for the whole series,fees
+uhm do you give rabies vaccine pls,services
+sir daapat ko bang takpan ang sugat po,first_aid
+quick question what is your favorite color po sir,off_topic
+pwede magtanong do you keep patient records po pls,services
+ilan ang staff niinyo,staff_info
+good day malapit ba kayo sa bayan?,location
+maam sino ang may ari ng clinic po pls,staff_info
+urgent what is your favorite color ?,off_topic
+may serbisyo ba kayo para sa kagat thank you,services
+maam paano mag set ng apointment po,appointment
+hi anoo ang unang gagawin,first_aid
+hi po ilang minuto hugaasn ang sugat,first_aid
+hello sir what are your hours ?,hours
+hello dapat ko bang takpan ang sugat ba,first_aid
+bitten by a kitten what do i do pls,bite_report
+po gaano katagal ang bakun asap,vaccine_followup
+nakagta ako ng kuting agad,bite_report
+hello sir ho wdo i know my schedule thanks,vaccine_followup
+good day directions to the center thanks,location
+do you treat animal bites?,services
+good day bitten by a cat what do i do pls,bite_report
+helol should i cover the wound kasi,first_aid
+urgent malapit ba kayo sa bayan ?,location
+hi admin do i need a tetanus shot,medical_advice
+ask ko lang mobile number of the clinic agad,contact
+tanong lang i want to schedule a visit agad,appointment
+wha dose of paracetamol po,medical_advice
+hello what time do yo close kasi,hours
+po saan ang ez animal bite center agad,location
+where are you located,location
+hi po what is the weather po,off_topic
+hi sino ang crush mo po pls,off_topic
+po can you ehlp me with math please,off_topic
+ask ko lagn what is your favorite color thanks,off_topic
+pasensya na po usto kong i cancel ang appointment,appointment
+excuse me a neighobr's dog bit me please,bite_report
+quick question nakagat ako sa kamay ba,bite_report
+write my essay po sir,off_topic
+pasensya na po pwede bang hindi na ako magpabakuna thanks,medical_advice
+urgent paano gamutin ang kagat po ba,first_aid
+nakalmot ako ng kuting ?,bite_report
+good day pwede ba uminom ng alak habang nagpapabakuna ?,medical_advice
+excuse mme anong pangalan mo po sir,bot_identity
+hello sir nasaan ang clinic thanks,location
+should i cover the wound agad,first_aid
+uhm got it thanks,thanks
+uhm my child was bitten by a stray dog po ba,bite_report
+pls i want to schedule a visit ?,appointment
+pwede magtanong kumusat po pls,greeting
+hello anong dapat gawin agad po sir,first_aid
+hello po can i come today salamat,appointment
+business hour spo sir,hours
+hello po are you open today pls,hours
+hello po nakagat ako ng aso ano gagawin ko salamat,bite_report
+hi admin sino ang may ari ng clinic ?,staff_info
+ask ko lng start ?,greeting
+hi admin are you a robot,bot_identity
+tanong lang what database does this system use kasi,about_system
+good day wil i die from this kasi,medical_advice
+urgent magkaano ang bakuna ba,fees
+hello nakalmot ako ng daga please,bite_report
+po anong oras angsara po maam,hours
+tanong lang paano pumunta sa clinic?,location
+hi kamusta ka agad,greeting
+maam will you send me an sms reminder po maam,vaccine_followup
+urgent na miss ko ang scheule salamat,vaccine_followup
+maam first aid ssteps,first_aid
+sir what medicine should i take kasi,medical_advice
+hi can i reschedule my appointment,appointment
+good day what are you hello,bot_identity
+paki sagot what are oyur hours asap,hours
+sir i want to canccel my appointment po maam,appointment
+urgent what ae you po sir,bot_identity
+quick quesion thanks po ba,thanks
+tanong lang can i text you salamat,contact
+pasensya na po may online payment ba pls,fees
+po do i use soap and water thanks,first_aid
+sing me a song po,off_topic
+paki sagot i got scratched by a cat ba,bite_report
+pwede magtanong sino ang may ari ng clinic please,staff_info
+ask ko lang late na ako sa susunod na turok salamat,vaccine_followup
+po ano ang paborito mong kata po ba,off_topic
+good day maraming salamat hello,thanks
+sir may sms rreminder ba,vaccine_followup
+hi admin magkano ang konsulta po ba,fees
+good day an i reschedule my appointment?,appointment
+tanong lang who is in charge of the clinic,staff_info
+sino ang gumawa ng system na ito?,about_system
+hi po how do i make an appointment po ba,appointment
+hi paano kayo makokontak,contact
+ask ko lang can i take amoxicillin,medical_advice
+hellonakagat ako ng aso ano gagawin ko po pls,bite_report
+hello saan sa calapan kayo,location
+hello what medicine should i take agad,medical_advice
+good day wkentuhan mo ako please,off_topic
+tanong lang may pila ba po pls,appointment
+maam ano ang mga servicess ninyo pls,services
+hello po pa send ng location please,location
+kumusta thank you,greeting
+hi admin operating hours,hours
+pasensya nap o ano ang address ninyo thank you,location
+kailan ang susunod na turok agad,vaccine_followup
+pwede magtanong anyone there hello,greeting
+sir pwede ba ako pumunta ngayon kasi,appointment
+paki sagot nasaan ang clinic,location
+pwede magtanong hi po ab,greeting
+sir saan sa calapan kayo po ba,location
+hello sir kumusta,greeting
+paki sagot are you hhuman po ba,bot_identity
+address po ello,location
+pwede magtanong ano ang number ng clinic kasi,contact
+sir anong gamot ang pwede kong inumin agad,medical_advice
+po can i get the source code,about_system
+hi saan ang clinic,location
+what is 2 plus 2 salamat,off_topic
+ano ang unang gagawin po pls,first_aid
+good day do you do wound cleaning hello,services
+urgent may fcebook page ba kayo po pls,contact
+hello gusto kong magpa schedule po ba,appointment
+urgent what services do you offer po ba,services
+paki sagot i was bitten by a neighbor's dog,bite_report
+maam nakagat ako ng alagang aso,bite_report
+operating hours agad,hours
+pls can i give the shot to my dog?,medical_advice
+a monkeyb it me po,bite_report
+tanong lang paano ginawa ang chatbot na ito po,about_system
+may facebook page ba kayo po maam,contact
+good day kailan ang susunod na turok pls,vaccine_followup
+anong oras kayo bukas hello,hours
+maam malala ba ang sugat ko salamat,medical_advice
+hi admin anong payment methods pls,fees
+pasensya na po who are the researchers po ba,about_system
+hello po is there a queue hello,appointment
+ask ko lang do you offer anti rabies shots salamat,services
+ano ang first aid sa kagat asap,first_aid
+hello how much is the consultation kasi,fees
+pls who built this website po ba,about_system
+pwede magtanong how does bitebridge work thank you,about_system
+hi po may online payment ba salamat,fees
+paki sagot gusto kong magpa schedule,appointment
+hi admin magkano ang konsulta salamat,fees
+good day who built this website agad,about_system
+pls where is ez animaal bite center asap,location
+ask ko lang may landmark ba kayo,location
+po mobille number of the clinic?,contact
+ask ko lang sino ang physician thank you,staff_info
+excuse me can i come today salamat,appointment
+pasensya na po nakagat ako ng unggoy ano gagawin ko,bite_report
+uhm how can i contact you,contact
+hello sir business hours po pls,hours
+excuse me tell me a joke,off_topic
+ask ko lang nakaga tako ng paniki ba,bite_report
+pwede magtanong sino ang mga staff agad,staff_info
+what to do before going to the clinic thakns,first_aid
+urgent maraming salamat po kasi,thanks
+kumain ka na ba po ba,off_topic
+po am i going to get a serious wound thanks,medical_advice
+good day saan ang clinic kasi,location
+quick question i have a bite wound ba,bite_report
+my child was bitten by a dog po sir,bite_report
+po pogi ba ako asap,off_topic
+pwede magtanong nakagat agn anak ko ng daga,bite_report
+po pwede ba akong uminom ng antibiotic,medical_advice
+hi po how do i make an appointment,appointment
+hello nakagat ako ng kuting po sr,bite_report
+ask ko lang ok salamat salamat,thanks
+pls immediate steps after a bite po pls,first_aid
+hello po may kagat ako sa paa ba,bite_report
+good day is there an online payment please,fees
+kailan ang susunod na tuurok?,vaccine_followup
+urgent i want to schedule a vsit,appointment
+pasensya na po how do i make an appointment,appointment
+good day what medicine should i take please,medical_advice
+ask ko lang do i have rabies,medical_advice
+tanong lang diagnose my wound salamat,medical_advice
+urgent do you keep patient records thank you,services
+sir how to stop the bleeding from a bite please,first_aid
+uhm what is your favorite color,off_topic
+pls totoong tao ba ito,bot_identity
+ask ko lang who is in charge of the clinic kasi,staff_info
+hello paano mag et ng appointment hello,appointment
+how many staff do you have?,staff_info
+thanks a lot po,thanks
+hi admin magkano ang buong bakuna salamat,fees
+hello sir nakagat ako ng unggoy thank you,bite_report
+tanong lang nakalimutan ko ang bakuna ko,vaccine_followup
+urgent do ineed a tetanus shot po sir,medical_advice
+hello sir write my essay kasi,off_topic
+maam ano ang unang gagawin asap,first_aid
+hello sir what time do you opeen pls,hours
+contact details,contact
+pasensya na po robot ka ba thank you,bot_identity
+hi admin are you a bot thanks,bot_identity
+what services are available asap,services
+hello tell me a story agad,off_topic
+uhmm how much does it cost po,fees
+po can you help me with math ?,off_topic
+po is this a capstone project?,about_system
+excuse me nasaan ang clinic thanks,location
+hello po do you do wound cleaning po pls,services
+po are you a real person thanks,bot_identity
+hello po can i talk to the nurse asap,staff_info
+pasenysa na po can i call the clinic thank you,contact
+may online payment ba hello,fees
+pasensya na po do you have a facebook page po maam,contact
+pwede magtanong how many staff do you have asap,staff_info
+hi po a bat bit me po,bite_report
+paan omag set ng appointment,appointment
+hi admin anong dapat gawin agad po sir,first_aid
+maam what is your address thank you,location
+tanong lang operating hours ?,hours
+do you also treat scratches please,services
+hi po magkano ang bayad salamat,fees
+paki sagot what should i do after a bite please,first_aid
+good day do you keep patient records,services
+good day ano ang paborito mong kanta agad,off_topic
+good day how do i get to the clinic pls,location
+quick question may rabies vaccine ba kayo asap,services
+maam email aaddress po,contact
+pwede ba mag text po pls,contact
+hi can i get a reminder for my next dose po ba,vaccine_followup
+taanong lang ano ang address ninyo po,location
+pasensya na po i have a bite wound pls,bite_report
+quick question am i going to get a serious wound po,medical_advice
+paki sagot directtions to the center po,location
+uhm gusto kong i cancel ang appointment,appointment
+tanong lang maganda baa ko hello,off_topic
+pasensya na po ano ang unang gagawin,first_aid
+pwede magtanong can i speak with the doctor po,staff_info
+hi po may serbisyo ba kayo para sa kagat po sir,services
+hello paano umunta sa clinic thank you,location
+paki sagot paano kayo makokontak thanks,contact
+pwede magtanong cp number ng clinic agad,contact
+maam do you give rabies vaccine po ba,services
+hi po how do ic lean a bite wound po,first_aid
+sir do i use soap and water,first_aid
+hi po do you also treat scratches please,services
+pasensya na po saan kayo located asap,location
+maam nakalmot ako ng so thank you,bite_report
+hi do you accept walk ins,appointment
+pls sino ang gumawa ng system na ito ?,about_system
+paki sagto follow up ko kailan,vaccine_followup
+pwede magtanong saan sa calapan kayo,location
+anong oras kayo bukas ?,hours
+urgent kailangan ba mag book muna hello,appointment
+maam is this a real person po maam,bot_identity
+whatt services are available kasi,services
+excuse me what programming language is this po,about_system
+anong payment methods pls,fees
+pasensya na po tell me about the bitebridge system po sir,about_system
+excuse me nakagat ang anak ko ng aalagang aso thanks,bite_report
+pasensya na po a kitten bit me ba,bite_report
+tanong lang salamat sa tulong,thanks
+sir contact details?,contact
+hi ano ang first aid sa kagat salamat,first_aid
+sing me a song ?,off_topic
+maam kinagat ako ng alagang asso thank you,bite_report
+quick question walk in lang ba o appointment po,appointment
+quick question are you open on sunday poo ba,hours
+quick question how long is the vacciantion schedule hello,vaccine_followup
+ilan ang staff nniyo po,staff_info
+tanong lang mmaganda ba ako salamat,off_topic
+maam bittenby a stray dog what do i do ?,bite_report
+hi po tell me about the bitebridge system agad,about_system
+sir who is hte best basketball player ?,off_topic
+good day gotit thanks kasi,thanks
+pasensya na po what services do you offer,services
+pls whta is day 0 3 7 please,vaccine_followup
+pwede magtanong pogi ba ako po ba,off_topic
+hello po dapat ko bang takpan ang sugat pls,first_aid
+hi admin how much does it cost po pls,fees
+hello po pwede ba ang tuob sa sugat ba,medical_advice
+pwede ba i reschedule hello,appointment
+nagbibigay ba kayo ng bakuna thank you,services
+hi admin saan sa calapan kayo po ba,location
+maam i got scratched by a cat helo,bite_report
+hello po kailangan ba mag book muna,appointment
+pano linisin ang kagat po sir,first_aid
+po maraming salamat please,thanks
+uhm do you like musci,off_topic
+number po ng clinic agad,contact
+hello anong ulam ngayon,off_topic
+po how much is the nati rabies shot hello,fees
+ask ko lang is my wound serious thanks,medical_advice
+hello who is the president kasi,off_topic
+ask ko lang who will assess my wound kasi,staff_info
+hello how do i get to the clinic kasi,location
+sir first aid for animal bite ba,first_aid
+maam phone number po,contact
+hi admin hhow do i make an appointment pls,appointment
+maam may anti rabies ba kayo,services
+maam address po please,location
+sige salamat thank you,thanks
+hello magkano ang buong bakun athank you,fees
+pwede magtanong do you give rabies vaccine please,services
+tanong lang pwede ko bang makausap ang nurse,staff_info
+hi admin do i se soap and water po maam,first_aid
+hello sir paano makipag ugnayan sa inyo po sir,contact
+quick question who is the best basketball player po pls,off_topic
+hi po pwede bang ma delay ang turok po maam,vaccine_followup
+quick question ano ang unang gagawin po,first_aid
+paki sagot may serbisyo ba kayo para sa kagat,services
+hello sir kailan ang susunod na turok thanks,vaccine_followup
+quick question can you give the vaccine to children hello,services
+sir can you give the vaccine to children po ba,services
+paki asgot kagat ng aso sa braso ko,bite_report
+quick question anong ulam ngayon,off_topic
+hello sir i was bitten by a cat pls,bite_report
+how are you ?,greeting
+hi po cp number ng clinic kasi,contact
+urgent paano kayo makokontak,contact
+ask ko lang sino ang nag program nito po sir,about_system
+anong araw kayo bukas po pls,hours
+what i the meaning of life,off_topic
+urgent are you a bot ?,bot_identity
+pwede magtanong may serbisyo ba kkayo para sa kagat hello,services
+paki sagot pwede ba mag text asap,contact
+urgent anyone there po pls,greeting
+pasensya na po are you open on sunday kasi,hours
+hello po mobile number of the clinic agad,contact
+sino ang physician po maam,staff_info
+sir am i oing to get an infection agad,medical_advice
+hi admin bitten by a monkey what do i do pls,bite_report
+pls who is the best basketblal player,off_topic
+hi magkano ang buong bakuna salamat,fees
+paki sagot do i have rabies po pls,medical_advice
+uhm what is your favorite color ?,off_topic
+hello po bukas ba kayo kapag linggo thank you,hours
+urgent contact detais po sir,contact
+po howw much does it cost,fees
+helllo sing me a song po ba,off_topic
+hi can i call the cliic thank you,contact
+helo po do you accept maya hello,fees
+hello sir do i have a serious wound agad,medical_advice
+maam hello po?,greeting
+hi po are you open now po sir,hours
+paki sagot ok salamat kasi,thanks
+waht can the center do po maam,services
+urgent pwede ba sab ata ang bakuna po pls,services
+tanong lang ano ang number ng clinic po ba,contact
+ask ko lang thank you salamat,thanks
+hi robot ka b aba,bot_identity
+ask ko lang may email ba kayo hello,contact
+quick question how many shots do in eed po pls,vaccine_followup
+pwede magtanong who is the president ba,off_topic
+hello a dog bit me kasi,bite_report
+hello sir kailangan ko ba ng tetanus,medical_advice
+pano ko malalaman ang schedule ko salamat,vaccine_followup
+hi admin what can the center do helo,services
+hi admin do i need to book first,appointment
+uhm nakalmot ako ng pusa po pls,bite_report
+hello sir ano ang numberng clinic,contact
+sir gusto kong i cancel ang appointment?,appointment
+hi po pwede ko ba kayong tawagan hello,contact
+uhm anong oras kayo bukas po,hours
+quick question pwede bang magpa book po maam,appointment
+mobile nmuber of the clinic agad,contact
+pno linisin ang kagat please,first_aid
+maamgamutan ba ng kalmot?,services
+excuse me maganda ba ako,off_topic
+ok salamat kai,thanks
+po am i going to et rabies kasi,medical_advice
+uhm how do i get to the clinic po pls,location
+ask ko lang contaact number po maam,contact
+who are the researchers,about_system
+pasensya na po how to cook adobo asap,off_topic
+pwede magtanong ikaw ba ay tao pls,bot_identity
+hello po what are the names of the staff thank you,staff_info
+pls i want to schedule a visit,appointment
+immediate steps after a bite po pls,first_aid
+hello po a kitten bit me,bite_report
+uhm ilang beses ang turok asap,vaccine_followup
+may kumagat sa akin na dagga thank you,bite_report
+quick question anyone there po ba,greeting
+good day do you accept walk ins,appointment
+hi po pwede ba walk in,appointment
+good day will you send me an sms reminder po,vaccine_followup
+excuse me ano ang first aid sa kagat?,first_aid
+hello anog ulam ngayon po sir,off_topic
+good day nakagat ako ng paniki ano gagawin ko thank you,bite_report
+hi paano pigilan ang dugo sa sugat po pls,first_aid
+tanong lang may landmark ba kayo asap,location
+hello sir pwede bang magpa boook,appointment
+hello sir is it safe for pregnant women po sir,medical_advice
+what time can i visit po ba,appointment
+tanong lang anong oras kayo nagsasara ?,hours
+locattion po asap,location
+ano nag gagawin ko bago pumunta sa clinic ba,first_aid
+hi do i use soap and water ?,first_aid
+pwede ba ang tuob sa sugat po pls,medical_advice
+po what is your pone number kasi,contact
+ask ko lang do i have a serious wound,medical_advice
+phone number ba,contact
+quick question who built this website?,about_system
+pwede magtanong maganda ba ako pls,off_topic
+quick question magandang gabi,greeting
+po are you open on sunday please,hours
+maam is a nurse aavilable,staff_info
+pasensya na po tell me a story,off_topic
+maam how much is the vaccine po ba,fees
+hi kumusta po asap,greeting
+hello do you keep patient records po pls,services
+hello po ano ang mga servicesn inyo po ba,services
+anong oras kayo nagsasaa thank you,hours
+hellopaano ginawa ang chatbot na ito thank you,about_system
+hi po follow up ko kailan?,vaccine_followup
+how was this chatbot made,about_system
+hello po there is a bite on my arm,bite_report
+what time do you close agad,hours
+paki sagot nakagat ako ng pusa po sir,bite_report
+hi po can i reschedule my appointment ?,appointment
+when is my next shot asaap,vaccine_followup
+tanong lang ilang minuto hugasan ang sugat ?,first_aid
+ask ko lang what is your address hllo,location
+uhm can i speak with the doctor hello,staff_info
+do you have a facebook page thank you,contact
+paki sagot who is the president hello,off_topic
+hello musta op sir,greeting
+how does bitebridge work thanks,about_system
+nakalimutan ko ang bakuna ko,vaccine_followup
+can i text you sap,contact
+hi po can i reschedule my appointment po sir,appointment
+hi po anong dapat gawina gad po,first_aid
+hi salamat thank you,thanks
+magandang gabi ba,greeting
+hello sir sabon at tubig ba ang gagamitin ba,first_aid
+uhm good morning hello,greeting
+where is ez animal bite center po,location
+po i want to schedule a visit kasi,appointment
+hello po pano ko malalaman ang schedule ko po,vaccine_followup
+hello sir may landmark ba kayo thank you,location
+paki sagot pwede ba mag bayad sa maya?,fees
+hi po pano ko malalaman ang schedule ko?,vaccine_followup
+hello po is there a queue po,appointment
+po i missed my vacccine schedule,vaccine_followup
+urgent i want to cancel my appointment asap,appointment
+pls do i use soap and water po maam,first_aid
+pwede magtanong pa send ng location po sir,location
+hi admin nakagat ako ng kuting ano gagawin ko kasi,bite_report
+hello ano ang paborito mong kanta agad,off_topic
+sir magandag hapon?,greeting
+quick question gusto kon i cancel ang appointment please,appointment
+ask ko lang who are the staff thanky ou,staff_info
+ask ko lang who is on duty today,staff_info
+hi ano ang address ninyo pleasse,location
+excuse me magkano ang buong bakun po sir,fees
+hi po hello,greeting
+pls anong payment methods hello,fees
+may jowa ka ba ?,off_topic
+tanong lang cinic hours please,hours
+what is bitebridge ba,about_system
+hello sir late na ako sa susunod na turok thanks,vaccine_followup
+hi po magkano po lahat,fees
+urgent sino ang physician ?,staff_info
+what is the meaning of life?,off_topic
+si kumusta pls,greeting
+sir do you do wound cleaning hello,services
+hi number po ng clinic po ba,contact
+hi po mamamatay ba ako agad,medical_advice
+pls kailangan ko ba ng tahi,medical_advice
+pasensya na po pwede ba ang tuob sa sugat po pls,medical_advice
+hello po do i have tetnus po ba,medical_advice
+pasensya na po may jowa ka ba salamat,off_topic
+hello po got it thanks,thanks
+excuse me magkano ang bakuna po pls,fees
+excuse me a monkey bit me salamat,bite_report
+pasensya na po phone number agad,contact
+hi nakagat ako ng daga ano gagawin ko po ba,bite_report
+anong oras pwede pumunta salamat,appointment
+hello sir do i have a serious owund kasi,medical_advice
+pwede agtanong mobile number of the clinic,contact
+po may jowa ka ba please,off_topic
+hi admin how to stop the bleeding from a bite po maam,first_aid
+hello po whois the president po sir,off_topic
+hi po bitten by a neighbor's dgo what do i do please,bite_report
+hello business hours po,hours
+po what programming language i sthis,about_system
+pwede magtanong how much for the whole series ?,fees
+hello do you accept gcash po ba,fees
+i was bitten by a dog po sir,bite_report
+uhm what technology does this system use thank you,about_system
+hi paano makipag ugnayan sa inyo salamat,contact
+pls is there an online payment,fees
+hello po pwede ko ba kayong tawagan thanks,contact
+good day who will assess my wound ?,staff_info
+i missed my vaccine schedule thanks,vaccine_followup
+sino ang gumawa ng chhatbot thank you,about_system
+hi admin when is my next dose po maam,vaccine_followup
+tanong lang the dog bit my leg and it is bleeding ?,bite_report
+hi admin who are the staff kasi,staff_info
+quick question when is my next dose ?,vaccine_followup
+uhm my child was bittenby a bat asap,bite_report
+may kumagat sa akin na unggoy po,bite_report
+good day anong oras na sa japan kasi,off_topic
+paki sagot mobile number of the clinic thanks,contact
+urgent sino ang gumawa ng chatbot,about_system
+excuse me email address asap,contact
+quick question magkano ang baayd,fees
+ask ko lang what servces are available,services
+is the doctor available po sir,staff_info
+good day may tao ba po maam,greeting
+na miss ko ang schedule ?,vaccine_followup
+sir ano ang number ng clinic,contact
+pwede magtanong is there an online payment salamat,fees
+pwede magtanong phone number,contact
+may impeksyon ba ang sugat ko pls,medical_advice
+uhm musta?,greeting
+urgent open pa ba kayo po ba,hours
+hello po can i reschedule my appointment po maam,appointment
+kinagat ako ng unggoy po maam,bite_report
+po translate this to korean ba,off_topic
+hello walk in lang ba o appointment po sir,appointment
+hello po do you offer anti rabies shots po maam,services
+tanong lang paano makipag ugnayan sa inyo,contact
+hello po proyekto ba ito ng estudyante salamat,about_system
+sir anong oras ang sara saalmat,hours
+ask ko lang anong oras ang sara,hours
+uhm nakalmot ako ng askal,bite_report
+excuse me recommend a movie po ba,off_topic
+quick question directions to the center kasi,location
+proyekto ba ito ng estudyante aasap,about_system
+hello how to stop the bleeding from a bit kasi,first_aid
+sir nagbibigay ba kayo ng bakuna please,services
+ask ko lang pwede ba mag bayad sa may apo maam,fees
+hello po ilang tableta ang iinumin ko ?,medical_advice
+uhm sige salamat,thanks
+good day anong oras kayo bukas hello,hours
+hello po i got scratched by a cat thanks,bite_report
+hi admin immediate steps after a bite,first_aid
+hello sino ang gumawa ng website na ito po ba,about_system
+good day anong oras pwede pumunta po ba,appointment
+urgent what to do before going to the clinic ba,first_aid
+hi ano ang gamit na databsae ng system po maam,about_system
+sir anong mga bakuna ang meron po ba,services
+pls email address po,contact
+good day can i talk to the nurse,staff_info
+may sms remindre ba,vaccine_followup
+hello po anong oras ang sara,hours
+good day can i speak wth the doctor ba,staff_info
+pasensya na po a pet dog bit me kasi,bite_report
+paki sagot start thank you,greeting
+urgent bitten by a kitten what ddo i do,bite_report
+can i book an appoiintment thanks,appointment
+hi po cp number ng clinic pls,contact
+uhm can i pay in cash po,fees
+ask ko lang i was biten by a kitten,bite_report
+do you accept walk ins salamat,appointment
+can i pay in cash hello,fees
+po can you give the vaccine to children,services
+magkano agn buong bakuna?,fees
+po nakagat ang anak ko ng aso ng kapitbahay ?,bite_report
+sir malapit ba kayo sa bayan pls,location
+hi po can i call the clinic pls,contact
+paki sagot i was bitten by a cat po sir,bite_report
+hello anong oras ang sara please,hours
+tanong lang sino ang kausap ko,bot_identity
+hi admin ilang tableta ang iinumin ko,medical_advice
+sino ang namamahala sa clinic thanks,staff_info
+hi po directions to the center thank you,location
+quick question paano pumunta sa clinic hello,location
+urgent who owns the clinic,staff_info
+pwede magtanong who are the researchers po,about_system
+hello nakalmot ako ng tuta ?,bite_report
+pwede magtanong nakagat ako sa binti hello,bite_report
+paki sagotd o you do wound cleaning please,services
+tanong lang magkano ang konsulta asap,fees
+gamutan ba ng kalmot?,services
+helllo what database does this system use po ba,about_system
+quick question may kumagat sa akin na kuting ?,bite_report
+quick question hello po po sir,greeting
+ask ko lang pwede ko bang makausap ang nurse,staff_info
+excue me sino ang nag program nito,about_system
+pwede magtanongg saan kayo located pls,location
+good day how long should i wash the wound ba,first_aid
+good day sio ang gumawa ng website na ito,about_system
+excuse me nandiyan ba ang doktor po maam,staff_info
+is the clinic near the highway po pls,location
+pwede magtanong are you human,bot_identity
+hi admin may kumagat sa akin na pusa po sir,bite_report
+good day can i talk tto the nurse po pls,staff_info
+kumain ka na ba po pls,off_topic
+hello sir can i talk to the nurse thanks,staff_info
+tanong lang kinagat ako ngp aniki hello,bite_report
+uhm ligtas ba sa buntis ang bakuna ?,medical_advice
+maam who is the physician po ba,staff_info
+maam kinagat ako ng tuta asap,bite_report
+maam what days are you open po pls,hours
+pasensya na po sing me a song?,off_topic
+hi po anong araw kayo bukas thank you,hours
+nakagat ako ng aso ng kapitbahay po maam,bite_report
+uhm mgkano ang bakuna thank you,fees
+hello po kumusta po salamat,greeting
+anong araw kayo bukas,hours
+how mmany tablets should i take ba,medical_advice
+maam thanks thanks,thanks
+hello po anong serbisyo ang meron kayo po pls,services
+urgent paano kayo hanapin ?,location
+po magkano ang bakuna please,fees
+pwede magtanong thanks a lot,thanks
+sino ang may ari ng clinic?,staff_info
+sir is the clinic near the highway asap,location
+where is ez animal bite center po sir,location
+excuse me bitten by a cat what do i do po,bite_report
+hello po who built this website,about_system
+hello sir what should i do after a bite,first_aid
+good day ano ka pls,bot_identity
+paano gamutin ang kagat?,first_aid
+quick question anong oras na sa japan po pls,off_topic
+who built this website,about_system
+hi po pa send ng locatio asap,location
+hi admin i missed my vaccine schedule please,vaccine_followup
+tanong lang what time do you close po maam,hours
+follow uup ko kailan,vaccine_followup
+urgent anong oras kayo bukas hello,hours
+hi po can i take amoxicillin po sir,medical_advice
+uhm anong oras kayo bukas agad,hours
+hello who iis the nurse ba,staff_info
+hi hello is anyone there,greeting
+are you open oday,hours
+excuse me tell me if i need stitches,medical_advice
+pwedde ba walk in ?,appointment
+urgent are you a robot agad,bot_identity
+hi admin may pila ba hello,appointment
+hi po i was bitten by a neighbor's dog salaamt,bite_report
+ask ko lang my child was bbitten by a puppy hello,bite_report
+tanong lang may jowa ka ba ba,off_topic
+paki sagot kinagat ako ng aso ng kapitbahay po ba,bite_report
+hello po may sms reminder ba salamat,vaccine_followup
+hello po tell me a joke po sir,off_topic
+sir mamamatay ba ako hello,medical_advice
+hello po nagbibigay ba kayo ng bakuna,services
+hi how much is the consultationkasi,fees
+sir kumusta po pls,greeting
+hello sir nakalmot ako ng alagang aso po sir,bite_report
+paki sagot anong gamot ang pwede kong inumin,medical_advice
+pasensya na po hello is anyone there,greeting
+maam salamat sa tulong hello,thanks
+pwede ba lagyan ng alcohol ang sugat po ba,first_aid
+hi po may pila ba,appointment
+sir there is a bite on my arm thanks,bite_report
+can i speak wih the doctor po ba,staff_info
+paano gamutin ang kagat hello,first_aid
+urgent who built this website ba,about_system
+nakagat ako ng aso ng kapitbahaay po pls,bite_report
+paki sagot kailan ang susunod na truok,vaccine_followup
+ano ang kaya ng clinic thank you,services
+hello po immediate step safter a bite thank you,first_aid
+maam ano ang mga services ninyo pls,services
+paki sagot what time do you close thank you,hours
+hi admin may kumaga sa akin na aso ng kapitbahay,bite_report
+quick question what time do you close thank you,hours
+sir what is the service ee po maam,fees
+hi admin sino ng physician,staff_info
+ask ko lang what is the service fee kasi,fees
+quick question what is day 0 3 7 agad,vaccine_followup
+hello is anyone there pls,greeting
+tanong lang sabon at tubig ba ang gagamitin asap,first_aid
+urgent who built this website pls,about_system
+what is your phone number kai,contact
+tanong lang nakagat ako ng alagang aso,bite_report
+hello am i going to get something dangerous thanks,medical_advice
+pasensya na po how to stop the bleeding from a bite ba,first_aid
+pasensya na op what is your favorite color po,off_topic
+uhm is there an online payment thakn you,fees
+uhm do i have an infection hello,medical_advice
+address po po,location
+pwede magtanong a bat bit me agad,bite_report
+po are you open now po ba,hours
+good day salamat po maam,thanks
+excuse me what is day 0 3 7 po maam,vaccine_followup
+po nandiyan ba ang nurse ba,staff_info
+recommend a movie,off_topic
+pls gamutan ba ng kalmot pls,services
+d oi use soap and water,first_aid
+po kinagat ako ng aso ng kaiptbahay po maam,bite_report
+good day sino ang mga staff asap,staff_info
+sir what is your address,location
+sir good morning pls,greeting
+anong payment methods po maam,fees
+quick question i was bitten by a puppy agad,bite_report
+pasensya n po am i going to get tetanus asap,medical_advice
+urgent how do i reach the center please,contact
+pakii sagot sabon at tubig ba ang gagamitin hello,first_aid
+hi po who mad ebitebridge?,about_system
+sir what can the center ddo po,services
+hi i missed my second dose thank you,vaccine_followup
+pls recommend a moive po maam,off_topic
+pasensya na po what is the service fee salamat,fees
+hanggang anong oras kayo salamat,hours
+excuse me magandang umaga po,greeting
+maam saan kayo located,location
+who owns the clinic salamat,staff_info
+hello po bukas ba kayo sa holiday po ba,hours
+do you do wound cleaning po maam,services
+my toddler got bitten thanky ou,bite_report
+po mobile number of the clinic salamat,contact
+hello po sino ang developer ng system thank you,about_system
+good day nakagat ako ng pusa ano gagawin ko ?,bite_report
+maam ilang beses ang turok salamat,vaccine_followup
+first aid for animal bite po pls,first_aid
+a neighbor's dog bit me thank you,bite_report
+pls pano linisin ang kagat ba,first_aid
+urgent who is thep resident pls,off_topic
+hi admin magkano ang bayad,fees
+hello p thanks,thanks
+pwede ba ang tuob sa sugat ba,medical_advice
+tanong lang what is the meaning of lifehello,off_topic
+urgent magkano ang bakuna thank you,fees
+ask ko lang magkano ang turok,fees
+tanong lang may kumagat sa akin na paniki asap,bite_report
+po nakagat ako ng tuta po maam,bite_report
+hello sir pano kayo tawagan?,contact
+hello sir good afternoon po pls,greeting
+pwede ba mag bayad sa maya please,fees
+maam gusto mo ba ng pizza salamat,off_topic
+hello sir i missed my second dose ba,vaccine_followup
+are you chatgpt ?,bot_identity
+who is the doctor po pls,staff_info
+hi saan sa calapan kayo,location
+good day how was this chatbo tmade,about_system
+uhm location po ba,location
+pls sino ang nag prograam nito,about_system
+good day may rabies vaccine ba kayo,services
+hello po i got scratched by a neighbor's dog po maam,bite_report
+ilang turok ang kailangan agad,vaccine_followup
+pwede cash,fees
+uhm should icover the wound,first_aid
+uhm anong programming language ang gamit asap,about_system
+will you seend me an sms reminder hello,vaccine_followup
+pwede magtanong is this a real person po pls,bot_identity
+tanong lang who are the researchers please,about_system
+excuse me bitten by a monkey what do i do salamat,bite_report
+pwede magtanong ano ang gagawin ko bago pumunta sa clinic po,first_aid
+good day pwed eba walk in,appointment
+tanong lang what is hte meaning of life ?,off_topic
+hi po ano ang unang gagawin please,first_aid
+hi are yo uchatgpt po ba,bot_identity
+sir pwede bang magpa book agad,appointment
+urgent how many shots do i need asap,vaccine_followup
+pki sagot where is the clinic,location
+am i going to get rabies agad,medical_advice
+tanong lang do you accept walk ins asap,appointment
+hello po mobile numbe of the clinic,contact
+hello sir nakagat ako ng tuta ano gagawin ko,bite_report
+pasensya na po i got scratched by a pet dog please,bite_report
+quick question can ii text you po ba,contact
+excuse me is the clinic near the highway ba,location
+paki sagot pwede bang ma delay ang turok salamat,vaccine_followup
+hello po can i book an appointment agad,appointment
+hi po who is the best basketball player salamat,off_topic
+sir pwede bang magpa book,appointment
+urgent kailan ang susunod na bakuna ko po,vaccine_followup
+tanong lang anong payment methods,fees
+hello po maganda ba ako thank you,off_topic
+is this a acpstone project hello,about_system
+pwede ba i reschedule po,appointment
+excuse me do you accept maya ba,fees
+location po ba,location
+hi po gaano katagal ang bakuna please,vaccine_followup
+paki sagot dapat ba hugasan ang sugat po sir,first_aid
+good day ma ykumagat sa akin na alagang aso,bite_report
+maam i want to cancel my appointment po sir,appointment
+pwede magtanong my child was bitten by a rat salamat,bite_report
+hello po i am late for my next dose?,vaccine_followup
+po how can i contact you thank you,contact
+urgent what is bitebridge hello,about_system
+hello sir diganose my wound po sir,medical_advice
+hello when is my next dose po,vaccine_followup
+po good afternoon ?,greeting
+urgent what days are you open pls,hours
+sir kumusta ka an hello,greeting
+quick question sino ang physician,staff_info
+tanong lang thanks po pls,thanks
+pls paano ginawa ang chatbot na ito hello,about_system
+urgent pwede ba mag text,contact
+excuse me when is my next shot kasi,vaccine_followup
+hello sir nnakagat ako ng kuting ano gagawin ko asap,bite_report
+pls pwede a lagyan ng alcohol ang sugat po pls,first_aid
+hello sir pwede ba mag text po maam,contact
+what is your phone number hello,contact
+ask ko lang i got scratched by a puppy,bite_report
+sir mamamatay ba ak okasi,medical_advice
+how to find the center please,location
+uhm kumusta thank you,greeting
+sir anong ulam ngayon asap,off_topic
+hello sir can i book an appointment po maam,appointment
+uhm good morning asap,greeting
+uhm paano gumagana ang bitebridge pls,about_system
+who owns the clinic,staff_info
+dapat ko bang takpan ang sugat po sir,first_aid
+urgent pwede ba sa bata ang bakuna po sir,services
+pasensya na po ano ang mga serivces ninyo,services
+good day hwo can i contact you thanks,contact
+can i get a reminder for my next dose ?,vaccine_followup
+urgent do you also treat scratches po ba,services
+urgent paano kayo makokontak agad,contact
+pwede bang magpa bookba,appointment
+hello po what is your phone number agad,contact
+quick question how are you po ba,greeting
+po how do i make an appointment po pls,appointment
+excuse me should i skip my vaccine ?,medical_advice
+hi got it thanks,thanks
+hello sir operating hours please,hours
+uhm pa send ng location po sir,location
+hello do you also treat scratches,services
+email address po sir,contact
+anong oras pwede pumunta thanks,appointment
+sir nakagat ako sa binti hello,bite_report
+hello sir do i have an infection agad,medical_advice
+quick question do i use soap and water please,first_aid
+pasensya naa po magkano ang bakuna salamat,fees
+pasensya na po kumain ka na ba please,off_topic
+po ano ang unang gagawin?,first_aid
+is the clinic near the highway po,location
+magkano ang konsulta kasi,fees
+excuse me anong payment methods,fees
+good day may sms reminder ba?,vaccine_followup
+pasensya na po magkano ang turok po ba,fees
+hello po until what time are you open thank you,hours
+ask ko lang ano ang mga services ninyo kasi,services
+quick question how does bitebridge work thank you,about_system
+hi po pwede ba ako pumunta ngayon po pls,appointment
+sir how much for the whole series agad,fees
+hi po hello po,greeting
+po ano ang address ninyo please,location
+a puppy bit me asap,bite_report
+quick question thank you ba,thanks
+pwede magtanong should i put alcohol on the wound agad,first_aid
+sir may email ba kayo please,contact
+uhm are youai kasi,bot_identity
+hello are you a real person agad,bot_identity
+hiw hat database does this system use ba,about_system
+hi admin paano kayo makokontak,contact
+hi po number po ng clinic po,contact
+operating hours,hours
+paki sagot are you open today po ba,hours
+good day anong oras kayo nagsasara asap,hours
+hello po nakagat ang anak ko ng pusa thank you,bite_report
+sir sino ang gumawa ng system na ito ba,about_system
+maam maraming salama po please,thanks
+good day good evening,greeting
+good day is this a real person kasi,bot_identity
+hi how do i clean a bite wound hello,first_aid
+hi po kumusta ka n hello,greeting
+hi po sino ang nurse salamat,staff_info
+sing me a ssong please,off_topic
+sir location po agad,location
+pano ko malalaman ang schedule ko ba,vaccine_followup
+paki sagot is the doctor avaliable ?,staff_info
+good evening please,greeting
+sir nakagat ako ng aso po sir,bite_report
+hello po saan sa calapan kayo thank you,location
+quick question bitten by a puppy what do i do thank you,bite_report
+pogi ba ako salamat,off_topic
+pls aano makipag ugnayan sa inyo po ba,contact
+maam when is my next shot salammat,vaccine_followup
+hi admin anong ulam ngayon thanks,off_topic
+hello po pwede ko ba kayong tawagan please,contact
+uhm magkano po lahat ba,fees
+tanong lang is this a real person pls,bot_identity
+pwede magtanong how many tablets should i tkae po ba,medical_advice
+sir hello po aspa,greeting
+how much is the consultation pls,fees
+good day what technology does this system use po sir,about_system
+pls kumusta ba,greeting
+uhm bitten by a rat what do i do ba,bite_report
+ask o lang nakagat ako ng tuta ano gagawin ko kasi,bite_report
+what is your phone number aasap,contact
+uhm pwede ba walk in kasi,appointment
+pwede magtanong how do i know my schedule po sir,vaccine_followup
+urgent ok salamaat hello,thanks
+quick question nakagat ako ng askal ano gagawin ko kasi,bite_report
+hello sir may iimpeksyon ba ang sugat ko ?,medical_advice
+quick question ii got scratched by a monkey thank you,bite_report
+hi are you chatgptpo sir,bot_identity
+urgent pwede ba sa bata ang bakuna,services
+hell gusto mo ba ng pizza,off_topic
+may sms reminder ba thanks,vaccine_followup
+pasensya na po what is your name hello,bot_identity
+anong oras kayo bukas po,hours
+quick question where is the clinic,location
+pasensya naa po sino ang pinakamagaling na artista asap,off_topic
+pls what is your address thaks,location
+ask ko lang are you open today?,hours
+hello po pwede ba i reschedule ba,appointment
+pano ko malalaman ang schedule ko,vaccine_followup
+ask ko lang anong oras kayo bukas lps,hours
+hello sir my child was bitten by a neighbor's dog ?,bite_report
+hello si rano ang number ng clinic hello,contact
+good day what can the center do po pls,services
+hello what time do you open agad,hours
+hello po do you keep patient records po ba,services
+hi admin dapat ko bang takpan ang sugat asap,first_aid
+excuse me how long is the vaccination schedule ?,vaccine_followup
+po a monkey bit me po ssir,bite_report
+sir who made bitebridge asap,about_system
+po how much for the whole seriespo,fees
+excuse me open pa ba kayo salamat,hours
+po thank you kasi,thanks
+pwede magtanong ikaw ba ay tao ba,bot_identity
+uhm how can i contact you po ba,contact
+do you offer anti rabies shots po ba,services
+paki sagot do you offer anti rabies shots ba,services
+uhm how long is the vaccination schedule,vaccine_followup
+nakagat ang anak ko ng tuta kasi,bite_report
+pwede magtanong may pial ba po sir,appointment
+sir may online payment ba,fees
+urgent gusto kong magpa schedule po mmaam,appointment
+ask ko lang nagbibigay ba kayo ng bakuna?,services
+sir ano ang mga services ninyo agad,services
+po is there an online payment?,fees
+uhm sino ang nasa duty ngayon,staff_info
+hi how much does it cost kasi,fees
+pasensya na po how much is the consultation salamat,fees
+hi admin i got scratched by a monkey asap,bite_report
+excuse me hello po po ba,greeting
+hi po salamat ?,thanks
+hi what is the service fee asap,fees
+hi po are you open on sunday salamat,hours
+hi where is the clinnic po ba,location
+sir kumain ka na ba poo sir,off_topic
+sir open pa ba kayo salamat,hours
+excuse me can i text you p omaam,contact
+ask ko lang kinagat ako ng askal,bite_report
+hi po tell me if i need stitches salamat,medical_advice
+hello mobile number of the clniic?,contact
+quick question pwede ba i reschedule,appointment
+hi admin can i take amoxicillin po pls,medical_advice
+po tumatanggap ba kayo ng gcash po,fees
+good day where are you located pls,location
+hello po what to do before going to the clinic,first_aid
+hello ano ang gagawin ko bago pumunta sa clinic po pls,first_aid
+pls anong pangalan mo po pls,bot_identity
+ano ang address ninyo hello,location
+hi admin do you accept maya,fees
+hi po how much is the consultation po sir,fees
+maam nakalimutan ko ang bakuna ko po pls,vaccine_followup
+hello sir business hours pls,hours
+excuse me sino ang titingin sa sugat ko,staff_info
+hello sir ppwede ko bang makausap ang nurse,staff_info
+pls how do i make an appointmentp o sir,appointment
+maam late na ako sa susunod na turok po sir,vaccine_followup
+po how long is the vaccination schedule salamat,vaccine_followup
+po how much for the whole series hello,fees
+pwede magtanong are you ai thanks,bot_identity
+open pa ba kayo asap,hours
+hi po where are you located po maam,location
+uhm dumugo ang kagat sa akin ba,bite_report
+maam who owns thhe clinic,staff_info
+good afternoon asap,greeting
+am i going to get tetanus salamat,medical_advice
+hello sir hanggang anong oras kayo asap,hours
+uhm bitten by a cat what do i do agad,bite_report
+can i give the shot to my dog ?,medical_advice
+i was bitten by a bat asap,bite_report
+pls sino aang kausap ko?,bot_identity
+pls helloo po,greeting
+ask ko lang who made bitebridge hello,about_system
+nakalmot ako g pusa thanks,bite_report
+pasensya na po paano ginawa ang chatbot na ito hello,about_system
+pasensya na po phone number thank you,contact
+pwede magtanong what is your name ?,bot_identity
+paki sagot ginagamot ba ninyo ng kagat,services
+hello sir how much does it cost thanks,fees
+landline number please,contact
+hello po clinic hours agad,hours
+hi po can i book an appointment pls,appointment
+hi walk in lan gba o appointment agad,appointment
+tanong lang what database does this system use po ba,about_system
+hello po are you a robot hello,bot_identity
+paki sagot are you open today?,hours
+uhm mamamatay ba ako,medical_advice
+ask ko lang where in calapan are you po,location
+hello po directions to the center pls,location
+hi po magkano ang konsulta,fees
+quick question anong araw kayo bkuas po ba,hours
+hello sir magkano ang buong bakuna pls,fees
+hi admin may kagat ako sa paasalamat,bite_report
+po how to stop the bleeding from a bite po,first_aid
+sir sing me a song agad,off_topic
+gusto kong i cancel ang appointment ba,appointment
+hi po nandiyan ba ang nurse po pls,staff_info
+sir nakalmot ako ng aso ng kapitbahay,bite_report
+ask ko lang how can i contact you po sir,contact
+maam how was this chatbot made po maam,about_system
+ok thanks po maam,thanks
+hello po who is in charge of the clinic,staff_info
+sir robot ka ba,bot_identity
+who is the best basketball player salamat,off_topic
+quick question first aid steps,first_aid
+pasensya na po how to find the center po,location
+tanong lang do i need to book first ba,appointment
+hello my child was bitten by a kitten,bite_report
+ask ko lang may sugat ako galing sa kagat ng aso po maam,bite_report
+sir gamutan ba ng kalmoot?,services
+pls am i going to get a serious wound pos ir,medical_advice
+hi po pwede ba mag text please,contact
+tanong lang bitten by a bat whatd o i do po maam,bite_report
+got it thanks agad,thanks
+po paano ginawa ang chatbot na ito salamat,about_system
+hello what payment methods do you accept agad,fees
+uhm anong oras na sa japan,off_topic
+what is the weather agad,off_topic
+ask ko lang kailan ang susunod na bakuna ko po ba,vaccine_followup
+ask ko lang where in calapan are you po pls,location
+quick question i missed my vaccine schedule kasi,vaccine_followup
+urgent na miss ko ang schedule po sir,vaccine_followup
+tanong lang translate this to korean po ba,off_topic
+pasensya na po start,greeting
+hi admin nakalimutan ko ang bakuna ko pls,vaccine_followup
+quick quesion nasaan ang clinic please,location
+paki sagot first aid steps,first_aid
+hi admin may jowa ka ba ?,off_topic
+good day sino ang may ari ng clinic,staff_info
+maam paano makipag ugnayan sa inyo,contact
+paano mag set ng appointment po maam,appointment
+hello po can you give the vaccine to childrn ?,services
+may jowa ka ba?,off_topic
+pls kinagat ako ng aso thanks,bite_report
+hi po clinic hours,hours
+hi anong payment methods hello,fees
+maam paano kayo makokontak kasi,contact
+hi admin ilang beses ang turok thanks,vaccine_followup
+paki sagot a kitten bit me?,bite_report
+tanong lang how long should i wash the wound,first_aid
+pasensya na po may rabies vaccine ba kayo kasi,services
+hello po what are youpo,bot_identity
+pasensya na po ano ang pangalan ng doktor thanks,staff_info
+ask ko lang are you open on sunday kasi,hours
+good day kinagat ako ng kuting thank you,bite_report
+sir what time can i visit,appointment
+uhm totoong tao ba ito salamat,bot_identity
+hello is anyone there,greeting
+pls maraming salamat,thanks
+hello po email address agad,contact
+hello po kailangan ba mag book muna hello,appointment
+sir where in calapan are you,location
+tanong lang kumustaka na ba,greeting
+excuse me what database does this system use po ba,about_system
+tanong lang gamutan ba ng kalmot pls,services
+tanong lang sino ang nurse,staff_info
+hello sino ang crush mo thank you,off_topic
+tanong lang what is your address po ba,location
+hello sir do you keep patient records po,services
+hi admin how are yyou po,greeting
+ask ko lang what can the center do kasi,services
+do i need to book first pls,appointment
+sir can i get the source coe po sir,about_system
+sir email address,contact
+hello po can i reschedule my appointment kasi,appointment
+good day salamat sa tulong agad,thanks
+pls number po ng clinic po pls,contact
+sir how does bitebridge work po maam,about_system
+hi how long is the vaccination schedule kasi,vaccine_followup
+hi how was this chatbot made,about_system
+excuse me pwede ba ang tuob sa sugat please,medical_advice
+buas ba kayo kapag linggo ba,hours
+pwede magtanong who is on duty today hello,staff_info
+should i wash the wound ba,first_aid
+hello po what time can i visit ?,appointment
+hello may facebook page ba kayo please,contact
+excuse me hey po ba,greeting
+pwede magtanong nakagat ako ng aga po sir,bite_report
+hello po is a unrse available,staff_info
+nakalmot ako ng tuta thank you,bite_report
+hello po bukas ba kayo sa holiday,hours
+hello po how to fix my phone po maam,off_topic
+ask ko lang anong serbisyo ang meron kayo thanks,services
+tanong lang whatto do before going to the clinic thank you,first_aid
+magkano po lahat salamat,fees
+paki sagot paano gumagana ang bitebriddge thank you,about_system
+list of services asap,services
+pasensya na po can you give the vaccine to children,services
+what payment methods do you accept,fees
+quick question how much does it cost po pls,fees
+hi po how long is the vaccination schedule,vaccine_followup
+pasensya na po pwede ba i reschedulle po,appointment
+paki saot kailan ang susunod na bakuna ko salamat,vaccine_followup
+pasensya na po what is day 0 3 7 pls,vaccine_followup
+po what technology does this system use salamat,about_system
+hi salamat sa ttulong,thanks
+how much is the anti rabies shot po,fees
+pls anong oras na sa japan hello,off_topic
+pwede magtanong may jowa ka ba?,off_topic
+maam is it saffe for pregnant women thank you,medical_advice
+paki sagot bitten by a stray dog what do i do,bite_report
+maam dapat ko bang takpan ang sugat hello,first_aid
+urgent do you do wound cleaning,services
+do you give rabies vaccine po pls,services
+excuse me can i talk to the nurse kasi,staff_info
+urgent sino ang nurse thank you,staff_info
+ask ko lang anong gamot ang pwede kong inumin salamat,medical_advice
+sir should i wash the wound po,first_aid
+pls anong oras pwede pumunta agad,appointment
+p contact number,contact
+urgent dapat ko bang takpan ang sugat please,first_aid
+thanks for the help hello,thanks
+who is the president ?,off_topic
+tanong lang who is the physician po pls,staff_info
+maam contact number please,contact
+hello po i missed my vaccine schedul epo sir,vaccine_followup
+quick question email address hello,contact
+excuse me oras ng clinic?,hours
+hi a mi going to get rabies thanks,medical_advice
+may rabies naba ako asap,medical_advice
+siir hey there salamat,greeting
+pasensya na po saan ang ez animal bite center po maam,location
+pwede mgtanong do you have a facebook page,contact
+po nakalmot ako ngg askal,bite_report
+maam saan ang ezanimal bite center,location
+pasensya na po ano ang pangalan ng doktor,staff_info
+pwede magtanong bukas ba kayo sa holiday please,hours
+hello po what time do you close po pls,hours
+ok salaamt,thanks
+urgent sige salamat po,thanks
+po walk in lang ba o appointment,appointment
+i was bitten by a rat po sir,bite_report
+uhm good afternoon kasi,greeting
+hi am i going to get a seriousw ound ?,medical_advice
+hello should i put alcohol on the wound thanks,first_aid
+quick question where in calapan are ou po sir,location
+sir amy sugat ako galing sa kagat ng aso hello,bite_report
+where are you located thank you,location
+tanong lang paano mag set ng appointment,appointment
+good day kailangan ba mag book muna thank you,appointment
+excuse me do you keep patient records,services
+hi admin is there an online payment kasi,fees
+hi admin are you open today po ba,hours
+urgent where in calapan are you po ba,location
+sino ang kausap ko ?,bot_identity
+hello sir what medicine should i take,medical_advice
+good day gaano katagal ang bakuna po ba,vaccine_followup
+tanong lang may rabies vaccine ba kayo thank you,services
+hello sir landlinenumber po,contact
+kailan ang susunod na turok?,vaccine_followup
+hello po i want to cancel my appointment po ba,appointment
+do i use soap and water po maam,first_aid
+uhm are you open now pls,hours
+hi po do you accept maya thanks,fees
+tanong lang follow up ko kailan ?,vaccine_followup
+may online payemnt ba asap,fees
+ask ko lang ilang beses ang turok,vaccine_followup
+pls bukas ba kayo ngayon please,hours
+maam thank you thank you,thanks
+excuse me do you do wound cleaning po maam,services
+hello sir ilang beses ang turok thanks,vaccine_followup
+excuse me first aid steps salamat,first_aid
+maam bitten by a kitten what do i do thank you,bite_report
+quick question how long should i wash the wound,first_aid
+uhm kailangan ko ba ng tetanus agad,medical_advice
+paki sagot anong dapat gawin agad,first_aid
+hi po ano ang unang gagawin salamat,first_aid
+tanong lang pweede bang magpa book po maam,appointment
+hello may email ba kayo po pls,contact
+pwede magtanong can i book an appointment ba,appointment
+pwede bang magpa book,appointment
+pls will i die from this po pls,medical_advice
+pwede magtanong how far is the clinic ba,location
+hi po what time can i visit hello,appointment
+hello pwede baa sa bata ang bakuna thank you,services
+excuse me how muchf or the whole series thanks,fees
+hello sir who are you po maam,bot_identity
+hello sir ano ang address ninyo po sir,location
+paki sagot what days are you open po ba,hours
+urgent how to cook adobo,off_topic
+do i have tetanus salamat,medical_advice
+ask ko lang are you open on holidays thanks,hours
+hi hanggang anong oras kayo po sir,hours
+ask ko lang anong pangalan mo kasi,bot_identity
+hello po tell me a story kasi,off_topic
+hi admin maraming salamat po asap,thanks
+may tao ba,greeting
+good day sino ang nag program nito agad,about_system
+paki sagot am i going to gte something dangerous ba,medical_advice
+pasensya na po what is your address kasi,location
+late na ako sa ussunod na turok po,vaccine_followup
+may online payment ba?,fees
+pasensya na po may impeksyon ba ang sugat ko agad,medical_advice
+hi pwee ba uminom ng alak habang nagpapabakuna kasi,medical_advice
+uhm nakagat ako ng kuting ba,bite_report
+hi admin robot ka ba po ba,bot_identity
+good day good morning agad,greeting
+anong payment meethods po maam,fees
+hello gusto kong magpa schedule po,appointment
+pasensya na po are you open today po maam,hours
+hii po how much is the consultation?,fees
+translate this to korean ba,off_topic
+do you accept walk ins ba,appointment
+uhm phone number,contact
+hello address po agad,location
+hello po anong gamot ang pwede kong inumin,medical_advice
+should i skip my vaccine hello,medical_advice
+maam are you human po,bot_identity
+sino ang physician,staff_info
+hello is it okay to use herbal medicine on the wound,medical_advice
+pasensya na po pano kayo tawgan?,contact
+hello sir do you offer anti rabies shots,services
+hello poo until what time are you open ba,hours
+hello po anong oras kayo nagsasara,hours
+hi po hello is anyone there ba,greeting
+good day saan kayo located pls,location
+quick quesiton gamutan ba ng kalmot ?,services
+po do you do wound cleaning thanks,services
+pls are you a bot thanks,bot_identity
+how can i contact you asap,contact
+quick question saan sa alapan kayo please,location
+anong oras ang sara po amam,hours
+maam pwede ba ang tuob sa sugat po sir,medical_advice
+what payment methods do you accept pls,fees
+hi kumusta ka na po pls,greeting
+urgent are you a real person,bot_identity
+paki sagot ano ang number ng clinic?,contact
+hello ok thanks pls,thanks
+hello po is a nurse available thank ou,staff_info
+po sino ang gumawa n chatbot asap,about_system
+hi admin kailan ang susunod na bakuna ko,vaccine_followup
+hello sir i got scratched by a neighbor's dog,bite_report
+hi po na miss ko ang schedule plesae,vaccine_followup
+paki sagot what time do you open po sir,hours
+excuse m anong oras pwede pumunta kasi,appointment
+hello sir first aid for animal bite hello,first_aid
+pwede magtanong sino ang gummawa ng website na ito pls,about_system
+hello ano ang gagawin ko bago pumunta sa clinic po sir,first_aid
+hi admin ano ang kaya ng clinic po sir,services
+uhm magkano po lhat po sir,fees
+po can you give the vaccine to chiildren hello,services
+is there a queue agad,appointment
+paano makipag ugnayan sa inyo,contact
+ask ko lang what do i do right now thanks,first_aid
+uhm where is the clinic please,location
+tanong lang what is your name po maam,bot_identity
+ask ko lang nakalimutan ko ang bakuna ko agad,vaccine_followup
+paki sagot anong oras na sa japan salamat,off_topic
+pasensya na po hello is anyone there po maam,greeting
+pls list of services salamat,services
+excuseme what services do you offer,services
+how much for the whole series,fees
+quick question ano ang gagawin ko bago pumunta sa clinic,first_aid
+hi po pwede ba i reschedule salamat,appointment
+hello sir am i going to get tetanus po sir,medical_advice
+pao kayo tawagan hello,contact
+hello what are you,bot_identity
+sir robot ka ba thank ou,bot_identity
+anong serbisyo ang meron kay o?,services
+paano kayo hanapin po maaam,location
+ask ko lang dapat ko bang takpan ang sugat asap,first_aid
+hi a neighbor's dog bit me,bite_report
+sir how much does it cost asap,fees
+hi admin i missed my second dose agad,vaccine_followup
+hello are you open on holidays thanks,hours
+good day pwede abng ako na ang mag inject kasi,medical_advice
+ask ko lang anong oras kayo nagsasara thank you,hours
+sir is it safe for pregnant women thank you,medical_advice
+uhm my child was bitten by acat po pls,bite_report
+paki sagot can i ome today salamat,appointment
+do i have something dangerous thanks,medical_advice
+bitten by a rat what do i do please,bite_report
+excuse me i got scratched by a rat please,bite_report
+hello po sabon at tubig ba ang gagamitin,first_aid
+i was bitten by a pet dog thannks,bite_report
+urgent bukas ba kayo kapag linggo kasi,hours
+uhm kumain ka na ba agad,off_topic
+sir when is my next dose,vaccine_followup
+pls dapat ba hugasan ang sugat po maam,first_aid
+hi po may kumagat sa akin na aso po sir,bite_report
+hi po tell me if i need stitches agad,medical_advice
+ask ko lang anong oras ang saa thank you,hours
+hi ad og bit me,bite_report
+uhm can i come today,appointment
+hello sir dapat ko bang takpan ang sugat,first_aid
+pasensya na po saan sa calapan kayo kasi,location
+quick question do you have a facebook page po,contact
+may impeksyon ba ang sugat ko asap,medical_advice
+maam anyone there po,greeting
+pasensya na po saan ang clinic,location
+tanong lang sino ang gumawa ng website na ito,about_system
+hello po what are the names of the staff salamat,staff_info
+good day anong oras kayo bukas?,hours
+uhm my child was bitten by a dog kasi,bite_report
+phone number salamat,contact
+are you a bot agad,bot_identity
+maam what technology does this system use,about_system
+hi anong payment methods thank you,fees
+tnong lang ano ang mga services ninyo po,services
+quick question paano gamutin ang kagat po pls,first_aid
+hi admin ano ang address ninyo thank you,location
+hello a neighbor's dog bit me,bite_report
+good day may rabies vaccine ba kayo please,services
+hello paano gumagana ang bitebridge thank you,about_system
+pasensya na po kamusta ka kasi,greeting
+hello sir is thee a queue,appointment
+pasensya na po whaat is your name po ba,bot_identity
+urgent who made bitebridge ?,about_system
+sino ang kausap ko,bot_identity
+business hours ?,hours
+pasensya na po tell me a joke ?,off_topic
+excuse me what is youur phone number,contact
+quick question bukas ba kayo kapag linggo,hours
+sino ka asap,bot_identity
+excuse me how many tablets should i take?,medical_advice
+paki sagot paano pigilan ang dugo sa sugat po maam,first_aid
+sir what time can i visit po ba,appointment
+pwede magtanong what is the weather po maam,off_topic
+hi may rabies vaccine ba kayo salamat,services
+hello sir nakagat ako ng pusa ba,bite_report
+pasensya na po clinic hours,hours
+hello po salamat sa tulong pls,thanks
+hi admin where are you located kasi,location
+address po po maam,location
+uhm nakagat ako ng daga ano gagawin ko asap,bite_report
+how much is the anti arbies shot,fees
+quick question my child was bitten by a rat pls,bite_report
+quick question what are you ba,bot_identity
+pwede magtanong may taob a,greeting
+hi hanggng anong oras kayo asap,hours
+what time do you open?,hours
+hello sir i got scratchedd by a bat pls,bite_report
+hello sir how much is the consultation please,fees
+ask ko lang do i se soap and water thanks,first_aid
+hello are you ai salamat,bot_identity
+good day pwede ko bang makausap ang nurse thank you,staff_info
+hi po anong oras kayo nagsasaraa ba,hours
+ask ko lang sino ang titingin sa sugat ko?,staff_info
+hi admin where are you locatted,location
+sir i missed my vaccin eschedule kasi,vaccine_followup
+hi po thank you so much,thanks
+how much is the anti rabies shot po pls,fees
+excuse me are you a bot po maam,bot_identity
+tanong lang do you accept walk ins po sir,appointment
+excuse me what time do you close please,hours
+may email ba kayo po sir,contact
+pwede magtanong open pa ba kayo thanks,hours
+tanong lang what time do you close please,hours
+hello po salamat po,thanks
+pasensya na po email address,contact
+ask ko lang location po ba,location
+who are you po pls,bot_identity
+sir nakagat ako ng pusa,bite_report
+pwede magtanong ttumatanggap ba kayo ng gcash,fees
+uhm gusto kong magpa schedule asap,appointment
+hi po is the clinic near the highway agad,location
+hello po what programming language is this please,about_system
+ask ko lang how do i make an appointment ba,appointment
+pwede magtanong hey po pls,greeting
+do i need to book first hello,appointment
+pls kailan ang susuno dna turok thank you,vaccine_followup
+good day how long is the vaccination schedule asap,vaccine_followup
+quick question magkano ang bakuna agad,fees
+good day is it safe for pregnant women thanks,medical_advice
+po phone number ba,contact
+pls my child was bitten by a kitten po pls,bite_report
+pwede magtanong pwede ba i reschedule?,appointment
+pwede cash please,fees
+uhm proyekto ba ito ng estudyante,about_system
+pls do i need to book first kasi,appointment
+urgent can i text you thank you,contact
+quick question hi po sir,greeting
+quick question kailan ang susunod na turok thank you,vaccine_followup
+tanong lang do i need a tetanus shot asap,medical_advice
+sir what are the names of the staff po ba,staff_info
+urgent paano makipag ugnayan sa inyo ?,contact
+sir do you have a facebook page po ba,contact
+hi po malala ba ang sugat ko po pls,medical_advice
+tanong lang kailan ang susunod na bakuna ko thank you,vaccine_followup
+hi admin how many staff do you have thanks,staff_info
+translate this to korean po ba,off_topic
+pasensya na po what time can i visit po pls,appointment
+pwede magtanong paano pigilan ang dugo sa sugat,first_aid
+po how many shots do i need ?,vaccine_followup
+pano mag luto ng sinigang agad,off_topic
+pwede magtanong magandang gabi,greeting
+hi admin cp number ng cliic thanks,contact
+magkano ang turok asap,fees
+po salamat sa tulong po ba,thanks
+quick question ligtas ba sa buntis ang bakuna,medical_advice
+salamat sa tulong hello,thanks
+hello sir schedule ng clinic,hours
+excuse me ikaw ba a ytao thanks,bot_identity
+paki sagot who is the nurse agad,staff_info
+pls magkano ang konsulta thank you,fees
+hello nakagat ang anak ko ng aos,bite_report
+tanong lang anong serbisyo ang meron kayoasap,services
+as ko lang is there an online payment po,fees
+hi admin thankks,thanks
+kamusta ka pls,greeting
+po kinagat ako ng kuting,bite_report
+hello how to stop the bleeding from a bite please,first_aid
+pls pano linisin ang kagat?,first_aid
+hello po good evening,greeting
+uhm may ms reminder ba,vaccine_followup
+pls may pial ba ba,appointment
+tanong lang pwede cash?,fees
+hi kailangan ko ba ng tahi po sir,medical_advice
+pasensya na po location po,location
+paki sagot first aid for animal bite,first_aid
+quick question can i get a reminder for my next dose po pls,vaccine_followup
+hello is nyone there,greeting
+hello sir sabon at tubig ba ang gagamitin,first_aid
+ask ko lang tao ka ba,bot_identity
+anong orras pwede pumunta thank you,appointment
+excusem e i got scratched by a cat hello,bite_report
+maam are you open now,hours
+first aid steps pls,first_aid
+paki sagot pa send ng location ?,location
+hello siir kwentuhan mo ako ba,off_topic
+sir nakagat ako ng askal ano gagawin ko po maam,bite_report
+good day nakalmot ako ng paniki thanks,bite_report
+hi admmin oras ng clinic po ba,hours
+pasensya na po may rabies vaccine ba kayo asap,services
+where are you located po,location
+quick qusetion kailangan ko ba ng tetanus ?,medical_advice
+pasensya na po when is my next shot po maam,vaccine_followup
+kailangan ko ba ng tahi thanks,medical_advice
+maam sino ang gumawa ng chatbot please,about_system
+ladnline number po pls,contact
+quick question kailangan ko ba ng tetanus slamat,medical_advice
+may email b akayo please,contact
+ask ko lang saan kayo located ?,location
+excuse me list of services agad,services
+uhmm my child was bitten by a kitten po sir,bite_report
+sir nandiyan ba ang nurse?,staff_info
+maam what to do before goingg to the clinic po sir,first_aid
+uhm bitten by a stray dog what do i do ba,bite_report
+hello po should i put alcohol on the wound agad,first_aid
+pls do you keep patient records,services
+urgent anong oras ang sara po maam,hours
+urgent magandang umaga,greeting
+kailangan ko ba ng tahi,medical_advice
+hello sir may serbisyo ba kayo par sa kagat salamat,services
+hello may pila ba po,appointment
+pls what is the weather po ba,off_topic
+maam what is your name,bot_identity
+ask ko lang who is the nurse,staff_info
+hello sir kumin ka na ba po pls,off_topic
+tanong lang what payment methods do you accept thanks,fees
+gusto kong magpa schedule po maam,appointment
+pwede magtanong maganda ba ako,off_topic
+whta services are available please,services
+hi admin who is the president asap,off_topic
+sino aang nurse,staff_info
+hello sir what are you pls,bot_identity
+hllo po do you like music thank you,off_topic
+uhm can i reschedule my appointment salamat,appointment
+good day what days are yo open asap,hours
+uhm what is your name thanks,bot_identity
+hello sir magkano ang bayyad po sir,fees
+as kko lang what is your name po sir,bot_identity
+good day i want to cancel my appointment,appointment
+hello ae you open on holidays thanks,hours
+good day pwede ba walk in po maam,appointment
+pls who owns the clinic kasi,staff_info
+po musta agad,greeting
+hello sir anong oras kayo nagsasara,hours
+tanong lang how to fix my phone ba,off_topic
+po will you send me an sms reminder ?,vaccine_followup
+pwede magtanong i missed my seccond dose po sir,vaccine_followup
+quick question ano ang number g clinic po pls,contact
+hi gamutan ba ng kalmot,services
+ask ko lang ilang turok ang kailangan thank you,vaccine_followup
+urgent sino ang namamahala sa clinic po pls,staff_info
+hi do you have a facebook page agad,contact
+kailangan ba mag book muna thank you,appointment
+uhm may serbisyo ba kayo para sa kagat,services
+paano makipagg ugnayan sa inyo ba,contact
+pasensya na po walk inlang ba o appointment po sir,appointment
+good day paano pumunta sa clinic,location
+may onine payment ba,fees
+excuse me how much is the anti rabies shot agad,fees
+po kailangan ko ba ng tahi,medical_advice
+pasensya na po should i put alcohol on the wound ?,first_aid
+ask ko lang nakalimutan ko ang bakuna ko po ba,vaccine_followup
+sir nakagat ang anak ko ng alagang aso po pls,bite_report
+pwede magtanong paano ginawa ang chatbot na ito thanks,about_system
+maam what should i do after a bite aggad,first_aid
+hello po what services do you offer?,services
+po how long should i wash the wound?,first_aid
+uhm nakalmot ako ng aso ba,bite_report
+uhm am i going to get rabies ba,medical_advice
+pasensya na po pano kayo tawagan po ba,contact
+are you open today thanks,hours
+excuse me hey there po,greeting
+pano ko malalaman ang schedule ko ?,vaccine_followup
+may kumagat sa akin na kuting po maam,bite_report
+nakagat ako sa binti thank you,bite_report
+hello thanks salamat,thanks
+i missed myy vaccine schedule ?,vaccine_followup
+good day what are you,bot_identity
+excuse me what shuld i do after a bite thank you,first_aid
+sir ano ang kaya ng clinic po,services
+good day nakalmot ako ng aso pls,bite_report
+ask k olang maganda ba ako,off_topic
+quick question maramnig salamat po kasi,thanks
+how much is the consultation po,fees
+maam who made bitebridge ?,about_system
+hi paano pumunta sa clinic ?,location
+po sino ang pinakamagaling na artista po pls,off_topic
+po i want to cancel my appointment hello,appointment
+hi po first aid for animal bite agad,first_aid
+magkano ang bayad?,fees
+tanong lang may serbisyo ba kayo para sa kagat please,services
+sir nasaan ang clinic ?,location
+ask ko lang bukas ba kayo kapag linggo,hours
+hello po paano mag set ng appointemnt thanks,appointment
+quick question anong dapat gawin agad po pls,first_aid
+quick question how can i contact you po sir,contact
+paki sagot may kumagat sa akin na askal thanks,bite_report
+ask ko lang anong oras kayo nagsasara ?,hours
+excuse me tao ka ba po maam,bot_identity
+hi admin how to fiind the center thanks,location
+ask ko lang hey there,greeting
+quick question can i pay in cash ?,fees
+anong dpat gawin agad ?,first_aid
+uhm good afternoon please,greeting
+hello po am i going to get something dangerous po pls,medical_advice
+hello po is there a queue po pls,appointment
+ugent can you give the vaccine to children asap,services
+hi ilang beses ang turok po sir,vaccine_followup
+hi admin how much is the anti rabies shot po maam,fees
+tanong lang thank you so much?,thanks
+hello po paano pumunta sa clinic thanks,location
+pwede bang magpa book hello,appointment
+paki sagot i got scratched by a rat po maam,bite_report
+pasensya na po who will assess my wound po pls,staff_info
+pwede magtanong salamat po po ba,thanks
+until what time are you open thank you,hours
+good day ilang beses ang turok ?,vaccine_followup
+hi admin anong mga bakuna ang meron ba,services
+urgent do you also treat scratches,services
+hi po pano kayo tawagan po sir,contact
+tanong lang is this a capsttone project,about_system
+paki sagot how much is the vaccine,fees
+urgent pwede ba ako pumunta ngayon thanks,appointment
+urgent magkano po lahat please,fees
+urgent how much is the vaccine ehllo,fees
+hi can i drink alcohol ater the shot agad,medical_advice
+excuse me paano kayo hanapin kasi,location
+urgent magkano po lahat po maam,fees
+can i come today ba,appointment
+good day what dose of pracetamol thank you,medical_advice
+hello sir do you keep patient records salamat,services
+sir sino ang nag program nito po maam,about_system
+hello po directions to the center please,location
+ask ko lang pwede ba mag text thanks,contact
+hello po sino ang physician,staff_info
+start,greeting
+sir is it safe for pegnant women ?,medical_advice
+hi po kailan ang susunod na turok hello,vaccine_followup
+paki sagot what are your hours agad,hours
+hi admin is there an online payment ba,fees
+hi admin pwede ko ba kayong tawagan kasi,contact
+good day what do i do right now salamat,first_aid
+ask ko lang what services are available po maam,services
+what are your hours salamat,hours
+i am late for my next dose po,vaccine_followup
+po location po po pls,location
+po pwede ko bang makausap ang nurse hello,staff_info
+hello po can i come today,appointment
+paki sagot who is the doctor please,staff_info
+excuse me may online paymentba,fees
+excuse me number po ng clinic po ba,contact
+pasensya na po can i book an appointment pls,appointment
+tanong lang may kumagat sa akin na aso ng kapitbahay,bite_report
+do i need a tetanus shot po ba,medical_advice
+hi admin dapat ko bang takpan ang sugat,first_aid
+maam sino ang may ari ng clinic thank you,staff_info
+hi po what is th emeaning of life pls,off_topic
+ask ko lang do you keep patient records thanks,services
+hi is itsafe for pregnant women asap,medical_advice
+po dumugo ang kagat sa akin po maam,bite_report
+tanong lang pwede ba walk in po ba,appointment
+hello may kumagat sa akin na tuta pls,bite_report
+hi dapat ko bang takpan ang sugat,first_aid
+po dapat ba hugasan ang sugat po ba,first_aid
+are you open now thanks,hours
+quick question how much is the vaccine thank you,fees
+what days are you open,hours
+pwede magtanong pwede bang ako na ang mag inject salamat,medical_advice
+hi po saan ang cclinic,location
+tanong lang how to find the center?,location
+quick question how much for the whole series,fees
+gusto kong i cancel ang appointment?,appointment
+hi po nakagat ang ana ko ng tuta kasi,bite_report
+maam do you do wound cleaning thank you,services
+ask ko laang what are you?,bot_identity
+what days are you open pls,hours
+paki sagot may kumagat sa akin na askal agad,bite_report
+quick question ilang beses ang turok hello,vaccine_followup
+tanong lang sino ang pinakamagaling na artista ?,off_topic
+hi po how far is the clinic thanks,location
+hello pano kayo makokontak,contact
+uhm can i talk to the nurse?,staff_info
+tanong lang kailangan ko ba ng tetanus,medical_advice
+are you ai please,bot_identity
+pasensya na po anyone there salamat,greeting
+pwede magtannog mobile number of the clinic thanks,contact
+sir paano ginawa ang chatbot na ito agad,about_system
+uhm what is the srevice fee thank you,fees
+hi admin operating hours hello,hours
+hi do i have tetanus?,medical_advice
+hi po how much does it cost pls,fees
+maam may pila ba agad,appointment
+po am i going to get something dangerous,medical_advice
+heello email address,contact
+helo sir what is day 0 3 7 po,vaccine_followup
+maam write my essay po maam,off_topic
+anong mga bakuna ang meron?,services
+hi po how many shots do i ned,vaccine_followup
+pwede magtanong nakagat ako ng alagang aso please,bite_report
+po follow up ko kailan,vaccine_followup
+pasensya na po where are you located?,location
+hi nakalmot ako ng panniki salamat,bite_report
+how do i get too the clinic po maam,location
+sir recommend a movie,off_topic
+po what is your address po pls,location
+sir kailan ang susunod na bakuna ko po maam,vaccine_followup
+po pwede ba mag text po,contact
+tanong lang anong oras kayo nagsasara?,hours
+po nagbibigay ba kayo ng bakuna asap,services
+hello anong araw kayo bukas ba,hours
+good day ano ang gamit na database ng system,about_system
+hi admin is this a capstone project?,about_system
+good day what time do you open thank you,hours
+hello sir anong dapat gawin agad agad,first_aid
+pasensya na po pano ko malalaman ang schedulee ko salamat,vaccine_followup
+good day dapt ko bang takpan ang sugat please,first_aid
+pls what do i do right now kasi,first_aid
+paki sagot magandang umaga,greeting
+po how long is the vaccination schedule thanks,vaccine_followup
+hi admin a puppy bit me,bite_report
+paki asgot can i call the clinic thank you,contact
+anong pangala mo po maam,bot_identity
+pasensya na po number po ng clinic thanks,contact
+hello sir pwede ba lagyan ng alcohol ang sugat thank you,first_aid
+hello who is the doctor pls,staff_info
+pls i am late for my next dose agad,vaccine_followup
+urgent i was bitten by a dog ba,bite_report
+maam follow up ko kailan psl,vaccine_followup
+h admin kailan ang susunod na turok pls,vaccine_followup
+hi admin is the doctor available please,staff_info
+po pwede ba i reschedule po ba,appointment
+hi who built this website asap,about_system
+excuse me am i going to get tetanus hello,medical_advice
+pwede magtanong are you open now,hours
+hi po paano makipag ugnaan sa inyo po pls,contact
+maam address po asap,location
+maam nakagat ako ng tuta salamat,bite_report
+hi pwede ko ba kayong tawagan po sir,contact
+hi po am i going to ge ttetanus agad,medical_advice
+hello po sige salamat po maam,thanks
+pwede magtanong when is my next shot please,vaccine_followup
+pwede magtanong may anti rabies ba kayo pls,services
+psensya na po can i pay in cash thank you,fees
+hello what dose of paracetamol ?,medical_advice
+urgent when is my next shot thank you,vaccine_followup
+nakagat an anak ko ng kuting thank you,bite_report
+ask ko lang are you ai po pls,bot_identity
+hello po clinic hours?,hours
+hi po can ii drink alcohol after the shot,medical_advice
+excuse me i have a bite wound salamat,bite_report
+pwede magtanong do you do wound cleaning hello,services
+tanong lang i want to schedule a visit hello,appointment
+uhm magandng hapon ba,greeting
+pwede magtanong first aid steps po pls,first_aid
+hello location po kasi,location
+pasensya na po magkano ang konsulta po pls,fees
+are you open on holidays hello,hours
+good day can i text you,contact
+hello po do you also treat scratches pls,services
+maam do you also treat scratches po ba,services
+hello po how does bitebridge work ba,about_system
+ask ko lang are you open today kasi,hours
+nasaan ang clinic ?,location
+hello po sige salamat?,thanks
+po sino angnamamahala sa clinic,staff_info
+hello can you help me with math thhank you,off_topic
+po what are your hours thank you,hours
+hello sir may kumagat sa akin na aso ng kapitbahay po pls,bite_report
+goodd ay pwede cash,fees
+ask ko lang do i use soap and water ?,first_aid
+pasensya na po i am late for my next dose,vaccine_followup
+po nakagat ako ng aso ng kapitbahay please,bite_report
+hello clinic hours thanks,hours
+pwede ba akong uminom ng antibiotic?,medical_advice
+what time do you close po pls,hours
+paki sagot may rabies vaccine ba kayo po sir,services
+pasensya na p ogamutan ba ng kalmot?,services
+urgent paano kayo makokontak po,contact
+uhm gusto kong magpa schedule salamat,appointment
+po i got scratched by a bat kasi,bite_report
+immediate steps after a bite thanks,first_aid
+pasensya na po how to cook addobo,off_topic
+maam my child was bitten by a kitten psl,bite_report
+tanong lang how to find the center thanks,location
+quick question anong programming language ang gamit please,about_system
+pwede magtanong can you give the vaccine to children please,services
+hello po nandiya nba ang nurse kasi,staff_info
+quick questio how much is the vaccine ?,fees
+paki sagot pa send ng location agad,location
+hello po ilang turok ang kailangan,vaccine_followup
+hello sir who developed this system,about_system
+tanong lang are yuo open on holidays please,hours
+hi first aid steps pls,first_aid
+excuse me kailan ang susunod na turok po ba,vaccine_followup
+ask ko lang what services do you offer thank you,services
+good day proyekto ba ito ng estudyante salamat,about_system
+hello how was this chatbot made?,about_system
+paki sagot mamamatay ba ako po pls,medical_advice
+a pet dog bit me agad,bite_report
+pweed magtanong can i take amoxicillin pls,medical_advice
+uhm are yu open now agad,hours
+uhm pwede cash hello,fees
+pwede magtanong who owns the clinic po pls,staff_info
+excues me salamat ?,thanks
+pwede magtanong saan ang clinic po maam,location
+po ilang beses ang turok po,vaccine_followup
+sir how do i make an appointment,appointment
+paki sagot nagbibigay ba kayo ng bakuna ?,services
+hi are you a bot,bot_identity
+quick question may sugat ako galing sa kagat ng aso please,bite_report
+pasensya na po saan ang ez animal bte center,location
+ok salamat po pls,thanks
+good day do i use soap and water please,first_aid
+po kumusta po hello,greeting
+maam pwede ba ako pumunta ngayon,appointment
+pasensya na po do i hhave an infection po ba,medical_advice
+pl show long should i wash the wound?,first_aid
+hi po thanks fro the help salamat,thanks
+hello po how to fix mmy phone,off_topic
+good day can i pay in cash po mam,fees
+hi po am i going to get a serious wound pls,medical_advice
+maam sino ang kausap ko ?,bot_identity
+hi po anog oras ang sara thank you,hours
+hi addres spo,location
+urgent do you give rabies vaccine kasi,services
+tanong lagn anong pangalan mo,bot_identity
+hello can i get the source code po sir,about_system
+sige salamat ?,thanks
+good day pwede ba lagyan ng alcohol ang sugat asap,first_aid
+tanong lang paano mag set ng appointment po,appointment
+uhm what days are you open?,hours
+hi may facebook page ba kayo,contact
+hi po magkano ang turok po,fees
+sino ang mga staff pls,staff_info
+hi po salamat kasi,thanks
+hi admin do you keep patient records kasi,services
+pwede magtanong nakagat ang anak ko ng tta ?,bite_report
+what database does this system use thank you,about_system
+quick question are you open today po sir,hours
+paki sagot nakalmot ako ng tuta hello,bite_report
+hello pwede ba ako pumunta ngayon?,appointment
+hello ir magkano ang bakuna thanks,fees
+mamamatay ba ako pls,medical_advice
+ano ang mga services ninyo po pls,services
+hi po are you open on sunday pls,hours
+hello sir do you give rabies vaccine,services
+paki sagot pa send ng location,location
+saan kayo located asap,location
+excuse me may facebook page ba kayo po sir,contact
+what is your phhone number thank you,contact
+god day ano ang bitebridge po maam,about_system
+excuse me thanks for the help,thanks
+maam do you accept gcash po ba,fees
+hello sir got it thanks po,thanks
+tanong lang nakagat ang anak ko ng aso,bite_report
+po immediate steps after a bite,first_aid
+good day i aml ate for my next dose po pls,vaccine_followup
+ask ko lang may email ba kao ?,contact
+hello sir start po sir,greeting
+what medicine should i take po,medical_advice
+hello sir is this a capstone project thanks,about_system
+hi po mya rabies vaccine ba kayo ?,services
+hello po paano ginawa ang chatbot na ito po maam,about_system
+excuse me maganda ba ako thank you,off_topic
+good day may jowa ka ba po,off_topic
+quick question can i call the clinic pls,contact
+hi pwede ba mag bayad sa maya pls,fees
+pwede magtanong what programming language is this thank you,about_system
+follow up ko kailan thanks,vaccine_followup
+walk in lang ba o apopintment po maam,appointment
+hello po paano akipag ugnayan sa inyo agad,contact
+are you open today asap,hours
+sir salamat pls,thanks
+hello kinagat ako ng tuta?,bite_report
+po can you give the vaccine to children agad,services
+pls my child was ibtten by a puppy,bite_report
+hello do you keep patient records,services
+hello may email ba kayo salamat,contact
+hello mobile number of thec linic,contact
+good day open pa ba kayo thanks,hours
+do i have rabies please,medical_advice
+good day pano ko malalaman ang schedule ko thanks,vaccine_followup
+good day may kumagat sa akin na unggoy please,bite_report
+good day good evening po ps,greeting
+maam ano ang numebr ng clinic hello,contact
+hi how are you hello,greeting
+po gusto mo ba ng pizza kasi,off_topic
+hi until what time are oyu open please,hours
+urgent what to do before going to the clinic thank oyu,first_aid
+what time do you open kasi,hours
+po how many shots do i need thank you,vaccine_followup
+hi po until what time are you open kasi,hours
+hello po saan sa calapan kayo asap,location
+hi po can you help me with math,off_topic
+dapat ko bang takpan ang sugat salamat,first_aid
+maam business hours agad,hours
+uhm how do i make an appointment thanks,appointment
+hi po where is ez animal bite center,location
+anno ang unang gagawin,first_aid
+ask ko lang makgano ang buong bakuna thank you,fees
+ask ko lang sing me a song agad,off_topic
+pasensya na po tell me a joke agad,off_topic
+pwede magtanong may sms reminder ba ba,vaccine_followup
+hi salamat,thanks
+magkano po lahat po sir,fees
+nasaa nang clinic pls,location
+sabon at tubig ba ang gagamitin thank you,first_aid
+sir bitten by a cat wht do i do kasi,bite_report
+excuse me may jowa ka ba po maam,off_topic
+paki sagot may email ba kayo po pls,contact
+hello how to findt he center salamat,location
+nagbibigay ba kayo ng bakuna kasi,services
+hello sabon at tubig ba ang gagamitin,first_aid
+hi po do i use soap and water asap,first_aid
+quick question pwede bang ma delay ang turok thank you,vaccine_followup
+hi admin will you send me an smsr eminder salamat,vaccine_followup
+hanggang anong oras kayo,hours
+tanong lang salamat po ba,thanks
+urgent what is the service fee thank you,fees
+hello saan kayo located tahnks,location
+excuse me am i going to get rabies kasi,medical_advice
+sir hello po pom aam,greeting
+hi po do you offer anti rabies shots please,services
+uhm kailangan ko ba ng tahi kasi,medical_advice
+hello can i speak with the doctor kasi,staff_info
+do i have an infection ba,medical_advice
+sir gamutan ba ng kalmot,services
+urgent magkano ang bayad,fees
+hi who are you ba,bot_identity
+pasensya na po pa send ng location,location
+tanong lang are you human ba,bot_identity
+po will i die from this thank you,medical_advice
+hi po nakagat ang anak ko ng aso ng kapitbahay ?,bite_report
+paki sagot anonga raw kayo bukas thanks,hours
+po hy there?,greeting
+hi po may facebook page ba kayo pls,contact
+po should i skip my vaccine,medical_advice
+tao ka ba hello,bot_identity
+hi what is the service fee thank you,fees
+uhm how was this chatbot made asap,about_system
+hello po list of services po sir,services
+pls ano ang first aid sa kagat po ba,first_aid
+maam paano kayo makokontak po,contact
+kumusta po pls,greeting
+ask ko lang kailan ang susunod na turok pls,vaccine_followup
+ask ko lang may pila ba ?,appointment
+urgent sing me a song po maam,off_topic
+what is 2 plus 2 please,off_topic
+po got it thanks po ba,thanks
+hello sir proyekto ba ito ng estudyante po,about_system
+quick question nandiyan ba ang doktor po sir,staff_info
+pwede magtanong totoong tao ba ito,bot_identity
+hey there thanks,greeting
+pwede magtanong sino ang gumawa ng website na ito po,about_system
+good day is there an online payment thanks,fees
+hello sir kailangan ko ba ng tahi,medical_advice
+hello po can you help me with math po pls,off_topic
+hi po what to do before going to the clinic?,first_aid
+good daay magandang gabi kasi,greeting
+hi i got scratched by a stray dog,bite_report
+hi po who is in charge of the clinic,staff_info
+hello sir where in calapan are you thank you,location
+am i going to get rabies ba,medical_advice
+quick question is it okay tto use herbal medicine on the wound?,medical_advice
+may pila ba agad,appointment
+hi admin may anti rabie sba kayo ?,services
+ask ko lang do i use soap and water,first_aid
+thanks a lot asap,thanks
+tanong lang sino ang crush mo kasi,off_topic
+tanong lang what to do before going to th clinic please,first_aid
+uhm may kumagat sa akin na aso ng kapitbahay ?,bite_report
+hi admin may anti rabies ba kayo,services
+do i have something dangerous po,medical_advice
+kailangan ba mag book muna po ba,appointment
+hello do i have rabies ba,medical_advice
+paano mag set ng appointmnet po sir,appointment
+should i wash the woud po maam,first_aid
+hi po anong dapat gawin agad thank you,first_aid
+hello po pwede ko ba kayong tawagan,contact
+helol po thanks for the help salamat,thanks
+urgent oras ng clinic,hours
+hi hi hello,greeting
+who is in charge of the clinic salamat,staff_info
+hello should i cover the wound po pls,first_aid
+hello i was bitten by a dog po,bite_report
+nakagat ang anak ko ng aso pls,bite_report
+sir how much is the anti rabies shot po,fees
+nakalimuatn ko ang bakuna ko ?,vaccine_followup
+paki sagot pwede ba uminom ng alak habang ngpapabakuna?,medical_advice
+uhm ilang tableta ang iinumin ko,medical_advice
+hi may jowa ka ba agad,off_topic
+pwede ab i reschedule po maam,appointment
+excuse me how do i know my schedule,vaccine_followup
+quick question how many shots do i need ?,vaccine_followup
+hi po do you offer anti rabies shots hello,services
+po do i need a tetannus shot ?,medical_advice
+pwede ba mag bayad sa maya agad,fees
+pls ilang beses ang turok,vaccine_followup
+sin gme a song?,off_topic
+paki sagot cp number ng clinic ba,contact
+pwede bang hindi na ako magpabakuna po maam,medical_advice
+hello pwede bang magpa book pls,appointment
+tanong lang can i take amoxicillin po maam,medical_advice
+quick question thank you so much agad,thanks
+what mediccine should i take,medical_advice
+hello sir how do i get to the clinic,location
+hi po how do i clean a bite wound,first_aid
+urgent how to fix my phone po maam,off_topic
+excuse me how do i make an appointment thanks,appointment
+hello sir do you do wound cleaning kaasi,services
+gusto kong i cancel ang appointment po sir,appointment
+hi po is a nurse available agad,staff_info
+maam bukas ba kayo ngayon po maam,hours
+excuse me anong payment methods pls,fees
+tanong lang are you open now pls,hours
+paki sagot how do i reach the center thank you,contact
+hi po good morning,greeting
+urgnt ano ang mga services ninyo,services
+excuse me address po,location
+hello pwede ba i erschedule please,appointment
+pwede magtanong may serbisyo ba kayo para sa kagat thank you,services
+ask ko lang pwede ba mag text po maam,contact
+pls saan ang clinic asap,location
+sir address po thanks,location
+paseensya na po dumugo ang kagat sa akin,bite_report
+good day who is on duty today,staff_info
+tanong lang pano ko malalaman ang schedule ko?,vaccine_followup
+hello po i missed my vaccine schedule po pls,vaccine_followup
+hello po how many tablets should i take,medical_advice
+excuse me saan kayo located ?,location
+hello sir how are you asap,greeting
+are you a bo asap,bot_identity
+hi admin can i get the source code salamat,about_system
+hi po nakagat ako ng kuting ano gagawin ko,bite_report
+kwentuhan mo ako salamat,off_topic
+ask ko lang saan kayo located hello,location
+hello kamusta ka,greeting
+po thank you,thanks
+good day can i speak with the doctor po pls,staff_info
+good day how much is the anti rabies shot salamat,fees
+who will assess my wound,staff_info
+hello po my child was bitten by a cat po,bite_report
+hello po okay thank you?,thanks
+urgent pano linisin ang kagat po maam,first_aid
+hello should i wash the wound,first_aid
+quick question do i have a serious wound pls,medical_advice
+maam pwede ba akong uminom ng antibiotic ?,medical_advice
+quick question first aid steps ba,first_aid
+po business hours,hours
+pasensya na po who is the nurse asap,staff_info
+hi may pila ba asap,appointment
+hello po is a nurse available asap,staff_info
+may kumagat sa akni na pusa thank you,bite_report
+hllo sir are you a robot agad,bot_identity
+uhm paano makipag ugnayan sa iyo?,contact
+pwede magtanong magkano ang turok thanks,fees
+quick question anong oras pwede pumunta ?,appointment
+location po agad,location
+hi should i cover the wound ba,first_aid
+hello nakagat ako ng tuta ano gagawin ko asi,bite_report
+uhm do you keep patient records po sir,services
+hello po how many doses of the vaccine thank you,vaccine_followup
+sir nagbibigay ba kayo ng bakuna thank you,services
+pwede magtanong tell me a story po,off_topic
+pasensya napo magkano ang buong bakuna po,fees
+pasensya na po kamsuta ka thank you,greeting
+good day na miss ko ang schedule thanks,vaccine_followup
+should i put alcohol on the wound kasi,first_aid
+good day nakagat ako ng daga ano gagawin ko kasi,bite_report
+who is the physician agad,staff_info
+urgent may sugat ako galing sa kagat ng aso ?,bite_report
+hello sir may jowa ka ba,off_topic
+hi pwede ba sa bata ang bakuna po maam,services
+ask kolang kailan ang susunod na bakuna ko please,vaccine_followup
+can you give the vaccine to children pls,services
+hello sir do i have rabies,medical_advice
+d i have something dangerous ba,medical_advice
+hi what is the meaning of life thanks,off_topic
+sir can i speak with the doctor pls,staff_info
+pwede magtanong how do i know my schedule,vaccine_followup
+maam ano agn gamit na database ng system po,about_system
+maam i was bitten by a monkey?,bite_report
+first aid for animal bite po maam,first_aid
+maam what services do you offer,services
+hello sir oas ng clinic,hours
+maam ano ang number ng clinic please,contact
+hi po how long shhould i wash the wound po,first_aid
+pwede magtanong what dose of paracetamol hello,medical_advice
+tanong lang contact number?,contact
+quick question sige salamat?,thanks
+sino agn developer ng system agad,about_system
+maam pano ko malalaman ang scehdule ko thank you,vaccine_followup
+excuse me kinagat ako ng aso ng kapitbahay po ba,bite_report
+good day bukas ba kyo kapag linggo pls,hours
+hi podo i have a serious wound ?,medical_advice
+hello siir can i text you po sir,contact
+hi po pwede ba ako pumunta ngayon salamat,appointment
+quick questio how do i reach the center,contact
+hi translate this to korean posir,off_topic
+hi admin how to find the center salamat,location
+sir may impeksyon ba ang sugat ko po,medical_advice
+paki sagot business hours ?,hours
+tanong lang hey asap,greeting
+pwede magtanong how many staff do you have agad,staff_info
+ask ko lang nakagat ang anak ko ng daga ?,bite_report
+ask ko lang until what time are you open salamat,hours
+bukas ba kayo ngayon salamat,hours
+urgent who is the best basketball player po ba,off_topic
+excuse me can i get the source code po sir,about_system
+number po ng cliinc po maam,contact
+sir what days are you open ba,hours
+hi how much for the whole series?,fees
+hi may email ba kayo lps,contact
+sir who mdae bitebridge po pls,about_system
+hello sir are you a real person po,bot_identity
+pasensya na po oras ng clinic,hours
+hi sino ang nag progam nito asap,about_system
+tanong lang mamamatay ba ako ?,medical_advice
+good day can i book an appointment agad,appointment
+late na ako sa susunod n turok po ba,vaccine_followup
+where is ez animal bite center kasi,location
+hello sir can i txt you po ba,contact
+urgent malala ba ang sugat ok,medical_advice
+maam do you like muic po sir,off_topic
+po no ang kaya ng clinic po pls,services
+hello po hey there hello,greeting
+hello what payment methods do you accept thanks,fees
+paki sagot can i pay in cash po sir,fees
+good day when is my next shot,vaccine_followup
+ask ko lang can i reschedule my appointment,appointment
+pwede bang ma delay ang turok po sir,vaccine_followup
+po where is ez animal bite center po ba,location
+gusto mo ba nng pizza,off_topic
+hello nakagat ako ng daga po ba,bite_report
+pasensya na po kwentuhan mo ako ba,off_topic
+quick question pwede ba mag text hello,contact
+what do i do right now,first_aid
+i am late for my next dose kasi,vaccine_followup
+hi admin how muc hdoes it cost?,fees
+pwede magtanogn phone number,contact
+hello ppo email address,contact
+ask ko lang paano kayo hanapin po sir,location
+urgent may pila ba po ba,appointment
+hi po anong serbisyo ang meron kayo po,services
+pasensya na po pwede ba walk in salamat,appointment
+hello may jowa ka ba po maam,off_topic
+pasensya na po sino ka thank you,bot_identity
+goo day i missed my second dose asap,vaccine_followup
+hello sir itten by a pet dog what do i do?,bite_report
+paki sagot ilan ang staff ninyo,staff_info
+tanong lang number po ng clinic hello,contact
+hellopo ilang turok ang kailangan please,vaccine_followup
+uhm gamutan ba ng kalmot kasi,services
+nakagat ako ng tuta agad,bite_report
+tanong lang clinic hours ba,hours
+pls gusto kong magpa schedule,appointment
+urgent do i have a sreious wound po maam,medical_advice
+nakgat ako ng aso ng kapitbahay,bite_report
+good day phone number pls,contact
+quick question how much does it cost,fees
+ask ko lang i was bitten by a cat po sir,bite_report
+maam do you accept maya,fees
+good day can you give the vaccine to children po maam,services
+ask ko lang ilan ang staff ninyo,staff_info
+excuse me what is 2 plus 2 po maam,off_topic
+tanong lang oras ng clinic,hours
+nakagat ako ng aso ng kapitbahay,bite_report
+pwede magtanong may kumagat sa akin na alagang aso kasi,bite_report
+maam i was bitten by a neighbor's dog,bite_report
+are you open on holidays ?,hours
+hello open pa ba kayo po maam,hours
+bukas ba kayo ngayon?,hours
+hello po sino ang gumawa ng system na ito asap,about_system
+maam do you offer anti rabies shots po ba,services
+hello nakagat ako ng pusa po pls,bite_report
+anong programming language ang gamit thanks,about_system
+hi where are yo ulocated po,location
+hi po anong oras kayo bukas salamat,hours
+what time do you close pls,hours
+ask ko lang how to fix my phone hello,off_topic
+tanong lang should i wash the wound po maam,first_aid
+hi po sino ang nurse thank you,staff_info
+my chid was bitten by a neighbor's dog pls,bite_report
+hello is it okay to useh erbal medicine on the wound po sir,medical_advice
+quick question malala ba ang sugat ko pls,medical_advice
+hello po cp number ng clinic,contact
+hello i am late for my next dose,vaccine_followup
+paki sagot thanks for the help thanks,thanks
+paki sagot paano pumunt sa clinic,location
+hello a pet dog bit me p osir,bite_report
+uhm anong serbisyo ang meron kayo ?,services
+hi admin may facebook page ba kayo po maam,contact
+hello po write my essay po ba,off_topic
+pwede bang magpa book po aam,appointment
+hello sir magkano po lahat,fees
+quick question got it thanks po maam,thanks
+may kumgat sa akin na unggoy?,bite_report
+good day how doi make an appointment kasi,appointment
+uhhm anong oras pwede pumunta pls,appointment
+maam cp number ng clinic,contact
+pasensya na po ano ang paborito mong kanta ?,off_topic
+excuse me how was thi schatbot made,about_system
+hello po are you ai salamat,bot_identity
+ask k lang ano ang number ng clinic pls,contact
+gamutan ba ng kalmot hello,services
+can youg ive the vaccine to children,services
+pwede magtanongg contact details po ba,contact
+hi is this a real person po ba,bot_identity
+hi po thanks a lot po,thanks
+got it thanks,thanks
+urgent do you have a facebook page ba,contact
+excuse me gusto kong magpa schdeule please,appointment
+good day schedule ng clinic,hours
+hello sir do you treat animal bites po ba,services
+do i have something dangerous salamat,medical_advice
+shuold i skip my vaccine po,medical_advice
+hi admin are you open on holdays thanks,hours
+hello sir paano ginawa nag chatbot na ito thanks,about_system
+uhm what i sday 0 3 7 po sir,vaccine_followup
+pwede magtanong location po kasi,location
+excuse me can i call the clinic po maam,contact
+hi admin do you offeer anti rabies shots,services
+what is the service fee kasi,fees
+good day schedule ng clinic agad,hours
+hello may impeksyon ba ang sugat ko hello,medical_advice
+po do you acceptt maya kasi,fees
+tanong lang what are your hous ba,hours
+hi admin sino ang doktor,staff_info
+ilang minuto hugasan ang sugat po maam,first_aid
+walk in lang ba o appointment po maam,appointment
+good day saan kayo located thank you,location
+pwee magtanong pwede bang ako na ang mag inject,medical_advice
+uhm can i talk to the nurse thanks,staff_info
+pasensya na po who are the researchers kasi,about_system
+ask ko lang tell me about the bitebridge system thanks,about_system
+po is there a queue ba,appointment
+uhm number po ng clinci agad,contact
+good day sabon at tubig ba ang gagamitin thanks,first_aid
+pls paano gumagana ang bitebridge thank you,about_system
+hello po malapit ba kayo sa bayan hello,location
+hello what can the center do agad,services
+sir pwede ba mag bayad sa maya please,fees
+saan ang ez animal bite center ?,location
+pwede magtanong hi po lpease,greeting
+urgent anonng dapat gawin agad,first_aid
+quick question saan kayo located pls,location
+pasensya na po i want to schedule a visit,appointment
+sir thank you so much,thanks
+sir nakalmot ako ng alagang aso po ba,bite_report
+kumain ka na ba po,off_topic
+urgent what database does this system use salamat,about_system
+urgent pwede ba lagyan ng alcohol ang sugat,first_aid
+po salamat po asap,thanks
+paki sagot what is your name?,bot_identity
+tanong lang who developed this system ?,about_system
+good day sino ang pinakamagaling na artista thanks,off_topic
+po pano mag luto ng sinigang hello,off_topic
+ask kolang are you open on sunday pls,hours
+hello sir who is the president hello,off_topic
+uhm gusto kong magpa schedule,appointment
+should i skip my vaccine kasi,medical_advice
+ask ko lang am i going to get an infection po pls,medical_advice
+are you open on holidays po ba,hours
+hi admin salamat sa tulong,thanks
+urgent what dose of paracetamol,medical_advice
+good day ano ang bitebridge salamat,about_system
+ask ko lang thank you hello,thanks
+tanong lang how was this chatbot made,about_system
+how to fix my phone please,off_topic
+excuse me maganda ba ako?,off_topic
+uhm business hours po maam,hours
+tanong lang ilang beses ang turok please,vaccine_followup
+excuse me pano ko mlalaman ang schedule ko po,vaccine_followup
+higot it thanks please,thanks
+urgent how long is the vaccination schedule po sir,vaccine_followup
+excuse m esino ang mga staff po pls,staff_info
+good day walk in lang ba o appointment,appointment
+kailangan ko ba ng tetanus hello,medical_advice
+ask ko lang my child was bitten by a cat agad,bite_report
+quick questoin ligtas ba sa buntis ang bakuna asap,medical_advice
+pls how long is the vaccination schedule,vaccine_followup
+hi do you offer anti rabies shots ?,services

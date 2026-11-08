@@ -1,0 +1,173 @@
+text,intent
+hello,greeting
+hi,greeting
+good morning,greeting
+good afternoon po,greeting
+hello po,greeting
+kumusta po,greeting
+magandang umaga po,greeting
+magandang hapon,greeting
+hey anyone there,greeting
+musta,greeting
+hi po may tao ba,greeting
+good evening,greeting
+i was bitten by a dog,bite_report
+nakagat ako ng aso,bite_report
+nakagat po ako ng pusa,bite_report
+nakagat ako ng aso ano gagawin ko,bite_report
+my cat scratched me,bite_report
+kinagat ako ng aso kanina,bite_report
+nakalmot ako ng pusa,bite_report
+a dog bit my son,bite_report
+nakagat ang anak ko ng aso,bite_report
+i got bitten by a stray dog,bite_report
+may kumagat sa akin na aso sa daan,bite_report
+my dog bit me and there is blood,bite_report
+nakagat ako ng daga,bite_report
+nakagat po ako ng unggoy,bite_report
+bitten by a cat what should i do,bite_report
+natusok ng ngipin ng aso ang kamay ko,bite_report
+what should i do after a dog bite,first_aid
+first aid for animal bite,first_aid
+ano ang first aid sa kagat ng aso,first_aid
+paano gamutin ang kagat ng aso,first_aid
+dapat bang hugasan ang sugat,first_aid
+how do i wash a bite wound,first_aid
+ilang minuto dapat hugasan ang kagat,first_aid
+anong gagawin ko sa sugat bago pumunta sa clinic,first_aid
+first aid steps,first_aid
+pano linisin ang sugat galing sa kagat,first_aid
+should i use soap on the wound,first_aid
+ano ang dapat gawin agad pagkatapos makagat,first_aid
+what time do you open,hours
+clinic hours,hours
+anong oras kayo bukas,hours
+bukas ba kayo ngayon,hours
+until what time are you open,hours
+anong oras ang sara ng clinic,hours
+are you open on sunday,hours
+bukas ba kayo kapag linggo,hours
+operating hours po,hours
+open pa ba kayo,hours
+anong oras ang schedule ng clinic,hours
+what are your business hours,hours
+where is the clinic,location
+saan ang clinic,location
+saan kayo located,location
+what is your address,location
+paano pumunta sa clinic,location
+how do i get to your clinic,location
+directions to ez animal bite center,location
+nasaan ang ez animal bite center,location
+saan po ang address ninyo,location
+location po,location
+sa calapan ba kayo,location
+ano ang landmark ng clinic,location
+phone number,contact
+contact number,contact
+ano ang number ng clinic,contact
+pwede ko ba kayong tawagan,contact
+what is your phone number,contact
+paano kayo makokontak,contact
+number po ng clinic,contact
+how can i contact you,contact
+may facebook page ba kayo,contact
+mobile number ng clinic,contact
+how do i call the center,contact
+can i text you,contact
+what services do you offer,services
+anong serbisyo ang meron kayo,services
+do you give rabies vaccine,services
+may anti rabies ba kayo,services
+ano ang mga services ninyo,services
+do you offer vaccination,services
+nagbibigay ba kayo ng bakuna,services
+list of services,services
+may bakuna ba kayo sa rabies,services
+what can the center do for me,services
+do you treat animal bites,services
+ano ang inaalok ng clinic,services
+how many doses of the vaccine,vaccine_followup
+ilang turok ang kailangan,vaccine_followup
+when is my next dose,vaccine_followup
+kailan ang susunod na bakuna ko,vaccine_followup
+i missed my vaccine schedule,vaccine_followup
+na miss ko ang schedule ng bakuna,vaccine_followup
+will i get a reminder for my next dose,vaccine_followup
+may reminder ba sa sms para sa bakuna,vaccine_followup
+what if i am late for my second dose,vaccine_followup
+late na ako sa pangalawang turok,vaccine_followup
+how long is the vaccination schedule,vaccine_followup
+gaano katagal ang bakuna,vaccine_followup
+can i book an appointment,appointment
+paano mag set ng appointment,appointment
+may appointment ba o walk in lang,appointment
+do you accept walk ins,appointment
+pwede ba walk in,appointment
+i want to schedule a visit,appointment
+gusto kong magpa schedule,appointment
+do i need to book first,appointment
+kailangan ba mag book muna,appointment
+how do i make an appointment,appointment
+pwede ba ako pumunta ngayon,appointment
+can i come today,appointment
+how much is the vaccine,fees
+magkano ang bakuna,fees
+how much does it cost,fees
+magkano ang bayad,fees
+what is the service fee,fees
+anong payment methods meron,fees
+tumatanggap ba kayo ng gcash,fees
+do you accept gcash or maya,fees
+magkano ang konsulta,fees
+can i pay in cash,fees
+pwede ba mag bayad sa maya,fees
+price of anti rabies shot,fees
+thank you,thanks
+salamat po,thanks
+thanks a lot,thanks
+maraming salamat,thanks
+ok salamat,thanks
+thank you so much,thanks
+salamat sa tulong,thanks
+okay thanks,thanks
+do i have rabies,medical_advice
+may rabies ba ako,medical_advice
+what medicine should i take,medical_advice
+anong gamot ang iinumin ko,medical_advice
+how many mg of antibiotics should i take,medical_advice
+ilang mg ng gamot ang dapat inumin,medical_advice
+is my wound infected,medical_advice
+infected na ba ang sugat ko,medical_advice
+can you diagnose my wound,medical_advice
+pwede mo ba i diagnose ang sugat ko,medical_advice
+do i still need a shot,medical_advice
+kailangan ko pa ba ng bakuna,medical_advice
+tell me a joke,off_topic
+what is the weather today,off_topic
+who is the president,off_topic
+can you write my homework,off_topic
+what is bitebridge,about_system
+sino ang gumawa ng bitebridge,about_system
+what system is this website using,about_system
+sino ang mga developer ng chatbot na ito,about_system
+is this website a school project,about_system
+anong framework ang gamit niyo sa system,about_system
+who are the nurses here,staff_info
+sino ang doktor sa clinic,staff_info
+is a nurse available now,staff_info
+sino ang magche check ng sugat ko,staff_info
+who is the owner of ez animal bite center,staff_info
+may doktor ba ngayon,staff_info
+are you a human,bot_identity
+ikaw ba ay robot,bot_identity
+sino ka ba,bot_identity
+what should i call you,bot_identity
+are you an ai assistant,bot_identity
+tao ka ba talaga,bot_identity
+pogi ba ako,off_topic
+kumain ka na ba,off_topic
+who won the basketball game,off_topic
+how to learn guitar,off_topic
+ano ang pinakamasarap na pagkain,off_topic
+what is the capital of japan,off_topic

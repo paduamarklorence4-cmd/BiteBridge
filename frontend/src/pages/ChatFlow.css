@@ -1,0 +1,25 @@
+.cf-card { background: #fff; border: 1px solid #d9e2ec; border-radius: 14px; padding: 20px; box-shadow: 0 1px 3px rgba(15, 42, 68, 0.08); }
+.cf-progress { height: 6px; background: #e4ebf2; border-radius: 999px; overflow: hidden; margin: 8px 0 18px; }
+.cf-progress > div { height: 100%; background: #c62828; transition: width 0.2s ease; }
+.cf-q { margin: 0 0 4px; font-size: 1.15rem; font-weight: 700; }
+.cf-q-fil { margin: 0 0 14px; color: #52606d; }
+.cf-opts { display: grid; gap: 10px; }
+.cf-opt { text-align: left; padding: 12px 14px; border: 1px solid #d9e2ec; border-radius: 10px; background: #fff; font: inherit; cursor: pointer; }
+.cf-opt:hover { background: #f4f7fa; border-color: #0f2a44; }
+.cf-opt:focus-visible { outline: 2px solid #0f2a44; outline-offset: 2px; }
+.cf-opt small { display: block; color: #52606d; margin-top: 2px; }
+.cf-actions { display: flex; justify-content: space-between; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+.cf-field { margin-bottom: 14px; }
+.cf-field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.cf-field input[type="text"], .cf-field input[type="tel"] { width: 100%; padding: 10px 12px; border: 1px solid #d9e2ec; border-radius: 8px; font: inherit; }
+.cf-hint { font-size: 0.85rem; color: #52606d; margin-top: 4px; }
+.cf-error { background: #fdecea; border-left: 4px solid #c62828; padding: 10px 12px; border-radius: 6px; margin-bottom: 14px; }
+.cf-thumb { display: flex; gap: 12px; align-items: center; margin-top: 8px; }
+.cf-thumb img { width: 84px; height: 84px; object-fit: cover; border-radius: 8px; border: 1px solid #d9e2ec; }
+.cf-ref { text-align: center; background: #f4f7fa; border: 2px dashed #0f2a44; border-radius: 12px; padding: 14px; margin: 12px 0 16px; }
+.cf-ref strong { display: block; font-size: 1.8rem; letter-spacing: 0.08em; color: #0f2a44; }
+.cf-summary { white-space: pre-line; background: #fff; border: 1px solid #e4ebf2; border-radius: 10px; padding: 14px; }
+.cf-link { background: none; border: 0; padding: 0; font: inherit; color: #0f2a44; text-decoration: underline; cursor: pointer; }
+.cf-assess-btn { margin-top: 8px; }
+@media (prefers-reduced-motion: reduce) { .cf-progress > div { transition: none; } }
+@media print { .cf-noprint, nav, footer, header { display: none !important; } }

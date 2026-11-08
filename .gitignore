@@ -1,0 +1,12 @@
+﻿node_modules/
+.venv/
+__pycache__/
+*.pyc
+.env
+backend/.env
+frontend/.env
+frontend/dist/
+backend/runtime/
+backend/storage/
+ai/model.pkl
+ai/vectorizer.pkl
