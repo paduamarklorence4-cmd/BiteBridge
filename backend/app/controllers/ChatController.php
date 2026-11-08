@@ -16,6 +16,9 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 class ChatController extends Controller
 {
     private const SESSION_HOURS = 24;
+
+    /** Short, safe reason for the last AI failure (shown in the 503 message to help fix deployment). */
+    private $ai_error = '';
     private const MAX_PHOTO_BYTES = 5242880; // 5 MB
 
     /** Allowed answers for each structured question. */
@@ -159,7 +162,11 @@ class ChatController extends Controller
         $base   = rtrim(getenv('AI_SERVICE_URL') ?: 'http://127.0.0.1:5000', '/');
         $result = $this->ask_ai($base . '/chat', $message);
         if ($result === null || !isset($result['reply'])) {
-            $this->api->respond_error('The AI service is unavailable', 503);
+            $why = $this->ai_error;
+            if (!getenv('AI_SERVICE_URL')) {
+                $why = 'AI_SERVICE_URL is not set on the backend';
+            }
+            $this->api->respond_error('The AI service is unavailable' . ($why !== '' ? ' (' . $why . ')' : ''), 503);
         }
 
         $intent = (string) ($result['intent'] ?? 'unknown');
@@ -211,9 +218,15 @@ class ChatController extends Controller
                 CURLOPT_HTTPHEADER => $headers,
                 CURLOPT_RETURNTRANSFER => true, CURLOPT_CONNECTTIMEOUT => 10, CURLOPT_TIMEOUT => 65,
             ]);
-            $body = curl_exec($ch);
-            $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            $body  = curl_exec($ch);
+            $code  = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            $errno = curl_errno($ch);
             curl_close($ch);
+            if ($errno === 28) {
+                $this->ai_error = 'timed out. The AI service may be waking up, try again in a minute';
+            } elseif ($errno !== 0) {
+                $this->ai_error = 'cannot connect to the AI service. Check AI_SERVICE_URL on the backend';
+            }
         } else {
             $ctx = stream_context_create(['http' => [
                 'method' => 'POST', 'header' => implode("\r\n", $headers) . "\r\n",
@@ -226,10 +239,17 @@ class ChatController extends Controller
             }
         }
         if ($body === false || $body === null || $code !== 200) {
+            if ($this->ai_error === '') {
+                $this->ai_error = 'the AI service answered HTTP ' . $code . ($code === 401 ? '. AI_SERVICE_KEY does not match' : '');
+            }
             return null;
         }
         $data = json_decode($body, true);
-        return is_array($data) ? $data : null;
+        if (!is_array($data)) {
+            $this->ai_error = 'the AI service sent an invalid response';
+            return null;
+        }
+        return $data;
     }
 
     // ------------------------------------------------------------------ assessment
