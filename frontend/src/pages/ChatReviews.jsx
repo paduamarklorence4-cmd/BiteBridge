@@ -35,7 +35,12 @@ function Photo({ row }) {
   useEffect(() => {
     let alive = true
     staffPost('/chatreviews/photo', { id: row.id })
-      .then((d) => { if (alive) setState({ loading: false, src: `data:${d.content_type};base64,${d.data}`, error: null }) })
+     .then((d) => {
+  const src = typeof d === 'string'
+    ? `data:image/jpeg;base64,${d}`
+    : `data:${d.content_type};base64,${d.data}`
+  if (alive) setState({ loading: false, src, error: null })
+})
       .catch((e) => { if (alive) setState({ loading: false, src: '', error: e }) })
     return () => { alive = false }
   }, [row.id])
