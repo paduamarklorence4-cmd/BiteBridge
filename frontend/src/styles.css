@@ -305,9 +305,40 @@ label { display: block; font-weight: 600; font-size: .9rem; margin: 1rem 0 .35re
 }
 @media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
-  .nav-links { position: absolute; top: var(--nav-h); left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--white); padding: .5rem 1.25rem 1.25rem; border-bottom: 1px solid var(--blue-line); box-shadow: var(--shadow); max-height: 0; overflow: hidden; visibility: hidden; opacity: 0; transition: opacity .2s, max-height .3s; }
-  .nav-links.is-open { max-height: 480px; visibility: visible; opacity: 1; }
-  .nav-links a:not(.btn), .nav-clear .nav-links a:not(.btn) { color: var(--ink); padding: .8rem 0; border-bottom: 1px solid var(--blue-line); }
+  .nav-links {
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--white);
+    padding: .5rem 1.25rem 1.25rem;
+    border-bottom: 1px solid var(--blue-line);
+    box-shadow: var(--shadow);
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, max-height .3s;
+  }
+  .nav-links.is-open {
+    max-height: calc(100vh - var(--nav-h));   /* fallback para sa lumang browser */
+    max-height: calc(100dvh - var(--nav-h));  /* sakto sa phone browser */
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6rem;
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-links a:not(.btn), .nav-clear .nav-links a:not(.btn) {
+    color: var(--ink);
+    padding: .8rem 0;
+    border-bottom: 1px solid var(--blue-line);
+  }
   .nav-links .nav-login { margin-top: .9rem; border-color: var(--navy); }
 }
 @media (max-width: 600px) {

@@ -21,6 +21,13 @@ export default function Navbar() {
   const overHero = pathname === '/' && !solid && !open
 
   useEffect(() => { setOpen(false) }, [pathname])
+
+  // Lock the page scroll behind the menu while it is open (mobile)
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
   useEffect(() => {
     const onScroll = () => setSolid(window.scrollY > 24)
     onScroll()
@@ -69,4 +76,3 @@ export default function Navbar() {
     </header>
   )
 }
-
