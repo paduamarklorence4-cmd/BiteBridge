@@ -6,6 +6,7 @@ $allowed_exact = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
     'https://bite-bridge-fikw.vercel.app',
+    'https://bite-bridge-nine.vercel.app',
 ];
 
 // Lahat ng deployment ng Vercel project (production, preview, at bagong URL)
