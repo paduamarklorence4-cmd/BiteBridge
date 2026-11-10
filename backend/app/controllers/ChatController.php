@@ -187,6 +187,12 @@ class ChatController extends Controller
 
         $lang = (($result['lang'] ?? '') === 'fil') ? 'fil' : 'en';
         if ($lang !== $session['language']) {
+            if ($photo) {
+                $model->insert(['table' => 'chat_photos'], [
+                    'assessment_id' => $aid, 'mime_type' => $photo['mime'],
+                    'file_size' => $photo['size'], 'image_base64' => $photo['b64'],
+                ]);
+            }
             $model->update(['table' => 'chat_sessions'], $sid, ['language' => $lang]);
         }
 
@@ -387,8 +393,11 @@ class ChatController extends Controller
         throw new RuntimeException('Could not create a unique code');
     }
 
-    /** Validates and stores an optional wound photo outside the public web folder. Returns the stored path or null. */
-    private function save_photo()
+    /**
+     * Validates an optional wound photo and returns it for saving in the database (null if none was sent).
+     * It is kept in the database because a web host's disk may be wiped on every restart.
+     */
+    private function read_photo()
     {
         if (!isset($_FILES['photo']) || $_FILES['photo']['error'] === UPLOAD_ERR_NO_FILE) {
             return null;
@@ -406,20 +415,15 @@ class ChatController extends Controller
 
         $info = @getimagesize($f['tmp_name']);
         $mime = class_exists('finfo') ? (new finfo(FILEINFO_MIME_TYPE))->file($f['tmp_name']) : ($info['mime'] ?? '');
-        $ext  = ['image/jpeg' => 'jpg', 'image/png' => 'png', 'image/webp' => 'webp'][$mime] ?? null;
-        if (!$ext || !$info || $info[0] > 10000 || $info[1] > 10000) {
+        if (!in_array($mime, ['image/jpeg', 'image/png', 'image/webp'], true) || !$info || $info[0] > 10000 || $info[1] > 10000) {
             $this->api->respond_error('Only JPEG, PNG, or WebP photos are allowed.', 422);
         }
 
-        $dir = __DIR__ . '/../../storage/wound_photos';
-        if (!is_dir($dir) && !@mkdir($dir, 0750, true)) {
-            $this->api->respond_error('The photo could not be saved. Please try again.', 500);
+        $raw = file_get_contents($f['tmp_name']);
+        if ($raw === false) {
+            $this->api->respond_error('The photo could not be read. Please try again.', 422);
         }
-        $name = bin2hex(random_bytes(16)) . '.' . $ext;
-        if (!move_uploaded_file($f['tmp_name'], $dir . DIRECTORY_SEPARATOR . $name)) {
-            $this->api->respond_error('The photo could not be saved. Please try again.', 500);
-        }
-        return 'wound_photos/' . $name;
+        return ['mime' => $mime, 'size' => (int) $f['size'], 'b64' => base64_encode($raw)];
     }
 
     public function assessment()
@@ -459,7 +463,7 @@ class ChatController extends Controller
             $this->api->respond_error('Contact number must be 7 to 15 digits.', 422);
         }
 
-        $photo = $this->save_photo();
+        $photo = $this->read_photo();
 
         [$cat, $urgent] = $this->classify($a);
         $lang  = $session['language'] === 'fil' ? 'fil' : 'en';
@@ -469,7 +473,7 @@ class ChatController extends Controller
         try {
             $aid = $model->insert_get_id(['table' => 'chat_assessments'], [
                 'session_id' => $sid, 'answers' => json_encode($a), 'summary' => $this->staff_summary($a, $cat, $urgent),
-                'suggested_category' => $cat, 'wound_photo_path' => $photo, 'review_status' => 'pending',
+                'suggested_category' => $cat, 'wound_photo_path' => $photo ? 'database' : null, 'review_status' => 'pending',
             ], ['session_id' => $sid]);
             if ($aid <= 0) {
                 throw new RuntimeException('The assessment was not saved.');
@@ -487,9 +491,6 @@ class ChatController extends Controller
             $model->commit();
         } catch (Throwable $e) {
             $model->rollback();
-            if ($photo) {
-                @unlink(__DIR__ . '/../../storage/' . $photo);
-            }
             $this->api->respond_error('Your summary could not be saved. Please try again or call the center.', 500);
         }
 

@@ -62,10 +62,18 @@ class ChatReviewsController extends ResourceController
             $this->api->respond_error('There is no photo for this assessment.', 404);
         }
 
+        // Photos are kept in the database (chat_photos). Older photos may still be files on the server disk.
+        $stored = $model->query_one("SELECT mime_type, image_base64 FROM chat_photos WHERE assessment_id = ? LIMIT 1", [$id]);
+        if ($stored) {
+            $auth['users']->log_activity((int) $auth['profile']['id'], 'chat_photo_viewed', 'chatbot',
+                'Viewed wound photo of chatbot assessment #' . $id, $id);
+            $this->api->respond(['content_type' => $stored['mime_type'], 'data' => $stored['image_base64']]);
+        }
+
         $base = realpath(__DIR__ . '/../../storage/wound_photos');
         $file = $base ? realpath($base . DIRECTORY_SEPARATOR . basename($row['wound_photo_path'])) : false;
         if (!$file || strpos($file, $base) !== 0 || !is_file($file)) {
-            $this->api->respond_error('The photo file is missing.', 404);
+            $this->api->respond_error('The photo is no longer available. It was uploaded before photos were saved in the database, and the hosting disk was reset.', 404);
         }
         $types = ['jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'webp' => 'image/webp'];
         $type  = $types[strtolower(pathinfo($file, PATHINFO_EXTENSION))] ?? null;
