@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import * as Lucide from 'lucide-react'
 import { CLINIC } from '../config'
 import PageHeader from './PageHeader'
+import Captcha from '../components/Captcha'
 import './ChatFlow.css'
 
 const pick = (...names) => names.map((n) => Lucide[n]).find(Boolean) || Lucide.Circle
@@ -303,6 +304,7 @@ function Retrieve({ onBack }) {
 export default function Chat() {
   const [consented, setConsented] = useState(() => readFlag(CONSENT_KEY) === 'yes')
   const [agree, setAgree] = useState(false)
+  const [captchaToken, setCaptchaToken] = useState('')
   const [mode, setMode] = useState('chat') // chat | assess | done | retrieve
   const [result, setResult] = useState(null)
   const [msgs, setMsgs] = useState([
@@ -314,13 +316,25 @@ export default function Chat() {
   const [slow, setSlow] = useState(false)
   const [offline, setOffline] = useState(false)
   const tokenRef = useRef(readFlag(TOKEN_KEY) || '')
+  const captchaRef = useRef('')
   const starting = useRef(false)
   const end = useRef(null)
 
   useEffect(() => { end.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }) }, [msgs])
 
+  // Sends the person back to the consent screen so they pass the captcha again.
+  const resetConsent = useCallback(() => {
+    tokenRef.current = ''
+    captchaRef.current = ''
+    writeFlag(TOKEN_KEY, '')
+    writeFlag(CONSENT_KEY, 'no')
+    setCaptchaToken('')
+    setConsented(false)
+  }, [])
+
   const startSession = useCallback(async () => {
-    const d = await api('/chat/start', { consent: true, language: 'en' })
+    const d = await api('/chat/start', { consent: true, language: 'en', recaptcha_token: captchaRef.current })
+    captchaRef.current = '' // a captcha token can be used only once
     if (!d.session_token) throw new Error('The chat session could not be started.')
     tokenRef.current = d.session_token
     writeFlag(TOKEN_KEY, d.session_token)
@@ -330,20 +344,30 @@ export default function Chat() {
 
   useEffect(() => {
     if (!consented || tokenRef.current || starting.current) return
+    if (!captchaRef.current) { resetConsent(); return } // no captcha yet, ask again
     starting.current = true
-    startSession().catch((e) => { console.error('Chat start failed:', e); setOffline(true) }).finally(() => { starting.current = false })
-  }, [consented, startSession])
+    startSession()
+      .catch((e) => {
+        console.error('Chat start failed:', e)
+        if (e.status === 403) { resetConsent(); return }
+        setOffline(true)
+      })
+      .finally(() => { starting.current = false })
+  }, [consented, startSession, resetConsent])
 
-  // Runs a request with the session token. If the session expired (410), starts a new one and tries once more.
+  // Runs a request with the session token. If the session expired (410), the person passes the captcha again.
   const withSession = useCallback(async (fn) => {
-    if (!tokenRef.current) await startSession()
+    if (!tokenRef.current) {
+      if (!captchaRef.current) { resetConsent(); const e = new Error('Please verify again to continue.'); e.status = 410; throw e }
+      await startSession()
+    }
     try {
       return await fn(tokenRef.current)
     } catch (e) {
-      if (e.status === 410) return fn(await startSession())
+      if (e.status === 410) resetConsent()
       throw e
     }
-  }, [startSession])
+  }, [startSession, resetConsent])
 
   async function send(text) {
     const q = text.trim()
@@ -377,6 +401,7 @@ export default function Chat() {
   }
 
   function accept() {
+    captchaRef.current = captchaToken
     writeFlag(CONSENT_KEY, 'yes')
     setConsented(true)
   }
@@ -410,7 +435,10 @@ export default function Chat() {
                 <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)} style={{ marginTop: 4 }} />
                 <span>I have read the Privacy Notice and I agree to continue.</span>
               </label>
-              <button type="button" className="btn btn-primary" disabled={!agree} onClick={accept}>Start chat</button>
+              <div style={{ margin: '12px 0' }}>
+                <Captcha onVerified={setCaptchaToken} />
+              </div>
+              <button type="button" className="btn btn-primary" disabled={!agree || !captchaToken} onClick={accept}>Start chat</button>
               <p className="fineprint">
                 If this is an emergency or the bleeding will not stop, call the center at {CLINIC.phoneDisplay} or go to the nearest hospital.
               </p>

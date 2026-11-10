@@ -5,7 +5,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
  * Public chatbot (no login). Saves the chat, the structured bite questions, an optional wound photo,
  * and gives the patient a reference code to view a safe summary later.
  *
- *   POST /chat/start       { consent: true, language? }            -> { session_token }
+ *   POST /chat/start       { consent: true, language?, recaptcha_token } -> { session_token }
  *   POST /chat/message     { session_token, message }              -> reply from the AI service (saved)
  *   POST /chat/assessment  multipart: session_token, answers (JSON), contact_name?, contact_number?, photo?
  *   POST /chat/retrieve    { code }                                -> { summary, saved_at }
@@ -108,6 +108,33 @@ class ChatController extends Controller
         }
     }
 
+    // ------------------------------------------------------------------ reCAPTCHA
+
+    /** Checks the Google reCAPTCHA token with the secret key kept in RECAPTCHA_SECRET (never in the frontend). */
+    private function verify_recaptcha($token)
+    {
+        $secret = getenv('RECAPTCHA_SECRET');
+        if (!$secret || !is_string($token) || $token === '') {
+            return false;
+        }
+        $ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+        curl_setopt_array($ch, [
+            CURLOPT_POST           => true,
+            CURLOPT_POSTFIELDS     => http_build_query([
+                'secret'   => $secret,
+                'response' => $token,
+                'remoteip' => $this->ip(),
+            ]),
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CONNECTTIMEOUT => 5,
+            CURLOPT_TIMEOUT        => 10,
+        ]);
+        $body = curl_exec($ch);
+        curl_close($ch);
+        $res = json_decode((string) $body, true);
+        return is_array($res) && !empty($res['success']);
+    }
+
     // ------------------------------------------------------------------ start
 
     public function start()
@@ -123,6 +150,9 @@ class ChatController extends Controller
 
         if (empty($in['consent'])) {
             $this->api->respond_error('Please agree to the Privacy Notice to start the chat.', 422);
+        }
+        if (!$this->verify_recaptcha($in['recaptcha_token'] ?? '')) {
+            $this->api->respond_error('Please complete the captcha and try again.', 403);
         }
         $lang  = (($in['language'] ?? '') === 'fil') ? 'fil' : 'en';
         $token = bin2hex(random_bytes(32));
