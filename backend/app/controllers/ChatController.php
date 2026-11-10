@@ -187,12 +187,6 @@ class ChatController extends Controller
 
         $lang = (($result['lang'] ?? '') === 'fil') ? 'fil' : 'en';
         if ($lang !== $session['language']) {
-            if ($photo) {
-                $model->insert(['table' => 'chat_photos'], [
-                    'assessment_id' => $aid, 'mime_type' => $photo['mime'],
-                    'file_size' => $photo['size'], 'image_base64' => $photo['b64'],
-                ]);
-            }
             $model->update(['table' => 'chat_sessions'], $sid, ['language' => $lang]);
         }
 
@@ -217,6 +211,8 @@ class ChatController extends Controller
         if ($key) {
             $headers[] = 'X-AI-Key: ' . $key;
         }
+        $body = false;
+        $code = 0;
         if (function_exists('curl_init')) {
             $ch = curl_init($url);
             curl_setopt_array($ch, [
@@ -478,6 +474,15 @@ class ChatController extends Controller
             if ($aid <= 0) {
                 throw new RuntimeException('The assessment was not saved.');
             }
+
+            // Save the wound photo (if any) in the database, linked to this assessment.
+            if ($photo) {
+                $model->insert(['table' => 'chat_photos'], [
+                    'assessment_id' => $aid, 'mime_type' => $photo['mime'],
+                    'file_size' => $photo['size'], 'image_base64' => $photo['b64'],
+                ]);
+            }
+
             $model->update(['table' => 'chat_sessions'], $sid, [
                 'contact_name' => $name === '' ? null : $name, 'contact_number' => $number === '' ? null : $number,
                 'status' => 'completed',
@@ -491,6 +496,7 @@ class ChatController extends Controller
             $model->commit();
         } catch (Throwable $e) {
             $model->rollback();
+            error_log('ChatController assessment: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine());
             $this->api->respond_error('Your summary could not be saved. Please try again or call the center.', 500);
         }
 
