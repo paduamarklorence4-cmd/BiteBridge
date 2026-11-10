@@ -67,7 +67,8 @@ class ChatReviewsController extends ResourceController
         if ($stored) {
             $auth['users']->log_activity((int) $auth['profile']['id'], 'chat_photo_viewed', 'chatbot',
                 'Viewed wound photo of chatbot assessment #' . $id, $id);
-         $this->api->respond(['data' => ['content_type' => $stored['mime_type'], 'data' => $stored['image_base64']]]);
+            $this->api->respond(['content_type' => $stored['mime_type'], 'data' => $stored['image_base64']]);
+        }
 
         $base = realpath(__DIR__ . '/../../storage/wound_photos');
         $file = $base ? realpath($base . DIRECTORY_SEPARATOR . basename($row['wound_photo_path'])) : false;
