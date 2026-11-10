@@ -118,8 +118,11 @@ $config['refresh_token_table'] = 'refresh_tokens';
 | These are used for JWT Issuer and Audience claims.
 |
 */
-$config['jwt_issuer'] = 'your-app';
-
+   $config['allow_origin'] = [
+       'https://bite-bridge-nine.vercel.app',
+       'http://localhost:5173',
+       'http://127.0.0.1:5173',
+   ];
 /*
 |--------------------------------------------------------------------------
 | JWT Issuer and Audience
