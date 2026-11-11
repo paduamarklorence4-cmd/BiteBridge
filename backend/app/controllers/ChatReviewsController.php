@@ -139,8 +139,9 @@ class ChatReviewsController extends ResourceController
         ]);
     }
 
-    /**
+        /**
      * Creates the patient, bite incident and wound assessment for one chatbot assessment.
+     * Uses no insert IDs: each row is found again by a value we control, so it works inside a transaction.
      * Safe to run again: if the wound assessment already exists, nothing new is created.
      */
     private function create_records($model, $assessment_id, $reviewer_id)
@@ -180,102 +181,74 @@ class ChatReviewsController extends ResourceController
         }
         if ($patient_id === 0) {
             [$first, $last] = $this->split_name($a['contact_name']);
-            $patient_id = $model->insert_id(['table' => 'patients'], [
-                'patient_code'      => 'EZ-TMP-' . bin2hex(random_bytes(6)),
-                'first_name'        => $first,
-                'last_name'         => $last,
-                'contact_number'    => $phone,
-                'registration_date' => date('Y-m-d'),
-                'notes'             => 'Created automatically from chatbot assessment #' . $assessment_id . '. Please verify the details.',
-                'created_by'        => $reviewer_id,
-            ]);
+            $temp_code = 'TMP-' . bin2hex(random_bytes(8));
+
+            $model->insert_rows(['table' => 'patients'],
+                ['patient_code', 'first_name', 'last_name', 'contact_number', 'registration_date', 'notes', 'created_by'],
+                [[
+                    'patient_code'      => $temp_code,
+                    'first_name'        => $first,
+                    'last_name'         => $last,
+                    'contact_number'    => $phone,
+                    'registration_date' => date('Y-m-d'),
+                    'notes'             => 'Created automatically from chatbot assessment #' . $assessment_id . '. Please verify the details.',
+                    'created_by'        => $reviewer_id,
+                ]]
+            );
+
+            $new = $model->find_where('patients', ['patient_code' => $temp_code]);
+            if (!$new) {
+                throw new RuntimeException('The new patient could not be found after saving.');
+            }
+            $patient_id = (int) $new['id'];
+
+            $model->execute(
+                "UPDATE patients SET patient_code = CONCAT('EZ-', LPAD(id, 5, '0')) WHERE id = ?",
+                [$patient_id]
+            );
         }
 
         // 2. Bite incident, linked to the patient.
-        $incident_id = $model->insert_id(['table' => 'animal_bite_incidents'], [
-            'patient_id'     => $patient_id,
-            'incident_date'  => $this->incident_date($ans['when'] ?? '', $a['created_at']),
-            'animal_type'    => $this->animal_label($ans['animal'] ?? 'other'),
-            'injury_type'    => $this->injury_type($ans['exposure'] ?? ''),
-            'body_part'      => $this->body_label($ans['body_part'] ?? 'other'),
-            'wound_details'  => $a['summary'] ?: null,
-            'staff_notes'    => 'Created from chatbot assessment #' . $assessment_id
-                              . '. Not yet verified by staff. Owner or vaccination: ' . ($ans['animal_status'] ?? 'unknown')
-                              . '. Bleeding: ' . ($ans['bleeding'] ?? 'unknown')
-                              . '. Washed: ' . ($ans['washed'] ?? 'unknown') . '.',
-            'recorded_by'    => $reviewer_id,
-        ]);
+        $model->insert_rows(['table' => 'animal_bite_incidents'],
+            ['patient_id', 'incident_date', 'animal_type', 'injury_type', 'body_part', 'wound_details', 'staff_notes', 'recorded_by'],
+            [[
+                'patient_id'    => $patient_id,
+                'incident_date' => $this->incident_date($ans['when'] ?? '', $a['created_at']),
+                'animal_type'   => $this->animal_label($ans['animal'] ?? 'other'),
+                'injury_type'   => $this->injury_type($ans['exposure'] ?? ''),
+                'body_part'     => $this->body_label($ans['body_part'] ?? 'other'),
+                'wound_details' => $a['summary'] ?: null,
+                'staff_notes'   => 'Created from chatbot assessment #' . $assessment_id
+                                 . '. Not yet verified by staff. Owner or vaccination: ' . ($ans['animal_status'] ?? 'unknown')
+                                 . '. Bleeding: ' . ($ans['bleeding'] ?? 'unknown')
+                                 . '. Washed: ' . ($ans['washed'] ?? 'unknown') . '.',
+                'recorded_by'   => $reviewer_id,
+            ]]
+        );
+
+        // The newest incident for this patient is the one we just created (same transaction).
+        $inc = $model->query_one(
+            "SELECT id FROM animal_bite_incidents WHERE patient_id = ? ORDER BY id DESC LIMIT 1",
+            [$patient_id]
+        );
+        if (!$inc) {
+            throw new RuntimeException('The new bite incident could not be found after saving.');
+        }
+        $incident_id = (int) $inc['id'];
 
         // 3. Wound assessment: suggested category only. Final category stays blank until staff confirm it.
-        $model->insert_id(['table' => 'wound_assessments'], [
-            'incident_id'         => $incident_id,
-            'chat_assessment_id'  => $assessment_id,
-            'wound_description'   => $a['summary'] ?: null,
-            'exposure_details'    => $this->exposure_label($ans['exposure'] ?? ''),
-            'suggested_category'  => in_array($a['suggested_category'], ['I', 'II', 'III'], true) ? $a['suggested_category'] : null,
-            'assessed_by'         => $reviewer_id,
-        ]);
+        $model->insert_rows(['table' => 'wound_assessments'],
+            ['incident_id', 'chat_assessment_id', 'wound_description', 'exposure_details', 'suggested_category', 'assessed_by'],
+            [[
+                'incident_id'        => $incident_id,
+                'chat_assessment_id' => $assessment_id,
+                'wound_description'  => $a['summary'] ?: null,
+                'exposure_details'   => $this->exposure_label($ans['exposure'] ?? ''),
+                'suggested_category' => in_array($a['suggested_category'], ['I', 'II', 'III'], true) ? $a['suggested_category'] : null,
+                'assessed_by'        => $reviewer_id,
+            ]]
+        );
 
         return ['already_created' => false, 'patient_id' => $patient_id, 'incident_id' => $incident_id];
-    }
-
-    private function clean_phone($v)
-    {
-        $v = preg_replace('/[^\d+]/', '', (string) $v);
-        return ($v === '' || strlen($v) < 7 || strlen($v) > 20) ? null : $v;
-    }
-
-    private function split_name($name)
-    {
-        $parts = preg_split('/\s+/', trim((string) $name), -1, PREG_SPLIT_NO_EMPTY);
-        if (!$parts) {
-            return ['Unknown', 'Unknown'];
-        }
-        $first = mb_substr(array_shift($parts), 0, 60);
-        $last  = $parts ? mb_substr(implode(' ', $parts), 0, 60) : 'Unknown';
-        return [$first, $last];
-    }
-
-    /** Approximate: the time choice relative to the day the chat was made. Staff can correct it. */
-    private function incident_date($when, $created_at)
-    {
-        $offset = ['today' => 0, '1_3_days' => 2, 'more_3_days' => 5][$when] ?? 0;
-        $base   = new DateTime(substr((string) $created_at, 0, 10) ?: 'today');
-        $base->modify('-' . $offset . ' days');
-        $today  = new DateTime('today');
-        return ($base > $today ? $today : $base)->format('Y-m-d');
-    }
-
-    private function animal_label($v)
-    {
-        return ['dog' => 'Dog', 'cat' => 'Cat'][$v] ?? 'Other';
-    }
-
-    private function injury_type($v)
-    {
-        $map = [
-            'bite_broke_skin'     => 'bite',
-            'nibble_no_break'     => 'bite',
-            'scratch_bleeding'    => 'scratch',
-            'scratch_no_bleeding' => 'scratch',
-            'lick_broken_skin'    => 'lick_on_broken_skin',
-        ];
-        return $map[$v] ?? 'other';
-    }
-
-    private function body_label($v)
-    {
-        return [
-            'head_face_neck' => 'Head, face, or neck',
-            'hand_fingers'   => 'Hand or fingers',
-            'arm'            => 'Arm',
-            'leg_foot'       => 'Leg or foot',
-            'trunk'          => 'Body (trunk)',
-        ][$v] ?? 'Other';
-    }
-
-    private function exposure_label($v)
-    {
-        return $v === '' ? null : ucfirst(str_replace('_', ' ', (string) $v));
     }
 }
