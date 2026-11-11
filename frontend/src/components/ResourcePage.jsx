@@ -122,16 +122,30 @@ function RefSelect({ id, resource, value, initialLabel, onChange, optional }) {
   )
 }
 
+// Turns a saved "a; b; c" text back into the checked option keys when editing a record.
+function checkedFromRow(fd, v) {
+  if (Array.isArray(v)) return v
+  if (typeof v !== 'string' || v === '') return []
+  const parts = v.split('; ')
+  return Object.keys(fd.options).filter((k) => parts.includes(fd.options[k]))
+}
+
 function RecordForm({ cfg, row, onCancel, onSaved }) {
   const editing = Boolean(row)
   const [f, setF] = useState(() => {
     const o = {}
-    cfg.fields.forEach((fd) => { o[fd.key] = row?.[fd.key] ?? '' })
+    cfg.fields.forEach((fd) => {
+      o[fd.key] = fd.type === 'checkboxes' ? checkedFromRow(fd, row?.[fd.key]) : (row?.[fd.key] ?? '')
+    })
     return o
   })
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
   const set = (k) => (e) => setF((s) => ({ ...s, [k]: e.target.value }))
+  const toggle = (k, opt) => setF((s) => {
+    const cur = Array.isArray(s[k]) ? s[k] : []
+    return { ...s, [k]: cur.includes(opt) ? cur.filter((x) => x !== opt) : [...cur, opt] }
+  })
 
   async function submit(e) {
     e.preventDefault()
@@ -158,16 +172,31 @@ function RecordForm({ cfg, row, onCancel, onSaved }) {
       <div className="pt-form">
         {cfg.fields.map((fd) => {
           const id = `rf-${fd.key}`
-          const full = fd.full || fd.type === 'textarea' || fd.type === 'ref'
+          const full = fd.full || fd.type === 'textarea' || fd.type === 'ref' || fd.type === 'checkboxes'
           return (
             <div key={fd.key} className={`pt-field${full ? ' full' : ''}`}>
-              <label htmlFor={id}>{fd.label}{fd.required ? ' *' : ''}</label>
+              <label htmlFor={fd.type === 'checkboxes' ? undefined : id}>{fd.label}{fd.required ? ' *' : ''}</label>
               {fd.type === 'textarea' && <textarea id={id} value={f[fd.key]} onChange={set(fd.key)} />}
               {fd.type === 'select' && (
                 <select id={id} value={f[fd.key]} onChange={set(fd.key)} disabled={editing && fd.createOnly} style={{ width: '100%', padding: '10px 12px', border: '1px solid #d9e2ec', borderRadius: 8, font: 'inherit', background: '#fff' }}>
                   <option value="">{fd.required ? 'Choose…' : 'None'}</option>
                   {fd.options.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
                 </select>
+              )}
+              {fd.type === 'checkboxes' && (
+                <div style={{ border: '1px solid #d9e2ec', borderRadius: 8, padding: '8px 12px', background: '#fff' }}>
+                  {Object.entries(fd.options).map(([k, text]) => (
+                    <label key={k} style={{ display: 'flex', gap: 8, alignItems: 'flex-start', padding: '6px 0', cursor: 'pointer' }}>
+                      <input
+                        type="checkbox"
+                        checked={(f[fd.key] || []).includes(k)}
+                        onChange={() => toggle(fd.key, k)}
+                        style={{ marginTop: 4 }}
+                      />
+                      <span>{text}</span>
+                    </label>
+                  ))}
+                </div>
               )}
               {fd.type === 'ref' && (
                 <RefSelect id={id} resource={fd.lookup} value={f[fd.key]} initialLabel={row?.[fd.labelKey]} optional={!fd.required} onChange={(v) => setF((s) => ({ ...s, [fd.key]: v }))} />
@@ -237,6 +266,7 @@ function RecordView({ cfg, id }) {
  * Generic staff list page. cfg: { title, subtitle, singular, base, perms:{view,manage}, searchPlaceholder,
  *   columns, fields, details, filters?, actions? }
  * actions: [{ label, perm, title, render(row, ctx) }] shown as extra buttons per row.
+ * Field types: text, textarea, date, number, time, password, select, ref, checkboxes.
  */
 export default function ResourcePage({ cfg }) {
   const perms = getSession()?.user?.permissions || []
