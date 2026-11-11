@@ -139,7 +139,7 @@ class ChatReviewsController extends ResourceController
         ]);
     }
 
-        /**
+    /**
      * Creates the patient, bite incident and wound assessment for one chatbot assessment.
      * Uses no insert IDs: each row is found again by a value we control, so it works inside a transaction.
      * Safe to run again: if the wound assessment already exists, nothing new is created.
@@ -173,10 +173,7 @@ class ChatReviewsController extends ResourceController
         $phone      = $this->clean_phone($a['contact_number']);
         $patient_id = 0;
         if ($phone !== null) {
-            $p = $model->query_one(
-                "SELECT id FROM patients WHERE contact_number = ? ORDER BY id DESC LIMIT 1",
-                [$phone]
-            );
+            $p = $model->query_one("SELECT id FROM patients WHERE contact_number = ? ORDER BY id DESC LIMIT 1", [$phone]);
             $patient_id = $p ? (int) $p['id'] : 0;
         }
         if ($patient_id === 0) {
@@ -226,7 +223,6 @@ class ChatReviewsController extends ResourceController
             ]]
         );
 
-        // The newest incident for this patient is the one we just created (same transaction).
         $inc = $model->query_one(
             "SELECT id FROM animal_bite_incidents WHERE patient_id = ? ORDER BY id DESC LIMIT 1",
             [$patient_id]
@@ -250,5 +246,65 @@ class ChatReviewsController extends ResourceController
         );
 
         return ['already_created' => false, 'patient_id' => $patient_id, 'incident_id' => $incident_id];
+    }
+
+    private function clean_phone($v)
+    {
+        $v = preg_replace('/[^\d+]/', '', (string) $v);
+        return ($v === '' || strlen($v) < 7 || strlen($v) > 20) ? null : $v;
+    }
+
+    private function split_name($name)
+    {
+        $parts = preg_split('/\s+/', trim((string) $name), -1, PREG_SPLIT_NO_EMPTY);
+        if (!$parts) {
+            return ['Unknown', 'Unknown'];
+        }
+        $first = mb_substr(array_shift($parts), 0, 60);
+        $last  = $parts ? mb_substr(implode(' ', $parts), 0, 60) : 'Unknown';
+        return [$first, $last];
+    }
+
+    /** Approximate: the time choice relative to the day the chat was made. Staff can correct it. */
+    private function incident_date($when, $created_at)
+    {
+        $offset = ['today' => 0, '1_3_days' => 2, 'more_3_days' => 5][$when] ?? 0;
+        $base   = new DateTime(substr((string) $created_at, 0, 10) ?: 'today');
+        $base->modify('-' . $offset . ' days');
+        $today  = new DateTime('today');
+        return ($base > $today ? $today : $base)->format('Y-m-d');
+    }
+
+    private function animal_label($v)
+    {
+        return ['dog' => 'Dog', 'cat' => 'Cat'][$v] ?? 'Other';
+    }
+
+    private function injury_type($v)
+    {
+        $map = [
+            'bite_broke_skin'     => 'bite',
+            'nibble_no_break'     => 'bite',
+            'scratch_bleeding'    => 'scratch',
+            'scratch_no_bleeding' => 'scratch',
+            'lick_broken_skin'    => 'lick_on_broken_skin',
+        ];
+        return $map[$v] ?? 'other';
+    }
+
+    private function body_label($v)
+    {
+        return [
+            'head_face_neck' => 'Head, face, or neck',
+            'hand_fingers'   => 'Hand or fingers',
+            'arm'            => 'Arm',
+            'leg_foot'       => 'Leg or foot',
+            'trunk'          => 'Body (trunk)',
+        ][$v] ?? 'Other';
+    }
+
+    private function exposure_label($v)
+    {
+        return $v === '' ? null : ucfirst(str_replace('_', ' ', (string) $v));
     }
 }
