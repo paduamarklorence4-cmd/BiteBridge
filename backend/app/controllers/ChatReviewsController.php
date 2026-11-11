@@ -176,7 +176,15 @@ class ChatReviewsController extends ResourceController
         // 1. Patient: reuse an existing patient with the same contact number, otherwise create one.
         $patient_id = 0;
         if ($phone !== null) {
-            $p = $model->query_one("SELECT id FROM patients WHERE contact_number = ? ORDER BY id DESC LIMIT 1", [$phone]);
+            [$first, $last] = $this->split_name($a['contact_name']);
+            $p = $model->query_one(
+                "SELECT id FROM patients
+                 WHERE contact_number = ?
+                   AND LOWER(TRIM(first_name)) = LOWER(?)
+                   AND LOWER(TRIM(last_name)) = LOWER(?)
+                 ORDER BY id DESC LIMIT 1",
+                [$phone, trim((string) $first), trim((string) $last)]
+            );
             $patient_id = $p ? (int) $p['id'] : 0;
             if ($patient_id > 0) {
                 // Fill only the blanks. Anything staff already entered is never overwritten.
