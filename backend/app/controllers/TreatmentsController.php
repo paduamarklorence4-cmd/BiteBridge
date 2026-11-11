@@ -45,16 +45,47 @@ class TreatmentsController extends ResourceController
     }
 
     /**
-     * Shows the real error on screen instead of a generic 500, so the cause can be fixed.
+     * POST /treatments/create. Written here instead of using the generic one, so the real
+     * database error is shown on screen when a save fails.
      */
     public function create()
     {
+        $this->api->require_method('POST');
+        $auth  = $this->authorize('treatments.manage');
+        $in    = $this->json_input();
+        $cfg   = $this->config();
+        $model = $this->call->model('ResourceModel');
+
+        // Validation first. These responses end the request with a readable message.
+        $data = $this->prepare($in, 'create', null);
+
+        $treatment_date = (string) ($in['treatment_date'] ?? '');
+        $d = DateTime::createFromFormat('Y-m-d', $treatment_date);
+        if (!$d || $d->format('Y-m-d') !== $treatment_date) {
+            $this->api->respond_error('Treatment date must be a valid date (YYYY-MM-DD).', 422);
+        }
+        if ($d > new DateTime('today')) {
+            $this->api->respond_error('Treatment date cannot be in the future.', 422);
+        }
+
         try {
-            parent::create();
+            $id = $model->insert($cfg, [
+                'incident_id'       => (int) $in['incident_id'],
+                'patient_id'        => (int) $data['patient_id'],
+                'treatment_date'    => $treatment_date,
+                'treatment_details' => $data['treatment_details'],
+                'notes'             => trim((string) ($in['notes'] ?? '')) === '' ? null : trim((string) $in['notes']),
+                'treated_by'        => (int) $auth['profile']['id'],
+            ]);
         } catch (Throwable $e) {
             error_log('treatments create: ' . $e->getMessage());
             $this->api->respond_error('Treatment save failed: ' . $e->getMessage(), 500);
         }
+
+        $this->api->respond([
+            'message' => 'Treatment record saved',
+            'item'    => $model->find($cfg, $id),
+        ], 201);
     }
 
     /**
