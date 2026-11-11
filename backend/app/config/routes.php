@@ -49,7 +49,7 @@ $router->post('/assessments/confirm', 'AssessmentsController::confirm');
 // Treatments
 $router->post('/treatments/search', 'TreatmentsController::search');
 $router->post('/treatments/detail', 'TreatmentsController::detail');
-$router->post('/treatments/create', 'TreatmentsController::store');
+$router->post('/treatments/create', 'TreatmentsController::create');
 $router->post('/treatments/update', 'TreatmentsController::modify');
 // Vaccination
 $router->post('/vaccination-schedules/search', 'VaccinationSchedulesController::search');
