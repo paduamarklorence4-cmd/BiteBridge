@@ -45,6 +45,19 @@ class TreatmentsController extends ResourceController
     }
 
     /**
+     * Shows the real error on screen instead of a generic 500, so the cause can be fixed.
+     */
+    public function create()
+    {
+        try {
+            parent::create();
+        } catch (Throwable $e) {
+            error_log('treatments create: ' . $e->getMessage());
+            $this->api->respond_error('Treatment save failed: ' . $e->getMessage(), 500);
+        }
+    }
+
+    /**
      * Runs before save. The patient always comes from the incident. The treatment text is checked
      * against the allowed labels, so only known choices can be stored.
      */
