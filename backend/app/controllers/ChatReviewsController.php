@@ -3,8 +3,9 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 require_once __DIR__ . '/ResourceController.php';
 
 /**
- * Staff review of chatbot assessments (needs chatbot.review). The suggested category is shown to staff only.
- * Only search, detail, transcript and review are routed (no create or edit: chats are written by the chatbot).
+ * Staff review of chatbot assessments (needs chatbot.review).
+ * Marking an assessment Reviewed or Referred creates the patient, bite incident and wound assessment
+ * automatically, in one transaction. Pending creates nothing.
  */
 class ChatReviewsController extends ResourceController
 {
@@ -62,7 +63,6 @@ class ChatReviewsController extends ResourceController
             $this->api->respond_error('There is no photo for this assessment.', 404);
         }
 
-        // Photos are kept in the database (chat_photos). Older photos may still be files on the server disk.
         $stored = $model->query_one("SELECT mime_type, image_base64 FROM chat_photos WHERE assessment_id = ? LIMIT 1", [$id]);
         if ($stored) {
             $auth['users']->log_activity((int) $auth['profile']['id'], 'chat_photo_viewed', 'chatbot',
@@ -108,14 +108,178 @@ class ChatReviewsController extends ResourceController
             $this->api->respond_error('Notes are too long (up to 2000 characters).', 422);
         }
 
-        $model->update($cfg, $id, [
-            'review_status' => $status,
-            'staff_notes'   => $notes === '' ? null : $notes,
-            'reviewed_by'   => $status === 'pending' ? null : (int) $auth['profile']['id'],
-            'reviewed_at'   => $status === 'pending' ? null : (new DateTime())->format('Y-m-d H:i:s'),
-        ]);
-        $auth['users']->log_activity((int) $auth['profile']['id'], 'chat_review_' . $status, 'chatbot',
+        $reviewer_id = (int) $auth['profile']['id'];
+        $created     = null;
+
+        $model->begin();
+        try {
+            $model->update($cfg, $id, [
+                'review_status' => $status,
+                'staff_notes'   => $notes === '' ? null : $notes,
+                'reviewed_by'   => $status === 'pending' ? null : $reviewer_id,
+                'reviewed_at'   => $status === 'pending' ? null : (new DateTime())->format('Y-m-d H:i:s'),
+            ]);
+            if ($status !== 'pending') {
+                $created = $this->create_records($model, $id, $reviewer_id);
+            }
+            $model->commit();
+        } catch (Throwable $e) {
+            $model->rollback();
+            error_log('chat review create: ' . $e->getMessage());
+            $this->api->respond_error('The review was not saved: ' . $e->getMessage(), 500);
+        }
+
+        $auth['users']->log_activity($reviewer_id, 'chat_review_' . $status, 'chatbot',
             'Marked chatbot assessment #' . $id . ' as ' . $status, $id);
-        $this->api->respond(['message' => 'Review saved', 'item' => $model->find($cfg, $id)]);
+
+        $this->api->respond([
+            'message' => 'Review saved',
+            'item'    => $model->find($cfg, $id),
+            'created' => $created,
+        ]);
+    }
+
+    /**
+     * Creates the patient, bite incident and wound assessment for one chatbot assessment.
+     * Safe to run again: if the wound assessment already exists, nothing new is created.
+     */
+    private function create_records($model, $assessment_id, $reviewer_id)
+    {
+        $existing = $model->query_one(
+            "SELECT id, incident_id FROM wound_assessments WHERE chat_assessment_id = ? LIMIT 1",
+            [$assessment_id]
+        );
+        if ($existing) {
+            return ['already_created' => true, 'incident_id' => (int) $existing['incident_id']];
+        }
+
+        $a = $model->query_one(
+            "SELECT a.id, a.summary, a.suggested_category, CAST(a.answers AS CHAR) AS answers,
+                    s.contact_name, s.contact_number, s.created_at
+             FROM chat_assessments a
+             INNER JOIN chat_sessions s ON s.id = a.session_id
+             WHERE a.id = ? LIMIT 1",
+            [$assessment_id]
+        );
+        if (!$a) {
+            throw new RuntimeException('Assessment not found.');
+        }
+
+        $ans = json_decode((string) $a['answers'], true);
+        $ans = is_array($ans) ? $ans : [];
+
+        // 1. Patient: reuse an existing patient with the same contact number, otherwise create one.
+        $phone      = $this->clean_phone($a['contact_number']);
+        $patient_id = 0;
+        if ($phone !== null) {
+            $p = $model->query_one(
+                "SELECT id FROM patients WHERE contact_number = ? ORDER BY id DESC LIMIT 1",
+                [$phone]
+            );
+            $patient_id = $p ? (int) $p['id'] : 0;
+        }
+        if ($patient_id === 0) {
+            [$first, $last] = $this->split_name($a['contact_name']);
+            $patient_id = $model->insert(['table' => 'patients'], [
+                'patient_code'      => 'TMP-' . bin2hex(random_bytes(6)),
+                'first_name'        => $first,
+                'last_name'         => $last,
+                'contact_number'    => $phone,
+                'registration_date' => date('Y-m-d'),
+                'notes'             => 'Created automatically from chatbot assessment #' . $assessment_id . '. Please verify the details.',
+                'created_by'        => $reviewer_id,
+            ]);
+            $model->execute(
+                "UPDATE patients SET patient_code = CONCAT('EZ-', LPAD(id, GREATEST(5, CHAR_LENGTH(id)), '0')) WHERE id = ?",
+                [$patient_id]
+            );
+        }
+
+        // 2. Bite incident, linked to the patient.
+        $incident_id = $model->insert(['table' => 'animal_bite_incidents'], [
+            'patient_id'     => $patient_id,
+            'incident_date'  => $this->incident_date($ans['when'] ?? '', $a['created_at']),
+            'animal_type'    => $this->animal_label($ans['animal'] ?? 'other'),
+            'injury_type'    => $this->injury_type($ans['exposure'] ?? ''),
+            'body_part'      => $this->body_label($ans['body_part'] ?? 'other'),
+            'wound_details'  => $a['summary'] ?: null,
+            'staff_notes'    => 'Created from chatbot assessment #' . $assessment_id
+                              . '. Not yet verified by staff. Owner or vaccination: ' . ($ans['animal_status'] ?? 'unknown')
+                              . '. Bleeding: ' . ($ans['bleeding'] ?? 'unknown')
+                              . '. Washed: ' . ($ans['washed'] ?? 'unknown') . '.',
+            'recorded_by'    => $reviewer_id,
+        ]);
+
+        // 3. Wound assessment: suggested category only. Final category stays blank until staff confirm it.
+        $model->insert(['table' => 'wound_assessments'], [
+            'incident_id'         => $incident_id,
+            'chat_assessment_id'  => $assessment_id,
+            'wound_description'   => $a['summary'] ?: null,
+            'exposure_details'    => $this->exposure_label($ans['exposure'] ?? ''),
+            'suggested_category'  => in_array($a['suggested_category'], ['I', 'II', 'III'], true) ? $a['suggested_category'] : null,
+            'assessed_by'         => $reviewer_id,
+        ]);
+
+        return ['already_created' => false, 'patient_id' => $patient_id, 'incident_id' => $incident_id];
+    }
+
+    private function clean_phone($v)
+    {
+        $v = preg_replace('/[^\d+]/', '', (string) $v);
+        return ($v === '' || strlen($v) < 7 || strlen($v) > 20) ? null : $v;
+    }
+
+    private function split_name($name)
+    {
+        $parts = preg_split('/\s+/', trim((string) $name), -1, PREG_SPLIT_NO_EMPTY);
+        if (!$parts) {
+            return ['Unknown', 'Unknown'];
+        }
+        $first = mb_substr(array_shift($parts), 0, 60);
+        $last  = $parts ? mb_substr(implode(' ', $parts), 0, 60) : 'Unknown';
+        return [$first, $last];
+    }
+
+    /** Approximate: the time choice relative to the day the chat was made. Staff can correct it. */
+    private function incident_date($when, $created_at)
+    {
+        $offset = ['today' => 0, '1_3_days' => 2, 'more_3_days' => 5][$when] ?? 0;
+        $base   = new DateTime(substr((string) $created_at, 0, 10) ?: 'today');
+        $base->modify('-' . $offset . ' days');
+        $today  = new DateTime('today');
+        return ($base > $today ? $today : $base)->format('Y-m-d');
+    }
+
+    private function animal_label($v)
+    {
+        return ['dog' => 'Dog', 'cat' => 'Cat'][$v] ?? 'Other';
+    }
+
+    private function injury_type($v)
+    {
+        $map = [
+            'bite_broke_skin'     => 'bite',
+            'nibble_no_break'     => 'bite',
+            'scratch_bleeding'    => 'scratch',
+            'scratch_no_bleeding' => 'scratch',
+            'lick_broken_skin'    => 'lick_on_broken_skin',
+        ];
+        return $map[$v] ?? 'other';
+    }
+
+    private function body_label($v)
+    {
+        return [
+            'head_face_neck' => 'Head, face, or neck',
+            'hand_fingers'   => 'Hand or fingers',
+            'arm'            => 'Arm',
+            'leg_foot'       => 'Leg or foot',
+            'trunk'          => 'Body (trunk)',
+        ][$v] ?? 'Other';
+    }
+
+    private function exposure_label($v)
+    {
+        return $v === '' ? null : ucfirst(str_replace('_', ' ', (string) $v));
     }
 }
