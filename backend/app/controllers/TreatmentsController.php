@@ -4,6 +4,17 @@ require_once __DIR__ . '/ResourceController.php';
 
 class TreatmentsController extends ResourceController
 {
+    /** The only treatment choices staff can pick. Keys are stored as sent; labels are saved as text. */
+    private const DETAIL_OPTIONS = [
+        'washed'       => 'Hinugasan ang sugat ng sabon at tubig',
+        'dressed'      => 'Nilagyan ng dressing',
+        'vaccine'      => 'Binigyan ng bakuna laban sa rabies',
+        'rig'          => 'Binigyan ng rabies immunoglobulin (RIG)',
+        'tetanus'      => 'Tinurukan ng tetanus',
+        'referred'     => 'Ni-refer sa physician',
+        'other'        => 'Iba pa (tingnan ang Notes)',
+    ];
+
     protected function config()
     {
         return [
@@ -23,7 +34,7 @@ class TreatmentsController extends ResourceController
             'fields' => [
                 'incident_id'       => ['type' => 'ref', 'table' => 'animal_bite_incidents', 'label' => 'Bite incident', 'required' => true],
                 'treatment_date'    => ['type' => 'date', 'label' => 'Treatment date', 'required' => true, 'no_future' => true],
-                'treatment_details' => ['type' => 'text', 'label' => 'Treatment details', 'required' => true],
+                'treatment_details' => ['type' => 'checkboxes', 'label' => 'Ginawa', 'required' => true, 'options' => self::DETAIL_OPTIONS],
                 'notes'             => ['type' => 'text', 'label' => 'Notes'],
             ],
             'filters' => [
@@ -33,12 +44,32 @@ class TreatmentsController extends ResourceController
         ];
     }
 
-    /** The patient always comes from the incident, so the two can never disagree. */
+    /**
+     * Runs before save. The patient always comes from the incident, and the checked options are turned
+     * into readable text. Only known option keys are accepted, so nothing else can be stored.
+     */
     protected function prepare(array $data, $mode, $existing)
     {
         $model    = $this->call->model('ResourceModel');
-        $incident = $model->get_row('animal_bite_incidents', (int) $data['incident_id']);
+        $incident = $model->get_row('animal_bite_incidents', (int) ($data['incident_id'] ?? 0));
+        if (!$incident) {
+            $this->api->respond_error('Choose a valid bite incident.', 422);
+        }
         $data['patient_id'] = (int) $incident['patient_id'];
+
+        $picked = $data['treatment_details'] ?? [];
+        if (!is_array($picked)) {
+            $picked = $picked === '' ? [] : [$picked];
+        }
+        $picked = array_values(array_intersect($picked, array_keys(self::DETAIL_OPTIONS)));
+        if (!$picked) {
+            $this->api->respond_error('Choose at least one thing that was done.', 422);
+        }
+
+        $data['treatment_details'] = implode('; ', array_map(
+            fn ($k) => self::DETAIL_OPTIONS[$k],
+            $picked
+        ));
         return $data;
     }
 }
