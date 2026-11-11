@@ -180,8 +180,8 @@ class ChatReviewsController extends ResourceController
         }
         if ($patient_id === 0) {
             [$first, $last] = $this->split_name($a['contact_name']);
-            $patient_id = $model->insert(['table' => 'patients'], [
-                'patient_code'      => 'TMP-' . bin2hex(random_bytes(6)),
+            $patient_id = $model->insert_id(['table' => 'patients'], [
+                'patient_code'      => 'EZ-TMP-' . bin2hex(random_bytes(6)),
                 'first_name'        => $first,
                 'last_name'         => $last,
                 'contact_number'    => $phone,
@@ -189,14 +189,10 @@ class ChatReviewsController extends ResourceController
                 'notes'             => 'Created automatically from chatbot assessment #' . $assessment_id . '. Please verify the details.',
                 'created_by'        => $reviewer_id,
             ]);
-            $model->execute(
-                "UPDATE patients SET patient_code = CONCAT('EZ-', LPAD(id, GREATEST(5, CHAR_LENGTH(id)), '0')) WHERE id = ?",
-                [$patient_id]
-            );
         }
 
         // 2. Bite incident, linked to the patient.
-        $incident_id = $model->insert(['table' => 'animal_bite_incidents'], [
+        $incident_id = $model->insert_id(['table' => 'animal_bite_incidents'], [
             'patient_id'     => $patient_id,
             'incident_date'  => $this->incident_date($ans['when'] ?? '', $a['created_at']),
             'animal_type'    => $this->animal_label($ans['animal'] ?? 'other'),
@@ -211,7 +207,7 @@ class ChatReviewsController extends ResourceController
         ]);
 
         // 3. Wound assessment: suggested category only. Final category stays blank until staff confirm it.
-        $model->insert(['table' => 'wound_assessments'], [
+        $model->insert_id(['table' => 'wound_assessments'], [
             'incident_id'         => $incident_id,
             'chat_assessment_id'  => $assessment_id,
             'wound_description'   => $a['summary'] ?: null,
