@@ -156,7 +156,7 @@ class ChatReviewsController extends ResourceController
 
         $a = $model->query_one(
             "SELECT a.id, a.summary, a.suggested_category, CAST(a.answers AS CHAR) AS answers,
-                    s.contact_name, s.contact_number, s.created_at
+                    s.contact_name, s.contact_number, s.contact_age, s.contact_address, s.created_at
              FROM chat_assessments a
              INNER JOIN chat_sessions s ON s.id = a.session_id
              WHERE a.id = ? LIMIT 1",
@@ -169,24 +169,37 @@ class ChatReviewsController extends ResourceController
         $ans = json_decode((string) $a['answers'], true);
         $ans = is_array($ans) ? $ans : [];
 
+        $phone   = $this->clean_phone($a['contact_number']);
+        $age     = $this->clean_age($a['contact_age']);
+        $address = $this->clean_address($a['contact_address']);
+
         // 1. Patient: reuse an existing patient with the same contact number, otherwise create one.
-        $phone      = $this->clean_phone($a['contact_number']);
         $patient_id = 0;
         if ($phone !== null) {
             $p = $model->query_one("SELECT id FROM patients WHERE contact_number = ? ORDER BY id DESC LIMIT 1", [$phone]);
             $patient_id = $p ? (int) $p['id'] : 0;
+            if ($patient_id > 0) {
+                // Fill only the blanks. Anything staff already entered is never overwritten.
+                $model->execute(
+                    "UPDATE patients SET age_years = COALESCE(age_years, ?), address = COALESCE(address, ?) WHERE id = ?",
+                    [$age, $address, $patient_id]
+                );
+            }
         }
         if ($patient_id === 0) {
             [$first, $last] = $this->split_name($a['contact_name']);
             $temp_code = 'TMP-' . bin2hex(random_bytes(8));
 
             $model->insert_rows(['table' => 'patients'],
-                ['patient_code', 'first_name', 'last_name', 'contact_number', 'registration_date', 'notes', 'created_by'],
+                ['patient_code', 'first_name', 'last_name', 'age_years', 'contact_number', 'address',
+                 'registration_date', 'notes', 'created_by'],
                 [[
                     'patient_code'      => $temp_code,
                     'first_name'        => $first,
                     'last_name'         => $last,
+                    'age_years'         => $age,
                     'contact_number'    => $phone,
+                    'address'           => $address,
                     'registration_date' => date('Y-m-d'),
                     'notes'             => 'Created automatically from chatbot assessment #' . $assessment_id . '. Please verify the details.',
                     'created_by'        => $reviewer_id,
@@ -252,6 +265,21 @@ class ChatReviewsController extends ResourceController
     {
         $v = preg_replace('/[^\d+]/', '', (string) $v);
         return ($v === '' || strlen($v) < 7 || strlen($v) > 20) ? null : $v;
+    }
+
+    private function clean_age($v)
+    {
+        if ($v === null || $v === '') {
+            return null;
+        }
+        $n = (int) $v;
+        return ($n >= 0 && $n <= 120) ? $n : null;
+    }
+
+    private function clean_address($v)
+    {
+        $v = trim((string) $v);
+        return $v === '' ? null : mb_substr($v, 0, 255);
     }
 
     private function split_name($name)

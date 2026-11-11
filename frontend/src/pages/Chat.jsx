@@ -10,7 +10,6 @@ const pick = (...names) => names.map((n) => Lucide[n]).find(Boolean) || Lucide.C
 const Send = pick('Send')
 const MessageCircle = pick('MessageCircle')
 const ShieldCheck = pick('ShieldCheck')
-const Camera = pick('Camera', 'ImagePlus')
 const Copy = pick('Copy')
 const Printer = pick('Printer')
 
@@ -131,6 +130,8 @@ function Assessment({ withSession, onCancel, onDone }) {
   const [ans, setAns] = useState({})
   const [name, setName] = useState('')
   const [number, setNumber] = useState('')
+  const [age, setAge] = useState('')
+  const [address, setAddress] = useState('')
   const [photo, setPhoto] = useState(null)
   const [photoUrl, setPhotoUrl] = useState('')
   const [saving, setSaving] = useState(false)
@@ -163,6 +164,10 @@ function Assessment({ withSession, onCancel, onDone }) {
       setError('Contact number must be 7 to 15 digits. You can also leave it blank.')
       return
     }
+    if (age !== '' && (!/^\d+$/.test(age) || Number(age) > 120)) {
+      setError('Age must be a whole number from 0 to 120. You can also leave it blank.')
+      return
+    }
     setSaving(true)
     setError(null)
     try {
@@ -172,6 +177,8 @@ function Assessment({ withSession, onCancel, onDone }) {
         fd.append('answers', JSON.stringify(ans))
         fd.append('contact_name', name)
         fd.append('contact_number', number)
+        fd.append('contact_age', age)
+        fd.append('contact_address', address)
         if (photo) fd.append('photo', photo, 'wound.jpg')
         return api('/chat/assessment', fd, { form: true, timeout: 30000 })
       })
@@ -222,6 +229,15 @@ function Assessment({ withSession, onCancel, onDone }) {
             <label htmlFor="cf-num">Contact number</label>
             <input id="cf-num" type="tel" value={number} onChange={(e) => setNumber(e.target.value)} maxLength={20} autoComplete="tel" />
             <div className="cf-hint">Used only by the center for your care and vaccination reminders. See the <Link to="/privacy">Privacy Notice</Link>.</div>
+          </div>
+          <div className="cf-field">
+            <label htmlFor="cf-age">Age (optional)</label>
+            <input id="cf-age" type="number" min="0" max="120" inputMode="numeric" value={age} onChange={(e) => setAge(e.target.value)} />
+          </div>
+          <div className="cf-field">
+            <label htmlFor="cf-addr">Address (optional)</label>
+            <input id="cf-addr" type="text" value={address} onChange={(e) => setAddress(e.target.value)} maxLength={255} autoComplete="street-address" />
+            <div className="cf-hint">Used only by the center for your care records.</div>
           </div>
           <div className="cf-field">
             <label htmlFor="cf-photo">Photo of the wound (optional)</label>
@@ -428,7 +444,8 @@ export default function Chat() {
               <p>
                 This chat gives general information only. It does not diagnose or replace care from our nurse or
                 physician. Your messages are saved so center staff can review them, and only authorized staff can see
-                them. If you choose to share your name, contact number, or a wound photo, they are used only for your care.
+                them. If you choose to share your name, contact number, age, address, or a wound photo, they are used
+                only for your care.
               </p>
               <p><Link to="/privacy">Read the full Privacy Notice</Link></p>
               <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '16px 0' }}>

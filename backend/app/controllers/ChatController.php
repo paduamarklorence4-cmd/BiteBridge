@@ -456,7 +456,6 @@ class ChatController extends Controller
     {
         $this->guard('assessment_impl');
     }
-
     private function assessment_impl()
     {
         $this->api->require_method('POST');
@@ -489,6 +488,18 @@ class ChatController extends Controller
             $this->api->respond_error('Contact number must be 7 to 15 digits.', 422);
         }
 
+        $age_raw = trim((string) ($_POST['contact_age'] ?? ''));
+        if ($age_raw !== '' && (!ctype_digit($age_raw) || (int) $age_raw > 120)) {
+            $this->api->respond_error('Age must be a whole number from 0 to 120.', 422);
+        }
+        $age = $age_raw === '' ? null : (int) $age_raw;
+
+        $address = trim((string) ($_POST['contact_address'] ?? ''));
+        if (mb_strlen($address) > 255) {
+            $this->api->respond_error('Address is too long (up to 255 characters).', 422);
+        }
+        $address = $address === '' ? null : $address;
+
         $photo = $this->read_photo();
 
         [$cat, $urgent] = $this->classify($a);
@@ -514,8 +525,11 @@ class ChatController extends Controller
             }
 
             $model->update(['table' => 'chat_sessions'], $sid, [
-                'contact_name' => $name === '' ? null : $name, 'contact_number' => $number === '' ? null : $number,
-                'status' => 'completed',
+                'contact_name'    => $name === '' ? null : $name,
+                'contact_number'  => $number === '' ? null : $number,
+                'contact_age'     => $age,
+                'contact_address' => $address,
+                'status'          => 'completed',
             ]);
             $code   = $this->new_code();
             $public = $this->public_summary($a, $urgent, $code, $lang);
@@ -532,33 +546,5 @@ class ChatController extends Controller
 
         // Only patient-safe data is returned: no category and no staff fields.
         $this->api->respond(['reference_code' => $code, 'summary' => $public, 'valid_days' => $days], 201);
-    }
-
-    // ------------------------------------------------------------------ retrieve
-
-    public function retrieve()
-    {
-        $this->guard('retrieve_impl');
-    }
-
-    private function retrieve_impl()
-    {
-        $this->api->require_method('POST');
-        $this->api->rate_limit('chat_ref_' . $this->ip(), 10, 60);
-        $in   = $this->json_input();
-        $code = strtoupper(trim((string) ($in['code'] ?? '')));
-
-        if (!preg_match('/^BB-[A-Z0-9]{4,12}$/', $code)) {
-            $this->api->respond_error('Enter your reference code, for example BB-7K3M9P2X.', 422);
-        }
-        $row = $this->rm()->query_one(
-            "SELECT public_summary, created_at FROM reference_codes
-             WHERE code = ? AND (expires_at IS NULL OR expires_at > NOW()) LIMIT 1",
-            [$code]
-        );
-        if (!$row) {
-            $this->api->respond_error('We could not find that code. Check it and try again, or call the center.', 404);
-        }
-        $this->api->respond(['summary' => $row['public_summary'], 'saved_at' => $row['created_at']]);
     }
 }
