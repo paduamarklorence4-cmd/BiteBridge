@@ -117,6 +117,24 @@ class ResourceModel extends Model
         return (int) ($row['id'] ?? 0);
     }
 
+    /**
+     * Inserts one row and returns its new id, read from the same connection right after the insert.
+     * Use this inside a transaction: LAST_INSERT_ID() can return 0 there, which breaks foreign keys.
+     */
+    public function insert_id(array $cfg, array $data)
+    {
+        $cols = array_keys($data);
+        $sql  = "INSERT INTO `{$cfg['table']}` (`" . implode('`, `', $cols) . "`) VALUES ("
+              . implode(', ', array_fill(0, count($cols), '?')) . ")";
+        $this->run_checked($sql, array_values($data), 'Insert into ' . $cfg['table']);
+
+        $id = (int) lava_instance()->db->lastInsertId();
+        if ($id <= 0) {
+            throw new RuntimeException('Insert into ' . $cfg['table'] . ' did not return an id.');
+        }
+        return $id;
+    }
+
     /** Inserts several rows in ONE query (fewer round trips to the database). No id is returned. */
     public function insert_rows(array $cfg, array $columns, array $rows)
     {
@@ -192,6 +210,7 @@ class ResourceModel extends Model
         return $this->exec_sql($sql, $params)->rowCount();
     }
 
+    /** Reads LAST_INSERT_ID() from the connection. Outside a transaction it is reliable. */
     public function last_id()
     {
         $row = $this->one("SELECT LAST_INSERT_ID() AS id");
