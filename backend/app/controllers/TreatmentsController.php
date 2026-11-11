@@ -4,15 +4,15 @@ require_once __DIR__ . '/ResourceController.php';
 
 class TreatmentsController extends ResourceController
 {
-    /** The only treatment choices staff can pick. Keys are stored as sent; labels are saved as text. */
+    /** The only treatment choices allowed. The labels are saved as text, so they must match Treatments.jsx. */
     private const DETAIL_OPTIONS = [
-        'washed'       => 'Hinugasan ang sugat ng sabon at tubig',
-        'dressed'      => 'Nilagyan ng dressing',
-        'vaccine'      => 'Binigyan ng bakuna laban sa rabies',
-        'rig'          => 'Binigyan ng rabies immunoglobulin (RIG)',
-        'tetanus'      => 'Tinurukan ng tetanus',
-        'referred'     => 'Ni-refer sa physician',
-        'other'        => 'Iba pa (tingnan ang Notes)',
+        'washed'   => 'Washed the wound with soap and water',
+        'dressed'  => 'Applied a dressing',
+        'vaccine'  => 'Given rabies vaccine',
+        'rig'      => 'Given rabies immunoglobulin (RIG)',
+        'tetanus'  => 'Given tetanus shot',
+        'referred' => 'Referred to physician',
+        'other'    => 'Other (see Notes)',
     ];
 
     protected function config()
@@ -34,7 +34,7 @@ class TreatmentsController extends ResourceController
             'fields' => [
                 'incident_id'       => ['type' => 'ref', 'table' => 'animal_bite_incidents', 'label' => 'Bite incident', 'required' => true],
                 'treatment_date'    => ['type' => 'date', 'label' => 'Treatment date', 'required' => true, 'no_future' => true],
-                'treatment_details' => ['type' => 'checkboxes', 'label' => 'Ginawa', 'required' => true, 'options' => self::DETAIL_OPTIONS],
+                'treatment_details' => ['type' => 'text', 'label' => 'Treatment done', 'required' => true],
                 'notes'             => ['type' => 'text', 'label' => 'Notes'],
             ],
             'filters' => [
@@ -45,8 +45,8 @@ class TreatmentsController extends ResourceController
     }
 
     /**
-     * Runs before save. The patient always comes from the incident, and the checked options are turned
-     * into readable text. Only known option keys are accepted, so nothing else can be stored.
+     * Runs before save. The patient always comes from the incident. The treatment text is checked
+     * against the allowed labels, so only known choices can be stored.
      */
     protected function prepare(array $data, $mode, $existing)
     {
@@ -57,19 +57,14 @@ class TreatmentsController extends ResourceController
         }
         $data['patient_id'] = (int) $incident['patient_id'];
 
-        $picked = $data['treatment_details'] ?? [];
-        if (!is_array($picked)) {
-            $picked = $picked === '' ? [] : [$picked];
-        }
-        $picked = array_values(array_intersect($picked, array_keys(self::DETAIL_OPTIONS)));
-        if (!$picked) {
-            $this->api->respond_error('Choose at least one thing that was done.', 422);
+        $parts   = array_filter(array_map('trim', explode(';', (string) ($data['treatment_details'] ?? ''))));
+        $allowed = array_values(self::DETAIL_OPTIONS);
+        $valid   = array_values(array_intersect($parts, $allowed));
+        if (!$valid) {
+            $this->api->respond_error('Choose at least one treatment done.', 422);
         }
 
-        $data['treatment_details'] = implode('; ', array_map(
-            fn ($k) => self::DETAIL_OPTIONS[$k],
-            $picked
-        ));
+        $data['treatment_details'] = implode('; ', $valid);
         return $data;
     }
 }

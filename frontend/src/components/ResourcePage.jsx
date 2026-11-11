@@ -146,7 +146,6 @@ function RecordForm({ cfg, row, onCancel, onSaved }) {
     const cur = Array.isArray(s[k]) ? s[k] : []
     return { ...s, [k]: cur.includes(opt) ? cur.filter((x) => x !== opt) : [...cur, opt] }
   })
-
   async function submit(e) {
     e.preventDefault()
     const missing = cfg.fields.filter((fd) => fd.required && !(editing && fd.optionalOnEdit) && String(f[fd.key] ?? '').trim() === '')
@@ -155,6 +154,12 @@ function RecordForm({ cfg, row, onCancel, onSaved }) {
     setError(null)
     try {
       const body = { ...f }
+      // Checkbox choices are sent as readable text, joined with "; ".
+      cfg.fields.forEach((fd) => {
+        if (fd.type === 'checkboxes') {
+          body[fd.key] = (f[fd.key] || []).map((k) => fd.options[k]).join('; ')
+        }
+      })
       const res = editing
         ? await staffPost(`${cfg.base}/update`, { ...body, id: row.id })
         : await staffPost(`${cfg.base}/create`, body)
